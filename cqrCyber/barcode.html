@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BarCode Generator</title>
+    <script src="https://cdn.jsdelivr.net/jsbarcode/3.5.8/JsBarcode.all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+
+
+
+<meta name="description" content="">  
+  <meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <script type="text/javascript" src="jquery.minqrc.js"></script>
+    <script type="text/javascript" src="qrcode.js"></script>
+  <!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">     
+
+   <!-- script
+   ================================================== -->
+  <script src="js/modernizr.js"></script>
+
+   <!-- favicons
+  ================================================== -->
+  <link rel="icon" type="image/png" href="favicon.png">
+<!--
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+-->
+</head>
+
+<body>
+
+  <!-- header 
+   ================================================== -->
+   <header class="main-header">
+    <div class="row">
+      <div class="logo">
+           <a href="index.html">cqrCyber</a>
+        </div>      
+    </div>   
+
+    <a class="menu-toggle" href="#"><span>Menu</span></a> 
+   </header> <!-- /header -->
+
+   <!-- navigation 
+   ================================================== -->
+   <nav id="menu-nav-wrap">
+<style type="text/css">
+  low{
+    text-transform: capitalize;
+    font-family: cursive;
+    color: darkorange;
+    font-size: 18px;
+  }
+</style>
+<style type="text/css">
+  olow{
+    text-transform: lowercase;
+    font-family: arial;
+    font-size: 18px;
+  }
+</style>
+<style type="text/css">
+  gr{
+    color: green;
+  }
+</style>
+    <h5 style="text-transform: capitalize; font-family: cursive;"><olow>cqr</olow><low>Cyber</low> <br>BarCode Generator<i class="fa fa-barcode"></i></h5><hr/>  
+    <p style="text-align: justify; line-height: 18px;">This simple tool will let you create bar codes of the input. Enter anything like names, numbers, links, etc and hit enter to get them converted into bar codes. You can also cross check bar codes by using bar scanner.
+      <ul class="nav-list">
+
+        <li><a href="qrcode.html" title="Generate Qr Codes" style="font-size: 15px;"><i class="fa fa-qrcode"></i> QrCode Generator</a></li>
+
+        <hr>
+      <li><a href="demo1.html" title="About and Contact" style="font-size: 15px;"><i style="color: darkorange;" class="fa fa-info-circle"></i> Home</a></li>
+      
+      <li><a href="demo3.html" title="cqrCyber Projects" style="font-size: 15px;"><i style="color: darkorange;" class="fa fa-shield" style="font-size: 15px;"></i> Projects</a></li>
+      <li><a href="demo2.html" title="Others" style="font-size: 15px;"><i style="color: darkorange;" class="fa fa-tags "></i> Miscellaneous</a></li>
+      <!--
+      <li><a href="https://t.me/umar_cbs" title="cqrCyber Telegram Channel"><i class="fa fa-send-o" style="color:lightblue;"></i> Telegram cqrCyber</a></li>
+      <li><a href="https://t.me/umarcbs" title="Personal Telegram Account (Umar Farooq)"><i class="fa fa-send" style="color: blue;"></i> Telegram</a></li>
+      <li><a href="https://api.whatsapp.com/send?phone=916005728432" title="only for Messages"><i class="fa fa-whatsapp" style="color: green;"></i> WhatsApp</a></li>
+      <li><a href="tel:+916005728432" title="Call in working hours only"><i class="fa fa-phone" style="color: orange;"></i> Call</a></li>         
+      <li><a href="http://soulat.in" title="Umar Farooq"><i class="fa fa-globe" style="color: white;"></i> Website</a></li>
+      <li><a href="mailto:soulatf3@gmail.com" title="Report errors or queries"><i class="fa fa-times-circle" style="color: red;"></i> Report Errors</a></li>  -->       
+    </ul>
+
+<!--
+    <h5><olow>cqr</olow><low>Cyber</low>Address</h5>  
+    <p style="text-align: justify; line-height: 12px;"><i class="fa fa-map-marker" style="font-size: 20px; color: purple;"></i> Srinagar, Jammu and Kashmir.
+       </p>
+       <p style="text-align: justify; line-height: 12px;"><i class="fa fa-thumb-tack" style="font-size: 20px; color: maroon;"></i> Postal Code: 192301
+       </p>
+       <p style="text-align: justify; line-height: 12px;"><i class="fa fa-phone" style="font-size: 20px; color: darkblue;"></i>  +91-6005728432
+       </p>
+-->
+    <hr/>
+    <h5><olow>cqr</olow><low>Cyber</low><i class="fa fa-shield" style="font-size: 10px; color: green;"></i></h5>  
+    <p style="text-align: justify; line-height: 18px;">If you have any queries/ suggestions/ messages about this website kindly do inform us in any of the above listed contacts. We will value your comments and let you remain anonymous.
+       <br><cpy style="color: darkorange; font-size: 12px;"><cpy1 style="color: white;">Copyright &copy 2020</cpy1> cqrcyber.xyz  </cpy>
+    </p>
+
+    
+
+  </nav>
+
+  <!-- main content
+   ================================================== -->
+   <main id="main-404-content" class="main-content-static">
+
+    <div class="content-wrap">
+
+       <div class="shadow-overlay"></div>
+
+       <div class="main-content">
+        <div class="row">
+          <div class="col-twelve">
+            
+              <h1 class="kern-this"></h1>
+              <style type="text/css">
+                olo{
+                  color: darkorange;
+                }
+              </style>
+              <style type="text/css">
+                oll{
+                  color: white;
+                }
+              </style>
+              <style type="text/css">
+                lll{
+                  color: green;
+                }
+              </style>
+              <p style="text-align: justify;">
+            <oll>cqr</oll><olo>Cyber</olo><i class="fa fa-shield" style="font-size: 9px; color: green;"></i> <lll>Bar Code Generator <i class="fa fa-barcode"></i> 
+              </p>
+
+              <div class="search">
+                
+                <svg id="barcode" /><formbr>
+    <input autofocus id="ean" type="text" placeholder="Put text & hit enter to generate barcode" style="background-color: transparent; background-color: rgba(169,169,169,0.1); width: 310px; "/>
+    <ul id="history"></ul>
+    </form>
+              </div>
+
+
+
+
+
+
+    <script type="text/javascript">
+      window.eanHistory = [];
+
+      function loadHistory() {
+        var serializedHistory = localStorage.history;
+        if (serializedHistory !== undefined) {
+          eanHistory = JSON.parse(serializedHistory);
+        }
+
+        if (eanHistory.length > 0) {
+          setEan(eanHistory[0]);
+        }
+      }
+
+      function updateHistory() {
+        localStorage.history = JSON.stringify(eanHistory);
+        $("#history").empty();
+        eanHistory.forEach(function(item) {
+          
+        });
+      }
+
+      function setEan(ean) {
+        $("#ean").val(ean);
+        updateEan(ean);
+      }
+
+      function updateEan(ean) {
+        ean = ean.trim();
+
+        if (ean.length == 0) {
+          return;
+        }
+
+        if (eanHistory.includes(ean)) {
+          eanHistory.splice(eanHistory.indexOf(ean), 1);
+        }
+
+        var format = ean.length == 7 || ean.length == 8 ? "EAN8" :
+          ean.length == 12 || ean.length == 13 ? "EAN13" : "CODE128";
+
+        try {
+          JsBarcode("#barcode", ean, {format: format});
+        } catch (e) {
+          console.log(e);
+          updateHistory();
+          return;
+        }
+
+        eanHistory.unshift(ean);
+
+        if (eanHistory.length > 50) {
+          eanHistory.splice(50);
+        }
+
+        updateHistory();
+      }
+
+      $(document).ready(function() {
+        loadHistory();
+        updateHistory();
+
+        $("#ean").on("keyup", function() {
+          updateEan($(this).val());
+        });
+
+        $("#ean").on("focus", function() {
+            $(this).select();
+        });
+
+        $("#history").on("click", "li", function() {
+          setEan($(this).text());
+        });
+      });
+    </script>
+    <style type="text/css">
+    
+      #barcode {
+
+        margin: 1em auto;
+        padding: 0.5em;
+        border: 1px solid darkorange;
+        display: block;
+        background-color: white;
+         border: 4px solid darkorange;
+        padding: 6px 6px; 
+        align-items: left; 
+        margin-left: 0px;
+         width: 315px;"
+      }
+      #history {
+        width: 15em;
+        font-size: 2em;
+        margin: 1em auto;
+        font-size: 2em;
+        list-style: none;
+        text-align: center;
+        cursor: pointer;
+        line-height: 2em;
+        padding: 0;
+      }
+    </style>
+  </lll></p></div></div></div></div>
+ <footer>
+        <div class="row">
+
+          <div class="col-seven tab-full social-links pull-right">
+            <!--<ul>
+              <li><a href="#" title="@umarcbs"><i class="fa fa-github"></i></a></li>
+                <li><a href="#" title="@umarcbs"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=916005728432" title="+916005728432"><i class="fa fa-whatsapp"></i></a></li>
+                <li><a href="#" title="+916005728432"><i class="fa fa-phone"></i></a></li>
+                <li><a href="mailto:soulatf3@gmail.com" title="soulatf3@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+                <li><a href="#" title="www.soulat.in"><i class="fa fa-globe"></i></a></li>        
+            </ul>-->
+          </div>
+            
+            <div class="col-five tab-full bottom-links">
+            <!--<ul class="links"><br><br><br>
+              <li><a href="#" title="Home">Homepage</a></li>
+                 <li><a href="#" title="Others">Miscellaneous</a></li>
+                 <li><a href="#" title="cqrCyber Projects">Projects</a></li>
+                                        
+            </ul>-->
+
+            <div class="credits">
+              <p style="color: silver;">Designed and Coded by <a href="http://soulat.in" title="Umar Farooq">Umar Farooq</a>
+                | <cpy1 style="color: white;">Copyright &copy 2020 | </cpy1> <cpy><cpy2 style="color: white;">cqr</cpy2><cpy3 style="color: darkorange;">Cyber</cpy3>.xyz  </cpy></p>
+            </div>
+          </div>            
+
+        </div> <!-- /row -->              
+       </footer>
+
+    </div> <!-- /content-wrap -->
+   
+   </main> <!-- /main-404-content -->
+
+   <div id="preloader"> 
+      <div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+    
+  </body>
+</html>
