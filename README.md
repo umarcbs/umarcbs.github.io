@@ -1,86 +1,185 @@
-# Milestone 4 - Twitter Clone
+# 1 About
 
-Part one of Milestone 4 for RockIT Bootcamp
+This repository is the source code for the epic length [Build Youtube in React](https://productioncoder.com/build-youtube-in-react-part-1/) tutorial series provided by [productioncoder.com](https://productioncoder.com).
 
-## Acceptance Criteria
+<h3 align="center">Please help this repo with a ⭐️ if you find it useful! 😁</h3>
 
-As a user, I should be able to
+# 2 Demo
 
-- Send a new tweet, which should get added to the list of tweets
-- Click any top-level tweet to expand it
-- See all replies to a tweet while it is expanded
-- Reply to any top-level tweet
-- Close/collapse an expanded top-level tweet by clicking it a second time
+**[Please watch the demo on Youtube](https://www.youtube.com/watch?v=E7wJTI-1dvQ)**
 
-## HTML Structure
+[![Build Youtube in React demo video](http://img.youtube.com/vi/E7wJTI-1dvQ/0.jpg)](http://www.youtube.com/watch?v=E7wJTI-1dvQ)
 
-The project is broken down into two main sections: `header` and `.tweets`.
+# 3 Screenshots
 
-The `.tweets` section will have its direct children elements be `.thread`s. Some are already made for you so you can see the structure. Others will be created dynamically.
+UI-wise this application looks **almost exactly like the original Youtube application**
 
-A new thread will be dynamically created each time someone uses the `.compose` section in the `header`. A `.thread` has the following structure when a new tweet is created.
+It uses real data by leveraging the [Youtube Data API v3](https://developers.google.com/youtube/v3/docs/).
+![Youtube in React Home feed](images/youtube-react-home-feed.png)
 
-When a reply `.tweet` is added, it will be placed as a sibling to the `.compose` section. Also note that all `.tweet`s will have the exact same HTML whether they are original tweets or replies.
+![Youtube in React Watch-1](images/youtube-react-watch-1.png)
 
-## State Management
+![Youtube in React Watch-2](images/youtube-react-watch-2.png)
 
-Be sure to study the CSS and see how it works. There are two parts to this site that use class names for state management. The first is the `.compose` section. By Default, the `.compose` section hides the div which contains the count and send button. The `textarea` is also smaller by default. When the `textarea` is clicked, you will need to add a class `.expand` to the `.compose` section.
+# 4 How to run this application
 
-The presence of `.expand` is a state change and the CSS will change the `.compose` to allow the `div` to be shown. It will also change the height of the `textarea`. JavaScript is responsible for behavior, so JS will determine when a state needs to be changed with events (like clicks), but it will only add/remove this class. CSS is responsible for what that state looks like.
+This application loads information using the [Youtube Data API v3](https://developers.google.com/youtube/v3/docs/).
 
-The second state we will manage is when an original tweet gets clicked (not a reply tweet). When this happens we will toggle the respective `.thread`'s visibility. Similarly to the compose section mentioned earlier, we will use an `.expand` to be added to the `.thread`. Just keep in mind that this `.expand` has nothing to do with the other one. We're just using similar class names to do similar concepts. Again, study the CSS to see how this is done.
+To use it, you need to set up a [Youtube Data v3 API key](https://productioncoder.com/build-youtube-in-react-part-19/) and run the project with `npm` or `yarn`.
 
-# Guide
+**Below, you'll find a step by step explanation**
 
-You will only need 6 functions for this project: three event handlers (each with its anonymous function) and three template functions. Follow this guide to ensure success:
+## 4.1. Getting a Youtube Data API key
 
-## 1. User Object
+1. Head over to the [Google developers console](https://console.developers.google.com)
+2. Create a new project by clicking on `Select project` drop down right next to the logo. Click the `New Project` button an give it a speaking name.
+3. Select your project by choosing it in the `Select Dropdown` directly next to the logo in the header.
+4. Click the `Enable APIs and Services` button
+5. Search for `youtube data`
+6. Click on the `Youtube Data API v3`
+7. Click the blue enable button
+8. In the dashboard, click `Credentials` on the left sidebar
+9. Click the `Create Credential` button
+10. Which API are you using: `Youtube Data API v3`
+11. Where will you be calling the API from: `Web browser`
+12. What data are you accessing: `Public data`
+13. Click the `What credentials do I need button`
+14. Copy the API key
 
-Create a `User` object to hold your twitter handle and your image name. We will use this when we compose tweets.
+## 4.2. Providinng the API key to your application
 
-## 2. State Management
+### 4.2.1 Option 1 - Environment variable (recommended)
 
-Since some threads are already provided for you in the initial HTML, the first thing you should do is create the aforementioned state management. This should take care of 2 out of the 6 functions we just mentioned. It's important to implement state management early so we can see the moving parts even though nothing dynamic is being created yet.
+Provide your Youtube Data API key with the `REACT_APP_YT_API_KEY` environment variable.
 
-## 3. Templating
+Create a `.env.local` file (alread gitignored) with
 
-Since there will be a lot of reusable HTML to this project, you will be using HandlebarsJs to break the reusable HTML into templates. Try to think of how many use-cases we're going to need to make the HTML for `.tweet`. There are actually two different use-cases when we need to do. The first is when we compose a new thread, and the second is when we reply. These are different because, in the case of a new thread, we will need the HTML for `.tweet` to be inside the HTML for `.thread`. But, for a reply, we just need the HTML for `.tweet`. With this in mind, a mistake would be to repeat the `.tweet` HTML twice in two templates:
+```
+touch .env.local
+```
 
-- A *tweet* template that has all the parts of a tweet
-- A *thread* template that has all the parts of a thread and all the parts of a tweet
+and then define the `REACT_APP_YT_API_KEY` environment variable which is supposed to hold your `Youtube Data v3 API` key in the `.env.local` file like so:
 
-This would be a mistake because the HTML for a tweet would exist twice. Since templates are supposed to be filled with variables, lets do this instead:
+```
+REACT_APP_YT_API_KEY=AIzaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
 
-- A *tweet* template that has all the parts of a tweet (same as before)
-- A *thread* template that has all the parts of a thread and a variable to insert the tweet that we get from the *tweet* template
+### 4.2.2 Option 2 - hardcode API key
 
-In other words, remember to keep your templates DRY.
+As an alternative, you could just hardcode the API key in the `src/App.js` file.
 
-We will create three template functions where each one will represent its respective template. Name your functions as follows:
+In general, we'd recommend going with the environment variable approach to **prevent you to accidentially commiting the API key go Git**.
 
-- `renderTweet(User, message)`
-- `renderCompose()`
-- `renderThread(User, message)`
+However, if you do want to hardcode the `Youtube Data API key`, you can head over to the `src/App.js` file and paste your API key in:
 
-Each of these templates will return a string. The string will be the respective template to the functions name. Build the functions in the order above and test them out by console logging their results. You can always pass fake data in to test.
+```
+const API_KEY = 'AIzaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+```
 
-The `renderTweet()` and `renderCompose()` functions are pretty straight forward. They simply use Handlebars to return the template as a string. The `renderThread()` function though takes some more thought. It will need to call off to the other two render functions to get its contents, then it will take those "sub templates" and build them into the thread template. Even though `renderThread()` won't use the `User` and `message` values directly, it will need to pass those along to the `renderTweet()`.
+## 4.3. Installing dependencies
 
-## 4. Composition
+To install the dependencies run
 
-So far you should have 5/6 functions made. Two for state management and three templating functions that you have already tested out. Now it's time to put it all together and compose some new tweets!
+```
+npm install
+```
 
-This last event handler function will be based on when the user clicks the "Send" button. Here is a breakdown of what this function should do:
+With [yarn](https://yarnpkg.com/lang/en/)
 
-> I recommend doing each of these steps one at a time and test them often in the browser to make sure they work
+```
+yarn install
+```
 
-- Cancel the form submission. Since our submit button is inside a form, we don't want the form to actually submit to the form's action do we?
-- Get the `message` the user typed into a variable
-- Determine what type of compose we are doing. You can do this based on the context (position) of the `.compose` section. Are we in the header? Are we in a thread?
-  - Call the appropriate template function based on our context and get the response (the new HTML to be inserted)
-  - Add the HTML response to the correct place in the DOM
-- Clear the `textarea` box so it has no value, and change the state of the `.compose` section so it's not expanded anymore.
+## 4.4 Running the application
 
-# Extra Credit
+### 4.4.1 Running locally with local env vars
 
-When composing, get the 140 character count to decrement similar to how twitter.com does. We'll let you take it from here. Good luck!
+You can run:
+```
+npm run dev
+```
+
+which will source your `.env.local` file and then start then run `npm start`.
+
+Note that if you change the value of the `.env.local` file, you need to run `npm run dev` again so that the new env var changes are picked up.
+
+As an alternative, you can manually source the `.env.local` file with
+
+```
+source .env.local
+```
+
+and then run
+
+```
+npm start
+```
+
+You can also use [yarn](https://yarnpkg.com/lang/en/) to run the application.
+
+```
+yarn start
+```
+
+**If you close the terminal, you will need to source the file again. That's why it is recommended to just run `npm run dev` so you don't need to think about it**.
+
+### 4.4.2 Running locally with hardcoded Youtube API key
+
+If you copied and pasted the API key directly into the code, you do not need to source anything and you can just run:
+
+```
+npm start
+```
+
+If you are using [yarn](https://yarnpkg.com/lang/en/), you can do
+
+```
+yarn start
+```
+
+**Make sure to not commit your file to Git!**
+
+# 5 Tests
+
+This project contains an extensive suite of tests and makes use of [Jest](https://jestjs.io/) and [Enzyme](https://github.com/airbnb/enzyme).
+
+Run all tests by executing.
+
+```
+npm test
+```
+
+You can also use [yarn](https://yarnpkg.com/lang/en/) to run the tests.
+
+```
+yarn test
+```
+
+# 6 Features
+
+This application includes the major features of Youtube such as
+
+- home feed with infinite scroll
+- trending videos
+- searching for videos
+- watching videos
+- displaying comments and video details
+
+# 7 Used technologies
+
+- [React / create-react-app](https://github.com/facebook/create-react-app)
+- [Redux](https://redux.js.org/)
+- [Redux-saga](https://redux-saga.js.org/)
+- [Redux-reselect](https://github.com/reduxjs/reselect)
+- [Jest](https://jestjs.io/)
+- [Enzyme](https://airbnb.io/enzyme/)
+- [Semantic UI](https://react.semantic-ui.com/)
+- CSS Grid / Flexbox
+
+# 8 Disclaimer
+
+This project is **solely intended for educational purposes** and is created under **fair use**.
+
+It is **not intended to create any kind of Youtube competitor**, but to teach advanced concepts in frontend development.
+
+Just see it a nice educational project that will help you to improve your coding skills.
