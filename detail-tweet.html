@@ -1,0 +1,254 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Detail Tweet | Like Twitter</title>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/materialize.css"/>
+      <link type="text/css" rel="stylesheet" href="css/style.css" />
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!-- Dropdown Structure -->
+      <ul id="dropdown1" class="dropdown-content">
+        <li class="padding-non-a">AH.HANDOYO<br /><small>@HandExcel</small></li>
+        <li class="divider"></li>
+        <li><a href="#!"><i class="material-icons left">person</i>Profile</a></li>
+        <li><a href="#!"><i class="material-icons left">list</i>Lists</a></li>
+        <li><a href="#!"><i class="material-icons left">memory</i>Moments</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Settings and Privacy</a></li>
+        <li><a href="#!">Help Center</a></li>
+        <li><a href="#!">Keyboard Shortcuts</a></li>
+        <li><a href="log-in.html">Log Out</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Night Mode <i class="material-icons right">brightness_3</i></a></li>
+      </ul>
+
+      <!-- Modal Tweet -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Compose new Tweet</h4>
+          <div class="row">
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea class="materialize-textarea areatweet" placeholder="What's happening?"></textarea>
+                </div>
+                <div class="input-field col s12">
+                  <button class="waves-effect waves-light btn-small modal-close">Tweet</button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo center"><i class="material-icons">art_track</i></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="index.html" class="active"><i class="material-icons left">home</i>Home</a></li>
+            <li><a href="notifications.html"><i class="material-icons left">notifications</i>Notifications</a></li>
+            <li><a href="messages.html"><i class="material-icons left">mail</i>Messages</a></li>
+          </ul>
+          <ul class="right hide-on-med-and-down">
+            <li><a class="dropdown-trigger" href="#" data-target="dropdown1"><i class="material-icons">person_pin</i></a></li>
+            <li><a href="#modal1" class="modal-trigger"><i class="material-icons">add_to_photos</i></a></li>
+          </ul>
+        </div>
+      </nav>
+      </div>
+      <!-- Sidenav Mobile -->
+      <ul class="sidenav" id="mobile-demo">
+        <li>
+          <div class="user-view">
+            <div class="background">
+              <img src="images/headerprofil.jpg">
+            </div>
+            <a href="#user"><img class="circle" src="images/fotoprofil.jpg"></a>
+            <a href="#name"><span class="white-text name">AH. HANDOYO</span></a>
+            <a href="#email"><span class="white-text email">@HandExcel</span></a>
+          </div>
+        </li>
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li>
+              <a class="collapsible-header">Settings<i class="material-icons">arrow_drop_down</i></a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="#!"><i class="material-icons left">person</i>Profile</a></li>
+                  <li><a href="#!"><i class="material-icons left">list</i>Lists</a></li>
+                  <li><a href="#!"><i class="material-icons left">memory</i>Moments</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!">Settings and Privacy</a></li>
+                  <li><a href="#!">Help Center</a></li>
+                  <li><a href="#!">Keyboard Shortcuts</a></li>
+                  <li><a href="log-in.html">Log Out</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!">Night Mode <i class="material-icons right">brightness_3</i></a></li>
+                  <li class="divider"></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li><a href="index.html" class="active"><i class="material-icons left">home</i>Home</a></li>
+        <li><a href="notifications.html"><i class="material-icons left">notifications</i>Notifications</a></li>
+        <li><a href="messages.html"><i class="material-icons left">mail</i>Messages</a></li>
+        <li><a href="#modal1" class="modal-trigger"><i class="material-icons">add_to_photos</i>Tweet</a></li>
+      </ul>
+
+      <div class="bgcontainers">
+          <div class="row">
+            <!-- content left -->
+            <div class="col m3">
+              <!-- profil card -->
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/headerprofil.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title">
+                    <img src="images/fotoprofil.jpg" alt="" class="profilecircle">
+                    <div style="margin-top: -20px;"><a href="profile.html"><b>AH. HANDOYO</b></a><br /><small>@HandExcel</small></div>
+                  </span>
+                  <div class="row">
+                    <div class="col s4"><small>Tweets</small><br /><b>2,185</b></div>
+                    <div class="col s4"><small>Following</small><br /><b>313</b></div>
+                    <div class="col s4"><small>Followers</small><br /><b>198</b></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- trends card -->
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title">Trends for you</span>
+                  <ul class="trends">
+                    <li><a href="#">#Ramadhan</a></li>
+                    <li><a href="#">#BanggaIndonesia</a></li>
+                    <li><a href="#">#HijabLook2018Final</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+            <!-- content center -->
+            <div class="col m6">     
+                  <ul class="collection" style="border:none;">
+
+                    <li class="collection-item avatar">
+                      <img src="images/fotoprofil.jpg" alt="" class="circle">
+                      <span class="title"><a href="#" class="right waves-effect waves-light btn-small">Follow</a><a href="#"><strong>Adobe XD</strong><br /><small>@AdobeXd</small></a></span><br /><br />
+                      <p>Remember to download @creativemints' Art Deco Icons Set to get started designing a splash screen, and share your XD prototype with us by midnight PT on June 10th: https://adobe.ly/xdartdecobehance</p> <br /> 
+                      <p><small>16 hours ago</small></p> <br />    
+                      <div style="clear: both;"></div>
+                      <span class="texttweet">
+                        <a href="#">125 Retweets</a>
+                        <a href="#">436 Likes</a>
+                      </span> 
+                      <span class="texttweetimage">
+                        <img src="images/fotoprofil.jpg" alt="" class="circletweet">
+                        <img src="images/fotoprofil.jpg" alt="" class="circletweet">
+                      </span>     
+                      <div style="clear: both;"></div>            
+                      <br />
+                      <div class="row">
+                        <div class="col s2"><a href="#"><i class="material-icons">chat_bubble_outline</i></a></div>
+                        <div class="col s2"><a href="#"><i class="material-icons">repeat</i></a></div>
+                        <div class="col s2"><a href="#"><i class="material-icons">star_border</i></a></div>
+                        <div class="col s2"><a href="#"><i class="material-icons">mail_outline</i></a></div>
+                      </div>
+                    </li>
+                    <li class="collection-item avatar">
+                      <img src="images/fotoprofil.jpg" alt="" class="circle">
+                      Replying to <a href="#">@AdobeXd</a><br />
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <textarea class="materialize-textarea areatweet" placeholder="Tweet your reply"></textarea>
+                          <button class="waves-effect waves-light btn-small modal-close">Reply</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="collection-item avatar">
+                      <img src="images/fotoprofil.jpg" alt="" class="circle">
+                      <span class="title"><a href="#"><strong>Anonymouse</strong> <small>@Anoniem . Jun 6</small></a></span><br />Replying to <a href="#">@AdobeXd</a><br /><br />
+                      <p>Good for your tweet</p>
+                      <a class="secondary-content" href="#" data-target="dropdownoption"><i class="material-icons">expand_more</i></a>
+                      <br />
+                      <div class="row">
+                        <div class="col s2"><a href="#"><i class="material-icons">chat_bubble_outline</i></a></div>
+                        <div class="col s2"><a href="#"><i class="material-icons">repeat</i></a></div>
+                        <div class="col s2"><a href="#"><i class="material-icons">star_border</i></a></div>
+                        <div class="col s2"><a href="#"><i class="material-icons">mail_outline</i></a></div>
+                      </div>
+                    </li>
+
+                  </ul>  
+            </div>
+
+            <!-- content right -->
+            <div class="col m3">
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title">Who to follow <br /><small> <a href="#">Refreash</a> . <a href="#">View All</a></small></span>
+                  <ul class="collection" style="border:none;">
+
+                    <li class="collection-item avatar">
+                      <img src="images/fotoprofil.jpg" alt="" class="circle">
+                      <span class="title"><strong>Adobe XD</strong> <small>@AdobeXd</small></span><br />
+                      <a href="#!" class="secondary-content"><i class="tiny material-icons">close</i></a>
+                      <br />
+                      <a class="waves-effect waves-light btn-small btnfollow">Follow</a>
+                    </li>
+
+                    <li class="collection-item avatar">
+                      <img src="images/fotoprofil.jpg" alt="" class="circle">
+                      <span class="title"><strong>Thomas Alexander</strong> <small>@thomasAlex</small></span><br />
+                      <a href="#!" class="secondary-content"><i class="tiny material-icons">close</i></a>
+                      <br />
+                      <a class="waves-effect waves-light btn-small btnfollow">Follow</a>
+                    </li>
+
+                    <li class="collection-item avatar">
+                      <img src="images/fotoprofil.jpg" alt="" class="circle">
+                      <span class="title"><strong>Tari</strong> <small>@dnickentari</small></span><br />
+                      <a href="#!" class="secondary-content"><i class="tiny material-icons">close</i></a>
+                      <br />
+                      <a class="waves-effect waves-light btn-small btnfollow">Follow</a>
+                    </li>
+
+                  </ul>  
+                </div>
+                <div class="card-action">
+                  <a href="#"><i class="material-icons">people_outline</i> <small>Find people you know</small></a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-content">
+                  <small class="linka">&copy; 2018 Orapakat.com <a href="#">About</a> <a href="#">Help Center</a> <a href="#">Terms Privacy</a></small>  
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('.sidenav').sidenav();
+          $('.dropdown-trigger').dropdown();
+          $('.modal').modal();
+          $('.collapsible').collapsible();
+        });
+      </script>
+    </body>
+  </html
