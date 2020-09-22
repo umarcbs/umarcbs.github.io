@@ -181,26 +181,16 @@
     </div>
     <!-- ##### Breadcrumb Area End ##### -->
 
-    <!-- ##### Checkout Area Start ##### -->
-    <div class="checkout_area mb-100">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-12 col-lg-12">
-                    <div class="checkout_details_area clearfix">
-                       
-                    </div>
-                    </div>
-                </div>
+    
 
 
-                <div class="col-12 col-lg-12">
+                <div class="col-12 col-lg-4">
                     <div class="checkout-content">
                         <h5 class="title--">Families</h5>
                         <h6 class="title--" style="text-align: right;">Count</h6>
                         <div class="products">
                             <div class="products-data">
                                 <h5>Asteraceae:</h5>
-                                <h5 style="text-align: right;">001</h5>
                                 <div class="single-products d-flex justify-content-between align-items-center">
                                     <details>
 <summary>
@@ -211,92 +201,7 @@
 <details>
     <summary>Ethno-Medicinal Uses</summary>
 
-   <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="product_details_tab clearfix">
-                        <!-- Tabs -->
-                        <ul class="nav nav-tabs" role="tablist" id="product-details-tab">
-                            <li class="nav-item">
-                                <a href="#all1" class="nav-link active" data-toggle="tab" role="tab">Description</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#all2" class="nav-link" data-toggle="tab" role="tab">FAQs</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#all3" class="nav-link" data-toggle="tab" role="tab">Reviews <span class="text-muted">(1)</span></a>
-                            </li>
-                        </ul>
-                        <!-- Tab Content -->
-                        <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane fade show active" id="all1">
-                                <div class="description_area">
-                                    <p>Sed a facilisis orci. Curabitur magna urna, varius placerat placerat sodales, pretium vitae orci. Aliquam erat volutpat. Cras sit amet suscipit magna. Quisque turpis odio, facilisis vel eleifend eu, dignissim ac odio.</p>
-                                    <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. In scelerisque augue at the moment mattis. Proin vitae arcu sit amet justo sollicitudin tincidunt sit amet ut velit.Proin placerat vel augue eget euismod. Phasellus cursus orci eu tellus vestibulum, vestibulum urna accumsan. Vestibulum ut ullamcorper sapien. Pellentesque molestie, est ac vestibulum eleifend, lorem ipsum mollis ipsum.</p>
-                                </div>
-                            </div>
-                            <div role="tabpanel" class="tab-pane fade" id="all2">
-                                <div class="additional_info_area">
-                                    <p>What should I do if I receive a damaged parcel?
-                                        <br> <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit impedit similique qui, itaque delectus labore.</span></p>
-                                    <p>I have received my order but the wrong item was delivered to me.
-                                        <br> <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis quam voluptatum beatae harum tempore, ab?</span></p>
-                                    <p>Product Receipt and Acceptance Confirmation Process
-                                        <br> <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ducimus, temporibus soluta impedit minus rerum?</span></p>
-                                    <p>How do I cancel my order?
-                                        <br> <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum eius eum, minima!</span></p>
-                                </div>
-                            </div>
-                            <div role="tabpanel" class="tab-pane fade" id="all3">
-                                <div class="reviews_area">
-                                    <ul>
-                                        <li>
-                                            <div class="single_user_review mb-15">
-                                                <div class="review-rating">
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <span>for Quality</span>
-                                                </div>
-                                                <div class="review-details">
-                                                    <p>by <a href="#">Colorlib</a> on <span>12 Sep 2018</span></p>
-                                                </div>
-                                            </div>
-                                            <div class="single_user_review mb-15">
-                                                <div class="review-rating">
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <span>for Design</span>
-                                                </div>
-                                                <div class="review-details">
-                                                    <p>by <a href="#">Colorlib</a> on <span>12 Sep 2018</span></p>
-                                                </div>
-                                            </div>
-                                            <div class="single_user_review">
-                                                <div class="review-rating">
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <span>for Value</span>
-                                                </div>
-                                                <div class="review-details">
-                                                    <p>by <a href="#">Colorlib</a> on <span>12 Sep 2018</span></p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                
-                            </div>
-</div></div></div></div></div>
+    some more text
     + <details>
         <summary>Map</summary>
 
