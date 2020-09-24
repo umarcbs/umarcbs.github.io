@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="cssdt/dataTables.bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="cssdt/buttons.dataTables.min.css">
     <link rel="stylesheet" type="text/css" href="cssdt/style.css">
-
+<link rel="stylesheet" href="style.css">
 
 
 
@@ -28,7 +28,52 @@
     <title>Medicinal Plants of J&K</title>
 </head>
 <body class="container">
-<h1 class="text-center" style="text-align: center;"><br>Database of Medicinal Plants in Jammu & Kashmir</h1>
+    
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-circle"></div>
+        <div class="preloader-img">
+            <img src="img/core-img/leaf.png" alt="">
+        </div>
+    </div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {margin:0;}
+
+.icon-bar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 28px;
+}
+
+.icon-bar a:hover {
+  background-color: green;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+</style>
+
+
+
+<div class="icon-bar">
+  <a href="index.html"><i class="fa fa-home"></i></a> 
+  <a class="active" href="#"><i class="fa fa-search"></i></a> 
+  <a href="#"><i class="fa fa-envelope"></i></a> 
+  <a href="#"><i class="fa fa-globe"></i></a>
+  <a href="#"><i class="fa fa-trash"></i></a> 
+</div><br>
 <table id="maintable" class="display compact cell-border" cellspacing="0" width="100%">
     <thead>
     <tr>
