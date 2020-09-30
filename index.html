@@ -58,14 +58,39 @@ body {
   background-color: #eee;
 }
 </style>
-</head>
-<body>
+
+<!-- Vertival menu scroll-->
+<style>
+.vertical-menu {
+  width: 200px;
+  height: 550px;
+  overflow-y: auto;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+<!-- Vertival menu scroll-->
 
 <h2>Search Menu</h2>
 <p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
 
 <div class="row">
-  <div class="left" style="background-color:#bbb;">
+  <div style="background-color:#bbb;" class="vertical-menu">
     <h2>Menu</h2>
     <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
     <ul id="myMenu">
