@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Glyphicons Halflings";
+    src: url("../fonts/glyphicons-halflings-regular.woff2");
+}
+
+.container {
+    margin-top: 20px;                /* Top Margin of the page*/
+}
+
+/* Fore color of the columns heads*/
+thead {
+    background-color: green;       /* Background color of the column heads*/
+    color: #fff;                  /* Fore color of the column heads*/
+}
+
+
+/* Background color of the searched string results*/
+mark {
+    background-color: lightgreen;
+    padding: 0;
+}
+
+button.dt-button, div.dt-button, a.dt-button {
+    padding: 0.2em 0.2em;       /* Buttons' Padding eg: Copy, Excel, etc*/
+
+}
