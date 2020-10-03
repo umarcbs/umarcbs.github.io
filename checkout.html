@@ -17,6 +17,26 @@
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
 
+
+
+    <!-- Print to pdf option links and JS-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $("#btnPrint").live("click", function () {
+            var divContents = $("#dvContainer").html();
+            var printWindow = window.open('', '', 'height=400,width=800');
+            printWindow.document.write('<html><head><title> Allium Cepa</title>');
+            printWindow.document.write('</head><body >');
+            printWindow.document.write(divContents);
+            printWindow.document.write('</body><br><br><b style="color:red;">MAPs of J&K</b> - <i>v20.10.03.1</i> <br> <b style="color:green;">Medicinal and Aromatic Plants of Jammu and Kashmir.</b></html>');
+            printWindow.document.close();
+            printWindow.print();
+        });
+    </script>
+
+    
+    <!-- Print to pdf option links and JS-->
+
 </head>
 
 <body>
@@ -586,8 +606,10 @@
   <div class="right" style="background-color: transparent; border: 1px solid #ddd;">
    
 
-
-
+<!-- print pdf-->
+<form id="form1">
+    <div id="dvContainer"> <!-- print pdf -->
+        
 
     <section class="single_product_details_area mb-50">
         <div class="produts-details--content mb-50">
@@ -720,6 +742,14 @@
             </div>
         </div>
     </section>
+
+    <!-- Print/pdf button -->
+    </div>
+    <style type="text/css"></style>
+    <text type="text" id="btnPrint" style="cursor: pointer; color: green;" ><i class="fa fa-file-pdf-o"> Print/Pdf</i></text>
+    </form> <br><a href="C:\Users\hp\Downloads\Allium Cepa - v20.10.03.1.pdf">     Open Pdf</a>
+    
+    <!-- Print/pdf button -->
 
 
 
