@@ -1755,8 +1755,7 @@ function myFunction00() {
                     <!-- Copywrite Text -->
                     <div class="col-12 col-md-6">
                         <div class="copywrite-text">
-                          <!--  <p><b style="font-size: 20px;"> جموں وکشمیر کے دواؤں اور خوشبودار پودوں کا ایک مجموعہ۔
-</b></p>-->
+                          <p>Translate the phrase:</p>
                         </div>
                     </div>
                     <!-- Footer Nav -->
@@ -1845,15 +1844,22 @@ translate("fr");
                     <!-- Copywrite Text -->
                     <div class="col-12 col-md-6">
                         <div class="copywrite-text">
-                          <div id="basicUsage">00:00:00</div>
+                          <div id="countDown"> </div>
+
+
 
 <script type="text/javascript">
-    var timer = new Timer();
-timer.start();
+  var secondsUp = 1;
+   var timeIntervalUp = setInterval(function(){startTimer()}, 1000);
 
-timer.addEventListener('secondsUpdated', function (e) {
-    $('#basicUsage').html(timer.getTimeValues().toString());
-});
+    function startTimer(){ 
+            document.getElementById("countDown").innerHTML = "Time of access:<span style='color:lightgreen'> " + secondsUp + " Seconds </span>";
+            secondsUp++;
+      
+             
+        }
+    
+    
 </script>
                         </div>
                     </div>
