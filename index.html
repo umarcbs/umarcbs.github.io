@@ -1831,6 +1831,74 @@ translate("fr");
                 </div>
             </div>
         </div>
+
+
+
+
+        <!--Loading Time and times of access -->
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="border-line"></div>
+                    </div>
+                    <!-- Copywrite Text -->
+                    <div class="col-12 col-md-6">
+                        <div class="copywrite-text">
+                          <div id="basicUsage">00:00:00</div>
+
+<script type="text/javascript">
+    var timer = new Timer();
+timer.start();
+
+timer.addEventListener('secondsUpdated', function (e) {
+    $('#basicUsage').html(timer.getTimeValues().toString());
+});
+</script>
+                        </div>
+                    </div>
+                    <!-- Footer Nav -->
+                    <div class="col-12 col-md-6">
+                        <div class="footer-nav">
+                            <nav>
+                                <ul>
+                                    <script type="text/javascript">  
+     var before_loadtime = new Date().getTime();  
+     window.onload = Pageloadtime;  
+     function Pageloadtime() {  
+         var aftr_loadtime = new Date().getTime();  
+         // Time calculating in seconds  
+         pgloadtime = (aftr_loadtime - before_loadtime) / 1000  
+  
+         document.getElementById("loadtime").innerHTML = "The results are fetched in <font color='lightgreen'>" + pgloadtime + "</font> Seconds ";  
+     }  
+</script>
+
+
+                                    <li><div>  
+<span id="loadtime"></span>
+</li>
+  
+                                </ul>
+                            </nav>
+
+
+
+
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
     </footer>
     <!-- ##### Footer Area End ##### -->
 
@@ -1849,3 +1917,6 @@ translate("fr");
 
 
 </html>
+
+
+
