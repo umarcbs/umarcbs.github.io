@@ -929,7 +929,47 @@ $(document).ready(function(){
         </div>
     </section>
     <!-- ##### Product Area End ##### -->
+<link rel="stylesheet" href="./Bootstrap 4 Side Drawer_Modal Examples_files/bootstrap.min.css">
+<link href="./Bootstrap 4 Side Drawer_Modal Examples_files/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./Bootstrap 4 Side Drawer_Modal Examples_files/bootstrap-side-modals.css">
+	
 
+
+
+
+
+
+
+
+</div>
+
+<div class="modal right xs fade" id="right_modal_xs" tabindex="-1" role="dialog" aria-labelledby="top_modal" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+    <div class="modal-content h-auto rounded-left">
+      <div class="modal-header">
+        <h5 class="modal-title">Share using QR code</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <a href=""></a> 
+        <a href="https://www.jqueryscript.net/demo/side-drawer-modal-bootstrap/#" class="btn btn-success"><i class="fa fa-user"></i></a>
+        <a href="https://www.jqueryscript.net/demo/side-drawer-modal-bootstrap/#" class="btn btn-danger"><i class="fa fa-twitter"></i></a> 
+        <a href="https://www.jqueryscript.net/demo/side-drawer-modal-bootstrap/#" class="btn btn-warning">4</a> 
+        <a href="https://www.jqueryscript.net/demo/side-drawer-modal-bootstrap/#" class="btn btn-info">5</a> 
+        <a href="https://www.jqueryscript.net/demo/side-drawer-modal-bootstrap/#" class="btn btn-secondary">6</a> 
+        <a href="https://www.jqueryscript.net/demo/side-drawer-modal-bootstrap/#" class="btn btn-dark">7</a> 
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ==================================================== -->
+
+
+
+<script src="./Bootstrap 4 Side Drawer_Modal Examples_files/jquery.min.js.download"></script>
+<script src="./Bootstrap 4 Side Drawer_Modal Examples_files/bootstrap.bundle.min.js.download"></script>
     <!-- ##### Blog Area Start ##### -->
     <section class="alazea-blog-area section-padding-100-0">
         <div class="container">
@@ -1537,6 +1577,7 @@ document.writeln ("Last updated on: " + LastUpdated);</script></p>
                                 <a href="https://umarcbs.github.io" title="Website"><i class="fa fa-link" aria-hidden="true"></i></a>
 
                             </div>
+
                         </div>
                     </div>
 
@@ -1554,11 +1595,14 @@ document.writeln ("Last updated on: " + LastUpdated);</script></p>
 
                                     <li><a href="#">FAQs</a></li>
                                     <li><a href="#"><select style="background-color: transparent; color: white; border-color: transparent;" name="sample" onchange="location = this.value;"> 
- <option style="color: black;" value="Home.php">Database</option> 
- <option style="color: black;" value="about.php">d1</option> 
- <option style="color: black;" value="contact.php">d2</option> 
+ <option style="color: black; background-color: lightgreen;" >Database</option> 
+ <option style="color: black; background-color: lightgreen;" value="shop.html"><p>Intro</p></option> 
+ <option style="color: black; background-color: lightgreen;" value="shop-details.html"><p>Analysis</p></option> 
+ <option style="color: black; background-color: lightgreen;" value="datatable.html"><p>DataTables</p></option> 
+ <option style="color: black; background-color: lightgreen;" value="checkout.html"><p>Full Details</p></option> 
 </select></a></li>
-                                    <li><a href="#">News</a></li>
+                                    <li><a href="#"><text type="text" class="" data-toggle="modal" data-target="#right_modal_xs">Right Modal XS</text>
+</a></li>
                                     <li><a href="#">Return</a></li>
                                     <li><a href="#">Advertise</a></li>
                                     <li><a href="#">Shipping</a></li>
@@ -1666,8 +1710,16 @@ document.writeln ("Last updated on: " + LastUpdated);</script></p>
                                 <p><span>Address:</span> Department of Bio Resources, University of Kashmir, Hazaratbal Srinagar, Jammu and Kashmir, 190006</p>
                                 <p><span>Phone:</span> 01933-295834 | +91-6005728432</p>
                                 <p><span>Email:</span> jkplants.maps@gmail.com</p>
-                                <p><span>Open hours:</span> Mon - Thu: 8 AM to 4 PM</p>
-                                <p><span>Happy hours:</span> Sat - Sun: 10 AM to 12 PM</p>
+                                <!-- Single Best Seller Products -->
+                            <div class="single-best-seller-product d-flex align-items-center">
+                                <div class="product-thumbnail">
+                                    <a href="#"><img src="img/bg-img/qrcode.png" alt=""></a>
+                                </div>
+                                <div class="product-info">
+                                    <p>Share</p>
+                                    <p>scan qr code</p>
+                                </div>
+                            </div>
                             </div>
                         </div>
                     </div>
