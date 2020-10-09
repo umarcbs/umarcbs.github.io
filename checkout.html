@@ -611,7 +611,69 @@
 <form id="form1">
     <div id="dvContainer"> <!-- print pdf -->
         
+<!-- Cart -->
+                                <div class="cart">
+                                    <a href="#"> <text class="btn-toggle"><i class="fa fa-toggle-on" aria-hidden="true"></i><span>Dark Mode</span></text>
+<style type="text/css">
+    body {
+  --text-color: #222;
+  --bkg-color: #fff;
+}
+body.dark-theme {
+  --text-color: #222;
+  --bkg-color: #121212;
+}
 
+@media (prefers-color-scheme: dark) {
+  /* defaults to dark theme */
+  body {
+    --text-color: #222;
+    --bkg-color: #121212;
+  }
+  body.light-theme {
+    --text-color: black;
+    --bkg-color: #fff;
+  }
+}
+
+
+body {
+  background: var(--bkg-color);
+}
+
+h1
+ {
+  color: var(--text-color);
+}
+
+</style>
+<script type="text/javascript">
+    const btn = document.querySelector(".btn-toggle");
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+const currentTheme = localStorage.getItem("theme");
+if (currentTheme == "dark") {
+  document.body.classList.toggle("dark-theme");
+} else if (currentTheme == "light") {
+  document.body.classList.toggle("light-theme");
+}
+
+btn.addEventListener("click", function () {
+  if (prefersDarkScheme.matches) {
+    document.body.classList.toggle("light-theme");
+    var theme = document.body.classList.contains("light-theme")
+      ? "light"
+      : "dark";
+  } else {
+    document.body.classList.toggle("dark-theme");
+    var theme = document.body.classList.contains("dark-theme")
+      ? "dark"
+      : "light";
+  }
+  localStorage.setItem("theme", theme);
+});
+</script></a>
+                                </div>
     <section class="single_product_details_area mb-50">
         <div class="produts-details--content mb-50">
             <div class="container">
