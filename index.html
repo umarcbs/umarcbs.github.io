@@ -167,14 +167,14 @@
   --bkg-color: #fff;
 }
 body.dark-theme {
-  --text-color: white;
+  --text-color: #222;
   --bkg-color: #121212;
 }
 
 @media (prefers-color-scheme: dark) {
   /* defaults to dark theme */
   body {
-    --text-color: white;
+    --text-color: #222;
     --bkg-color: #121212;
   }
   body.light-theme {
@@ -188,10 +188,11 @@ body {
   background: var(--bkg-color);
 }
 
-h1,
+h1,h2,h5,
 p {
   color: var(--text-color);
 }
+
 </style>
 <script type="text/javascript">
     const btn = document.querySelector(".btn-toggle");
