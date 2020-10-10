@@ -159,6 +159,7 @@
                                 </div>
                                 <!-- Cart -->
                                 
+                                
                             </div>
                         </div>
                     </div>
@@ -210,9 +211,183 @@
                                             
                                         </ul>
                                     </li>
-                                    <li><a href="shop.html">Shop</a></li>
-                                    <li><a href="portfolio.html">Portfolio</a></li>
+                                    
                                     <li><a href="contact.html">Contact</a></li>
+                                    <li title="Toggle dark mode"><header>
+  <div class="container">
+    <div class="heading">
+      
+    </div>
+    <hr class="display-mobile" />
+    <div class="theme-switcher">
+      <div class="switch-container">
+        <label class="switch">
+          <input id="switch" type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+   
+<style type="text/css">
+  /** variables **/
+:root {
+  /* colors */
+  --bg-color: #ffffff;
+  --header-bg-color: #f8f9fe;
+  --line-color: var(--secondary-color);
+  --primary-color: hsl(227, 47%, 96%);
+  --secondary-color: hsl(228, 12%, 44%);
+  --text-color: hsl(230, 17%, 14%);
+  --hover-color: #e1e3f0;
+ 
+  --lime-green: hsl(163, 72%, 41%);
+  --bright-red: hsl(356, 69%, 56%);
+  --toggle-color: transparent;
+  --toggle-button-color: #ffffff;
+  --dark-mode-hover: var(--toggle-color);
+  /* dimensions */
+}
+
+.dark-mode {
+  /* colors */
+  --bg-color: #1d2029;
+  --header-bg-color: hsl(232, 19%, 15%);
+  --line-color: #373a4d;
+  --primary-color: #252b43;
+  --secondary-color: #9499b7;
+  --text-color: hsl(0, 0%, 100%);
+  --hover-color: #333a56;
+  
+  --toggle-color: transparent;
+  --toggle-button-color: #353956;
+  --dark-mode-hover: #ffffff;
+  /* dimensions */
+}
+
+/** general **/
+
+body {
+  
+  
+  color: var(--text-color);
+  background: var(--bg-color);
+}
+hr {
+  border: none;
+}
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+h6 {
+  display: inline;
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+}
+
+
+
+
+
+  
+}
+
+
+/** toggle switcher **/
+.theme-switcher {
+  span {
+    transition: 300ms;
+  }
+  &:hover > span {
+    color: var(--dark-mode-hover);
+    transition: 300ms;
+  }
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--toggle-color);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "🌄";
+  height: 19px;
+  width: 19px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--toggle-button-color);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: transparent;
+}
+
+
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+</style>
+<script type="text/javascript">
+  // script for dark mode handling
+const checkbox = document.getElementById("switch");
+const body = document.getElementsByTagName("body")[0];
+
+checkbox.addEventListener("change", () => {
+  if (checkbox.checked) {
+    body.classList.add("dark-mode");
+  } else {
+    body.classList.remove("dark-mode");
+  }
+});
+
+</script></li>
                                 </ul>
 
                                 <!-- Search Icon -->
@@ -237,6 +412,7 @@
             </div>
         </div>
     </header>
+    <!-- ##### Header Area End ##### -->
     <!-- ##### Header Area End ##### -->
     <!-- ##### Header Area End ##### -->
     <!-- ##### Header Area End ##### -->
@@ -870,7 +1046,7 @@ function myFunction0() {
   <p>This website is used for uploading a database that we named as <b>"MAPs" of J&K</b> - (Medicinal & Aromatic Plants of Jammu & Kashmir).</p>
 
   <h6><b>Which programming languages are used in this website?</b></h6>
-  <p style="color: black;">This website uses <a href="https://en.wikipedia.org/wiki/HTML5" style="color: green">HTML5</a>, <a href="https://en.wikipedia.org/wiki/CSS" style="color: green"> CSS3</a>, <a href="https://en.wikipedia.org/wiki/JavaScript" style="color: green"> JavaScript</a>, <a href="https://en.wikipedia.org/wiki/PHP" style="color: green">PHP</a> programming languages. We also used <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" style="color: green">BootStrap</a> and <a href="https://en.wikipedia.org/wiki/JQuery" style="color: green">JQuery</a> that are scripts made from CSS and JavaScript, respectively. We also used <a href="https://datatables.net/" style="color: green">Datatables</a> in one section of this website for entering the data about plants in a tabular form wherein we only deal with textual data.</p>
+  <p style="color: black;">This website uses <a href="https://en.wikipedia.org/wiki/HTML5" style="color: green">HTML5</a>, <a href="https://en.wikipedia.org/wiki/CSS" style="color: green"> CSS3</a>, <a href="https://en.wikipedia.org/wiki/JavaScript" style="color: green"> JavaScript</a>, <a href="https://en.wikipedia.org/wiki/PHP" style="color: green">PHP</a> programming languages. We also used <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" style="color: green">BootStrap</a> and <a href="https://en.wikipedia.org/wiki/JQuery" style="color: green">JQuery</a> that are scripts made from CSS and JavaScript, respectively. We also used <a href="https://datatables.net/" style="color: green">Datatables</a> in one section of this website for entering the data about plants in a tabular form wherein we only deal with textual data. We also used <a href="https://en.wikipedia.org/wiki/Sass_(stylesheet_language)" style="color: green">Sass</a> scripting language for improving the styling of the website.</p>
 
   <h6><b>What is your Privay Policy?</b></h6>
   <p style="color: black;">It has been discussed in <a href="#" style="color: green;">
@@ -1496,7 +1672,7 @@ translate("fr");
                     <div class="col-12 col-md-6">
                         <div class="copywrite-text">
                           
-<script type="text/javascript">document.writeln ("<small>Last Updated on:</small> <font color='lightgreen'>"+document.lastModified + " </font>"); </script>
+<script type="text/javascript">document.writeln ("<font color='white'> <small>Last Updated on:</small></font> <font color='lightgreen'>"+document.lastModified + " </font>"); </script>
                         </div>
                     </div>
                     <!-- Footer Nav -->
@@ -1512,7 +1688,7 @@ translate("fr");
          // Time calculating in seconds  
          pgloadtime = (aftr_loadtime - before_loadtime) / 1000  
   
-         document.getElementById("loadtime").innerHTML = "<small>Results are fetched in: </small><font color='lightgreen'>" + pgloadtime + " s  </font>";  
+         document.getElementById("loadtime").innerHTML = "<font color='white'><small>Results are fetched in: </font> </small><font color='lightgreen'>" + pgloadtime + " s  </font>";  
      }  
 </script>
 
@@ -1520,7 +1696,7 @@ translate("fr");
                                     <li><div>  
 <span id="loadtime"></span>
 </li>
-<li> &nbsp;&nbsp; & &nbsp;&nbsp;</li>
+<li> &nbsp;&nbsp;<font color='white'> &</font>&nbsp;&nbsp;</li>
 <li><div id="countDown"> </div>
 
 
@@ -1530,7 +1706,7 @@ translate("fr");
    var timeIntervalUp = setInterval(function(){startTimer()}, 1000);
 
     function startTimer(){ 
-            document.getElementById("countDown").innerHTML = " <small>Time of access: </small><span style='color:lightgreen'> " + secondsUp + " s </span>";
+            document.getElementById("countDown").innerHTML = " <font color='white'><small>Time of access: </small></font><span style='color:lightgreen'> " + secondsUp + " s </span>";
             secondsUp++;
       
              
