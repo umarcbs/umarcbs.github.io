@@ -1270,7 +1270,10 @@ $(document).ready(function(){
 	</strong> so that you are sure what you are accessing. - <i>MAPs of J&K</i></p>
 	</div>
 
-<div>
+
+<!-- ##### 4 Seasons Start ... ##### -->
+<!-- ##### 4 Seasons Start ... ##### -->
+<div class="container">
 
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js
 	"></script>
@@ -1317,7 +1320,7 @@ html, body {
   left: 0;
   height: 5vmin;
   max-height: 62px;
-  background: transparent url(https://dodozhang21.github.io/svg/fourSeasons/grassBk.png) repeat-x;
+  background: transparent url(https://umarcbs.github.io/svg/fourSeasons/grassBk.png) repeat-x;
   background-size: contain;
   z-index: 1;
 }
@@ -1388,7 +1391,7 @@ html, body {
 }
 
 .spring {
-  background-image: url(https://dodozhang21.github.io/svg/fourSeasons/springTree.svg);
+  background-image: url(https://umarcbs.github.io/svg/fourSeasons/springTree.svg);
   &:after {
     background: linear-gradient(top, rgba($cyan, .5) 0%, rgba($white, .2) 100%);
     @include filter(saturate(1));
@@ -1398,9 +1401,9 @@ html, body {
 
 .summer {
   left: 25%;
-  background-image:  url(https://dodozhang21.github.io/svg/fourSeasons/summerTree.svg);
+  background-image:  url(https://umarcbs.github.io/svg/fourSeasons/summerTree.svg);
   &:before {
-    background: url(https://dodozhang21.github.io/svg/fourSeasons/bird.svg) no-repeat center center;
+    background: url(https://umarcbs.github.io/svg/fourSeasons/bird.svg) no-repeat center center;
     background-size: 10% 10%;
   }
   &:after {
@@ -1411,9 +1414,9 @@ html, body {
 
 .fall {
   left: 50%;
-  background-image: url(https://dodozhang21.github.io/svg/fourSeasons/fallTree.svg);
+  background-image: url(https://umarcbs.github.io/svg/fourSeasons/fallTree.svg);
   &:before {
-    background: url(https://dodozhang21.github.io/svg/fourSeasons/leaves.svg) no-repeat center center;
+    background: url(https://umarcbs.github.io/svg/fourSeasons/leaves.svg) no-repeat center center;
     background-size: contain;
   }
   &:after {
@@ -1425,10 +1428,10 @@ html, body {
 
 .winter {
   left: 75%;
-  background-image:  url(https://dodozhang21.github.io/svg/fourSeasons/winterTree.svg);
+  background-image:  url(https://umarcbs.github.io/svg/fourSeasons/winterTree.svg);
   background-position: center 95%;
   &:before {
-    background-image: url(https://dodozhang21.github.io/svg/fourSeasons/snow.svg), linear-gradient(top, rgba($white, .05) 0%, $white 20%, $white 100%);
+    background-image: url(https://umarcbs.github.io/svg/fourSeasons/snow.svg), linear-gradient(top, rgba($white, .05) 0%, $white 20%, $white 100%);
     @include filter(grayscale(1));
     background-repeat: no-repeat;
     background-size: 50% 50%, 100% 6%;
@@ -1447,24 +1450,12 @@ html, body {
   }
 }
 </style>
-<script type="text/javascript">
-	;(function($) {
-  var $seasons = $('.season');
-  
-  $seasons.on('click', function(e) {
-    e.preventDefault();
-    var $this = $(this);
-    if($this.hasClass('active')) {
-      $seasons.removeClass('active inactive');
-    } else {
-        $seasons.removeClass('active').addClass('inactive');
-      $(this).removeClass('inactive').addClass('active');
-    }
-  });
-  
+<!-- ##### 4 Seasons End ... ##### -->
+<!-- ##### 4 Seasons End ... ##### -->
 
-})(jQuery);
-</script>
+
+
+
     <!-- ##### Contact Area Start ##### -->
     <section class="contact-area section-padding-100-0">
         <div class="container">
