@@ -490,16 +490,7 @@ checkbox.addEventListener("change", () => {
 </div>
 
 <style type="text/css">
-    @import 'compass';
 
-$blue: #0063a6;
-$cyan: #2fdbf5;
-$white: #fff;
-$yellow: #f3d891;
-$darkBlue: #4494d3;
-$armyGreen: #3b490b;
-$darkOrange: #fe5302;
-$gray: #eee;
 
 html, body {
   height: 100%;
@@ -570,59 +561,25 @@ html, body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center bottom;
-  @include transition(all 1s ease-out, opacity 0.5s ease-out);
-  &:before,&:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
   
-  &.active {
-    width: 100%;
-    left: 0;
-    z-index: 100;
-  }
-  &.inactive {
-    opacity: 0;
-  }
 }
 
 .spring {
   background-image: url(https://umarcbs.github.io/svg/fourSeasons/springTree.svg);
-  &:after {
-    background: linear-gradient(top, rgba($cyan, .5) 0%, rgba($white, .2) 100%);
-    @include filter(saturate(1));
-  }
+ 
 
 }
 
 .summer {
   left: 25%;
   background-image:  url(https://umarcbs.github.io/svg/fourSeasons/summerTree.svg);
-  &:before {
-    background: url(https://umarcbs.github.io/svg/fourSeasons/bird.svg) no-repeat center center;
-    background-size: 10% 10%;
-  }
-  &:after {
-    background-image: linear-gradient(top, rgba($darkBlue, .7) 0%, rgba($yellow, .5) 60%, rgba($yellow, 0.3) 70%, rgba($yellow, 0.3) 80%, rgba(darken($yellow, 50%), .3) 100%);
-  @include filter(brightness(1));
-  }
+  
 }
 
 .fall {
   left: 50%;
   background-image: url(https://umarcbs.github.io/svg/fourSeasons/fallTree.svg);
-  &:before {
-    background: url(https://umarcbs.github.io/svg/fourSeasons/leaves.svg) no-repeat center center;
-    background-size: contain;
-  }
-  &:after {
-    background: rgba($darkOrange, .4);
-    @include filter(saturate(1));
-  }
+ 
 
 }
 
@@ -630,24 +587,7 @@ html, body {
   left: 75%;
   background-image:  url(https://umarcbs.github.io/svg/fourSeasons/winterTree.svg);
   background-position: center 95%;
-  &:before {
-    background-image: url(https://umarcbs.github.io/svg/fourSeasons/snow.svg), linear-gradient(top, rgba($white, .05) 0%, $white 20%, $white 100%);
-    @include filter(grayscale(1));
-    background-repeat: no-repeat;
-    background-size: 50% 50%, 100% 6%;
-    background-position: center 140%, center bottom;
-    @include transition(all 0.3s ease-out);
-  }
-  &:after {
-    background-image: linear-gradient(top, rgba($gray, .7) 0%, rgba($white, .1) 100%);
-    @include filter(grayscale(1));
-  }
-  &.active {
-    &:before {
-      background-size:50% 25%,  100% 6%;
-      background-position: center 112%, center bottom;
-    }
-  }
+  
 }
 </style>
 <!-- ##### 4 Seasons End ... ##### -->
@@ -1459,7 +1399,7 @@ translate("fr");
                                     <li><a href="shop.html" title="Database">Database</a></li>
                                     <li><a href="portfolio.html" title="DataTable">DataTable</a></li>
                                     <li><a href="contact.html" title="Contact  Us">Contact</a></li>
-                                    <li title="Version"><a style="cursor: help;">v20.10.1945</a></li>
+                                    <li title="Version"><a style="cursor: help;">v20.10.2255</a></li>
                                 </ul>
                             </nav>
                         </div>
