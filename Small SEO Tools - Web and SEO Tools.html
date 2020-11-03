@@ -94,13 +94,13 @@
             <div class="search-results" id="index-results" style="display: none;"></div>
             <hr>
         </div>      
-        <div class="col-md-12"><h2 class="category_heading">Your System Details &amp; Info <span> Tools</span></h2><p class="category_des">Some of the best system details tools you will ever need for SEO. Check your IP Address, IP Address Location, Device, Browser, Screen, Location, and other details from this section.</p><div class="clearfix"></div><div class="category_box">
+        <div class="col-md-12"><h2 class="category_heading">Your System Details &amp; Info <span> Tools</span></h2><p class="category_des">Some of the best system details tools you will ever need for SEO. Check your Public/Private IP, IP Address Location, Device, Browser, Screen, Location, and other details from this section.</p><div class="clearfix"></div><div class="category_box">
 
 <div class="col-sm-3 col-xs-6">
                        <div class="category-box"> 
                             <div class="seo-box">
-                                <a href="https://smallseo.tools/plagiarism-checker" class="seo-md-margin">
-                                    <span class="seo seo-md"><img class="seotoolimg" alt="Plagiarism Checker" src="./Small SEO Tools - Web and SEO Tools_files/plagiarism.svg"></span>
+                                <a href="systemdetails.html" class="seo-md-margin">
+                                    <span class="seo seo-md"><img class="seotoolimg" alt="Full System Details" src="./Small SEO Tools - Web and SEO Tools_files/plagiarism.svg"></span>
                                 </a>
                                  <a href="https://smallseo.tools/plagiarism-checker">
                                     <span class="tool_des">Full System Details</span>
@@ -133,7 +133,7 @@
                                     <span class="seo seo-md"><img class="seotoolimg" alt="Article Density Checker" src="./Small SEO Tools - Web and SEO Tools_files/density.svg"></span>
                                 </a>
                                  <a href="https://smallseo.tools/article-density-checker">
-                                    <span class="tool_des">Screen Details</span>
+                                    <span class="tool_des">Your Screen Details</span>
                                  </a>
                             </div></div>
                        </div><div class="col-sm-3 col-xs-6">
@@ -143,7 +143,7 @@
                                     <span class="seo seo-md"><img class="seotoolimg" alt="Comma Separating Tool" src="./Small SEO Tools - Web and SEO Tools_files/comma-separator-tool.svg"></span>
                                 </a>
                                  <a href="https://smallseo.tools/comma-separating-tool">
-                                    <span class="tool_des">Device Details</span>
+                                    <span class="tool_des">Your Device Details</span>
                                  </a>
                             </div></div>
                        </div><div class="col-sm-3 col-xs-6">
@@ -153,7 +153,7 @@
                                     <span class="seo seo-md"><img class="seotoolimg" alt="Article Rewriter Pro (Spinner)" src="./Small SEO Tools - Web and SEO Tools_files/spin.svg"></span>
                                 </a>
                                  <a href="https://smallseo.tools/article-rewriter-spinner">
-                                    <span class="tool_des">Browser Details</span>
+                                    <span class="tool_des">Your Browser Details</span>
                                  </a>
                             </div></div>
                        </div><div class="col-sm-3 col-xs-6">
@@ -173,7 +173,7 @@
                                     <span class="seo seo-md"><img class="seotoolimg" alt="Word Counter and Character Count" src="./Small SEO Tools - Web and SEO Tools_files/unknown.svg"></span>
                                 </a>
                                  <a href="https://smallseo.tools/word-counter">
-                                    <span class="tool_des">Network Details</span>
+                                    <span class="tool_des">Your Network Details</span>
                                  </a>
                             </div></div>
                        </div></div></div><div class="clearfix"></div><div class="col-md-12"><br><br><h2 class="category_heading">Keywords Suggestion and Optimization <span> Tools</span></h2><p class="category_des">The heart of SEO, Keywords. Use our precisely crafted intelligent keyword tools to create best keywords research and reports. Highly recommended for Webmasters and SEO specialists.</p><div class="clearfix"></div><div class="category_box"><div class="col-sm-3 col-xs-6">
@@ -1176,7 +1176,140 @@
         
 <div class="col-md-4">
     <div class="clearfix"></div>
+<div class="sidebar_adds p5 mt15 box_shadow_border">
+            <div class="sideXd">
+                    </div>
+        
+        
+            <p style="text-align: center;">Current Time</p>
+        
+        
+            <div class="clock">
+    <div class="clock-face">
+      <div class="hand hour-hand"></div>
+      <div class="hand min-hand"></div>
+      <div class="hand second-hand"></div>
+    </div>
+  </div>
+  </script>
+  <style type="text/css">
+      .clock {
+  width: 37vh;
+  height: 30vh;
+  border-radius: 50%;
+  margin: 2vh auto;
+  display: flex;
+  position: relative;
+}
 
+.clock-face {
+  width: 33vh;
+  height: 33vh;
+  border-radius: 50%;
+  position: absolute;
+  top: 1.5vh;
+  left: 1.5vh;
+  background: url('https://github.com/umarcbs/AnalogCLock/blob/master/clock-face2.png?raw=true');
+  background-size: 100% 100%;
+}
+
+.hand {
+  width: 35%;
+  height: 6px;
+  background-color: black;
+  position: absolute;
+  top: 49.5%;
+  left: 17.5%;
+  transform-origin: 95%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.second-hand {
+  height: 3px;
+}
+
+.hour-hand {
+  width: 20%;
+  left: 31.8%;
+  top: 50%;
+}
+  </style>
+  <script type="text/javascript">
+      const secondHand = document.querySelector('.second-hand');
+const minHand = document.querySelector('.min-hand');
+const hourHand = document.querySelector('.hour-hand');
+
+function setDate() {
+  const now = new Date();
+
+  const second = now.getSeconds();
+  const secondsDegree = ((360/60) * second) + 90;
+  secondHand.style.transition = secondsDegree === 90 ? 'all 0s' : 'all 0.05s';
+  secondHand.style['transition-timing-function'] = 'cubic-bezier(0.1, 2.7, 0.58, 1)';
+  secondHand.style.transform = `rotate(${secondsDegree}deg)`;
+
+  const min = now.getMinutes()
+  const minsDegree = ((360/60) * min) + 90;
+  minHand.style.transform = `rotate(${minsDegree}deg)`;
+  minHand.style.transition = minsDegree === 90 ? 'all 0s' : 'all 0.05s';
+  minHand.style['transition-timing-function'] = 'cubic-bezier(0.1, 2.7, 0.58, 1)';
+  minHand.style.transform = `rotate(${minsDegree}deg)`;
+
+  const hour = now.getHours();
+  // to give a realistic hour hand (minsDegree/12 - 8) was added to normal hoursDegree.
+  // this serves to ofset the hour hand gradually as the minute hand moves
+  // the -8 counters the +90 offset of the original minsDegree
+  const hoursDegree = ((360/12) * hour) + 90 + (minsDegree/12 - 8);
+  hourHand.style.transform = `rotate(${hoursDegree}deg)`;
+  hourHand.style.transition = hoursDegree === 90 ? 'all 0s' : 'all 0.05s';
+  hourHand.style['transition-timing-function'] = 'cubic-bezier(0.1, 2.7, 0.58, 1)';
+  hourHand.style.transform = `rotate(${hoursDegree}deg)`;
+}
+
+setInterval(setDate, 1000);
+  </script>
+
+            
+    <div id="clock"></div>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+
+#clock {
+  font-family: 'Orbitron', sans-serif;
+  color: #66ff99;
+  font-size: 36px;
+  text-align: center;
+  padding-top: 40px;
+}
+    </style>   
+    <script type="text/javascript">
+        function currentTime() {
+  var date = new Date(); /* creating object of Date class */
+  var hour = date.getHours();
+  var min = date.getMinutes();
+  var sec = date.getSeconds();
+  hour = updateTime(hour);
+  min = updateTime(min);
+  sec = updateTime(sec);
+  document.getElementById("clock").innerText = hour + " : " + min + " : " + sec; /* adding time to the div */
+    var t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
+}
+
+function updateTime(k) {
+  if (k < 10) {
+    return "0" + k;
+  }
+  else {
+    return k;
+  }
+}
+
+currentTime(); /* calling currentTime() function to initiate the process */
+    </script> 
+                    </div>
     
             	<div class="popular_tool_box box_shadow_border pn mb10">
         <ul>
@@ -1232,7 +1365,7 @@ document.write("<small><small>"+localtime+"</small></small>");
     </script>
 
                 <div class="icon_image"><img src="F:\SoulProjects\Tools Website\Small SEO Tools - Web and SEO Tools_files\ip-address.svg"></div>
-                <a href="https://smallseo.tools/plagiarism-checker"> <p id="gfg">Your Public IP</p></a>
+                <a href="https://smallseo.tools/plagiarism-checker" title="Your Public IP"> <p id="gfg">Your Public IP</p></a>
             </li>
             <li class="aw-hovr">
                 <div class="icon_image"><img src="F:\SoulProjects\Tools Website\Small SEO Tools - Web and SEO Tools_files\location-pin.svg"></div>
@@ -1245,12 +1378,12 @@ $.get("https://ipinfo.io/json", function (response) {
 
 
 				
-                <a href="https://smallseo.tools/article-rewriter-spinner"><p id="address">Your IP Location</p></a>
+                <a href="https://smallseo.tools/article-rewriter-spinner" title="Your IP Location"><p id="address">Your IP Location</p></a>
             </li>
             <li class="kpc-hovr">
                 <div class="icon_image"><img src="F:\SoulProjects\Tools Website\Small SEO Tools - Web and SEO Tools_files\resolution.svg"></div>
                 
-                <a href="https://smallseo.tools/keyword-position-checker"><p id="demo9">Your Screen Resolution</p></a>
+                <a href="https://smallseo.tools/keyword-position-checker" title="Your Screen Resolution"><p id="demo9">Your Screen Resolution</p></a>
 
 <script>
 document.getElementById("demo9").innerHTML =screen.width +"<span> x </span>"+screen.height;
@@ -1258,7 +1391,7 @@ document.getElementById("demo9").innerHTML =screen.width +"<span> x </span>"+scr
             </li>
             <li class="gc-hovr">
                 <div class="icon_image"><img src="F:\SoulProjects\Tools Website\Small SEO Tools - Web and SEO Tools_files\cursor.svg"></div>
-                <a href="https://smallseo.tools/plagiarism-checker"><p id='info'>Cursor Location</p></a>
+                <a href="https://smallseo.tools/plagiarism-checker" title="Your Cursor Position"><p id='info'>Cursor Location</p></a>
 
     <script type="text/javascript">
   // Getting 'Info' div in js hands
@@ -1274,7 +1407,7 @@ addEventListener('mousemove', tellPos, false);
             </li>
             <li class="da-hovr">
                 <div class="icon_image"><img src="F:\SoulProjects\Tools Website\Small SEO Tools - Web and SEO Tools_files\responsive.svg"></div>
-                <a href="https://smallseo.tools/plagiarism-checker"><p id="-6">Your Device</p></a>
+                <a href="https://smallseo.tools/plagiarism-checker" title="Your Device"><p id="-6">Your Device</p></a>
 
 
 	<script type="text/javascript">
@@ -1289,8 +1422,8 @@ addEventListener('mousemove', tellPos, false);
             </li>
             <li class="pr-hovr">
                 <div class="icon_image"><img src="F:\SoulProjects\Tools Website\Small SEO Tools - Web and SEO Tools_files\grid.svg"></div>
-                <a><p id="22">Your Location Co-ordinates <small><small>(click)</small></small></p></a>
-                <body onload="getLocation()">
+                <a title="Your Location Coordinates"><p id="22"><text onclick="getLocation()">Your Location Co-ordinates <small style="cursor: pointer;">(Click)</small></text></p></a>
+                
 
 
 
@@ -1311,7 +1444,7 @@ function showPosition(position) {
             </li>
             <li class="mc-hovr">
                 <div class="icon_image"><img src="F:\SoulProjects\Tools Website\Small SEO Tools - Web and SEO Tools_files\web-search-engine.svg"></div>
-                <a href="browser.html"><p id="demo5">Your Browser is:</p></a>
+                <a href="browser.html" title="Your Browser Details"><p id="demo5">Your Browser is:</p></a>
 
 
 <script>
@@ -1323,6 +1456,8 @@ document.getElementById("demo5").innerHTML = "<small><small><small><small>"+navi
         
 </div><br>
 
+
+
     <div class="clearfix"></div>
 
     <div class="popular_tool_box box_shadow_border pn mb10">
@@ -1331,127 +1466,100 @@ document.getElementById("demo5").innerHTML = "<small><small><small><small>"+navi
                 <h3 class="mn p10">Popular SEO Tools</h3>
             </li>
             <li class="pg-hovr">
-                <div class="icon_image plagrism-checker"></div>
-                <a href="https://smallseo.tools/plagiarism-checker">Plagiarism Checker</a>
+                <div class="icon_image plagrism-checker"><img src="F:\SoulProjects\Tools Website\Small SEO Tools - Web and SEO Tools_files\usb-port.svg"></div>
+                <a href="https://smallseo.tools/plagiarism-checker">Port Scanner</a>
             </li>
             <li class="aw-hovr">
-                <div class="icon_image article-rewriter"></div>
-                <a href="https://smallseo.tools/article-rewriter-spinner">Article Spinner / Rewriter</a>
+                <div class="icon_image article-rewriter"><img src="F:\SoulProjects\Tools Website\Small SEO Tools - Web and SEO Tools_files\ip.svg"></div>
+                <a href="https://smallseo.tools/article-rewriter-spinner">IP Lookup</a>
             </li>
             <li class="kpc-hovr">
-                <div class="icon_image keyword-position-checker"></div>
-                <a href="https://smallseo.tools/keyword-position-checker">Keyword Position Checker</a>
+                <div class="icon_image keyword-position-checker"><img src="F:\SoulProjects\Tools Website\Small SEO Tools - Web and SEO Tools_files\domain-registration.svg"></div>
+                <a href="https://smallseo.tools/keyword-position-checker">Domain Availability Checker</a>
             </li>
             <li class="gc-hovr">
-                <div class="icon_image grammer-chacker"></div>
-                <a href="https://smallseo.tools/grammar-checker">Grammar Check</a>
+                <div class="icon_image grammer-chacker"><img src="F:\SoulProjects\Tools Website\Small SEO Tools - Web and SEO Tools_files\coding.svg"></div>
+                <a href="https://smallseo.tools/grammar-checker">HTTP Viewer</a>
             </li>
             <li class="da-hovr">
-                <div class="icon_image domain-ath"></div>
-                <a href="https://smallseo.tools/domain-authority-checker">Domain Authority Checker</a>
+                <div class="icon_image domain-ath"><img src="F:\SoulProjects\Tools Website\Small SEO Tools - Web and SEO Tools_files\domain.svg"></div>
+                <a href="https://smallseo.tools/domain-authority-checker">Domain to IP</a>
             </li>
             <li class="pr-hovr">
-                <div class="icon_image page-rank-c"></div>
-                <a href="https://smallseo.tools/page-speed-checker">Pagespeed Insights Checker</a>
+                <div class="icon_image page-rank-c"><img src="F:\SoulProjects\Tools Website\Small SEO Tools - Web and SEO Tools_files\south-pole.svg"></div>
+                <a href="https://smallseo.tools/page-speed-checker">IP Location</a>
             </li>
             <!--<li class="ic-hovr">-->
             <!--    <div class="icon_image image-comp"></div>-->
             <!--    <a href="https://smallseo.tools/image-optimizer">Image Compression Tool</a>-->
             <!--</li>-->
             <li class="ris-hovr">
-                <div class="icon_image reverse-image"></div>
-                <a href="https://smallseo.tools/reverse-image-search">Reverse Image Search</a>
+                <div class="icon_image reverse-image"><img src="F:\SoulProjects\Tools Website\Small SEO Tools - Web and SEO Tools_files\work-table.svg"></div>
+                <a href="https://smallseo.tools/reverse-image-search">Website Screenshot</a>
             </li>
             <li class="pac-hovr">
-                <div class="icon_image page-athority"></div>
-                <a href="https://smallseo.tools/page-authority-checker">Page Authority checker</a>
+                <div class="icon_image page-athority"><img src="F:\SoulProjects\Tools Website\Small SEO Tools - Web and SEO Tools_files\spyware.svg"></div>
+                <a href="https://smallseo.tools/page-authority-checker">Fake Emailer</a>
             </li>
             <!--<li class="sc-hovr">-->
             <!--    <div class="icon_image spell-checker"></div>-->
             <!--    <a href="https://smallseo.tools/text-to-speech-converter">Text To Speech</a>-->
             <!--</li>-->
             <li class="bc-hovr">
-                <div class="icon_image backlink-checker"></div>
-                <a href="https://smallseo.tools/backlink-checker">Backlink Checker</a>
+                <div class="icon_image backlink-checker"><img src="F:\SoulProjects\Tools Website\Small SEO Tools - Web and SEO Tools_files\cloud.svg"></div>
+                <a href="https://smallseo.tools/backlink-checker">Backlinks Generator</a>
             </li>
             <li class="arc-hovr">
-                <div class="icon_image alexa-rank-c"></div>
-                <a href="https://smallseo.tools/alexa-rank-checker">Alexa Rank Checker</a>
+                <div class="icon_image alexa-rank-c"><img src="F:\SoulProjects\Tools Website\Small SEO Tools - Web and SEO Tools_files\picture.svg"></div>
+                <a href="https://smallseo.tools/alexa-rank-checker">JPG/PNG to WEBP</a>
             </li>
             <li class="bm-hovr">
-                <div class="icon_image back-link-m"></div>
-                <a href="https://smallseo.tools/backlink-maker">Backlink Maker</a>
+                <div class="icon_image back-link-m"><img src="F:\SoulProjects\Tools Website\Small SEO Tools - Web and SEO Tools_files\resize.svg"></div>
+                <a href="https://smallseo.tools/backlink-maker">Crop Image</a>
             </li>
             <li class="dac-hovr">
-                <div class="icon_image domain-age-checker"></div>
+                <div class="icon_image domain-age-checker"><img src="F:\SoulProjects\Tools Website\Small SEO Tools - Web and SEO Tools_files\search-engine.svg"></div>
                 <a href="https://smallseo.tools/domain-age-checker">Domain Age Checker</a>
             </li>
+            <li class="dac-hovr">
+                <div class="icon_image domain-age-checker"><img src="F:\SoulProjects\Tools Website\Small SEO Tools - Web and SEO Tools_files\temperature.svg"></div>
+                <a href="https://smallseo.tools/domain-age-checker">Weather Details</a>
+            </li>
             <li class="wpt-hovr">
-                <div class="icon_image website-ping-c"></div>
-                <a href="https://smallseo.tools/online-ping-website-tool">Website Ping Tool</a>
+                <div class="icon_image website-ping-c"><img src="F:\SoulProjects\Tools Website\Small SEO Tools - Web and SEO Tools_files\on-off.svg"></div>
+                <a href="https://smallseo.tools/online-ping-website-tool">Website Online/Offline Checker</a>
             </li>
             <li class="wssc-hovr">
-                <div class="icon_image website-seo-score"></div>
-                <a href="https://smallseo.tools/website-checker">Website Seo Score Checker</a>
+                <div class="icon_image website-seo-score"><img src="F:\SoulProjects\Tools Website\Small SEO Tools - Web and SEO Tools_files\coding (1).svg"></div>
+                <a href="https://smallseo.tools/website-checker">Website Code Text Ratio</a>
             </li>
             <li class="kdc-hovr">
-                <div class="icon_image keyword-dencity-checker"></div>
-                <a href="https://smallseo.tools/keyword-density-checker">Keyword Density Checker</a>
+                <div class="icon_image keyword-dencity-checker"><img src="F:\SoulProjects\Tools Website\Small SEO Tools - Web and SEO Tools_files\password (1).svg"></div>
+                <a href="https://smallseo.tools/keyword-density-checker">Password Strength Checker</a>
             </li>
             <li class="wpsc-hovr">
-                <div class="icon_image website-page-size-checker"></div>
-                <a href="https://smallseo.tools/page-size-checker">Website Page Size Checker</a>
+                <div class="icon_image website-page-size-checker"><img src="F:\SoulProjects\Tools Website\Small SEO Tools - Web and SEO Tools_files\locked.svg"></div>
+                <a href="https://smallseo.tools/page-size-checker">HTML Encryptor </a>
             </li>
 
             <li class="wcc-hovr">
-                <div class="icon_image word-count-checker"></div>
-                <a href="https://smallseo.tools/word-counter">Word Count Checker</a>
+                <div class="icon_image word-count-checker"><img src="F:\SoulProjects\Tools Website\Small SEO Tools - Web and SEO Tools_files\qr.svg"></div>
+                <a href="https://smallseo.tools/word-counter">QR Code Generator</a>
             </li>
             <li class="mc-hovr border-bottom">
-                <div class="icon_image mozrank-checker"></div>
-                <a href="https://smallseo.tools/mozrank-checker">Mozrank Checker</a>
+                <div class="icon_image mozrank-checker"><img src="F:\SoulProjects\Tools Website\Small SEO Tools - Web and SEO Tools_files\chess.svg"></div>
+                <a href="https://smallseo.tools/mozrank-checker">Alexa Rank Checker</a>
             </li>
         </ul>
     </div>
 
 
-    <div class="sidebar_adds p5 mt15 box_shadow_border">
-            <div class="sideXd">
-                    </div>
-        <br>
-        
-        	
-        <ul>
-            <li class="popular-seo-t pn">
-                <h3 class="mn p10">Popular SEO Tools</h3>
-            </li>
-            
-            <li class="pg-hovr">
-                <div class="icon_image plagrism-checker"></div>
-                <a href="https://smallseo.tools/plagiarism-checker">Plagiarism Checker</a>
-            </li>
-            <li class="aw-hovr">
-                <div class="icon_image article-rewriter"></div>
-                <a href="https://smallseo.tools/article-rewriter-spinner">Article Spinner / Rewriter</a>
-            </li>
-            <li class="kpc-hovr">
-                <div class="icon_image keyword-position-checker"></div>
-                <a href="https://smallseo.tools/keyword-position-checker">Keyword Position Checker</a>
-            </li>
-            <li class="gc-hovr">
-                <div class="icon_image grammer-chacker"></div>
-                <a href="https://smallseo.tools/grammar-checker">Grammar Check</a>
-            </li>
-            <li class="da-hovr">
-                <div class="icon_image domain-ath"></div>
-                <a href="https://smallseo.tools/domain-authority-checker">Domain Authority Checker</a>
-            </li></ul>
-                    </div>
+
 
     </div>   
   	</div>
 </div> <br> <br><div class="f_description_bg text-center">
-    <div class="google-auto-placed" style="width: 100%; height: auto; clear: none; text-align: center;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-2852996182927794" data-adsbygoogle-status="done" style="display: block; margin: 10px auto; background-color: transparent; height: 280px;"><ins id="aswift_5_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:1200px;background-color:transparent;"><ins id="aswift_5_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:1200px;background-color:transparent;"></ins></ins></ins></div><div class="f_graph">
+    <div class="google-auto-placed" style="width: 100%; height: auto; clear: none; text-align: center;"></div><div class="f_graph">
         <div class="container">
             <div class="col-lg-1 col-md-1"></div>
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 f_logo_box f_contect pn">
@@ -1489,10 +1597,16 @@ document.getElementById("demo5").innerHTML = "<small><small><small><small>"+navi
                         <a href="https://smallseo.tools/#">Backlinks</a>
                         <a href="https://smallseo.tools/#">Small SEO Tools</a>
                 </div>
-                <br>
                 <div class="top10">
-                    <a class="ultm ultm-facebook ultm-32 ultm-color-to-gray" href="https://www.facebook.com/SmallSEOToolsFree" target="_blank" rel="nofollow"></a>
-                    <a class="ultm ultm-twitter ultm-32 ultm-color-to-gray" href="https://twitter.com/small_seo_tools" target="_blank" rel="nofollow"></a>
+                    <p>Social Media Links</p>
+                    <a href="https://www.github.com/umarcbs">
+                    <img src="F:\SoulProjects\Tools Website\Small SEO Tools - Web and SEO Tools_files\github (1).svg" width="40px;" height="40px;"></a>&nbsp;
+                    <a href="https://www.twitter.com/umarcbs">
+                    <img src="F:\SoulProjects\Tools Website\Small SEO Tools - Web and SEO Tools_files\twitter (1).svg" width="40px;" height="40px;"></a>&nbsp;
+                    <a href="https://t.me/umarcbs">
+                    <img src="F:\SoulProjects\Tools Website\Small SEO Tools - Web and SEO Tools_files\telegram.svg" width="40px;" height="40px;"></a>&nbsp;
+                    <a href="https://t.me/umarcbs">
+                    <img src="F:\SoulProjects\Tools Website\Small SEO Tools - Web and SEO Tools_files\youtube (1).svg" width="40px;" height="40px;"></a>&nbsp;
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 f_contect pl30" style="min-height: 230px;">
@@ -1512,8 +1626,8 @@ document.getElementById("demo5").innerHTML = "<small><small><small><small>"+navi
             <div class="col-md-6 col-sm-12 col-xs-12 text-center pull-right_big">
 
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
-                <p class="text-center margin0">Copyright © 2019 Small SEO Tools. All rights reserved.                </p>
+            <div class="col-sm-12 col-xs-12" style="text-align: center;">
+                <p class="text-center margin0" style="text-align: center;">Copyright © 2020 cqrCyber Tools. All rights reserved. &nbsp; |&nbsp; Designed with 💛 by <a href="">Umar Farooq</a></p>
             </div>
         </div>
     </div>
