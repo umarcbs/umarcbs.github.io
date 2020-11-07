@@ -53,7 +53,28 @@
                     </div>
                     <div class="navbar-collapse collapse" id="myNavbar" aria-expanded="false" style="height: 1px;">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="https://smallseo.tools/" style="font-family: Atomic Age"> Home</a></li><li><a href="https://smallseo.tools/contact" style="font-family: Atomic Age"> About</a></li><li><a href="https://smallseo.tools/blog" style="font-family: Atomic Age"> Contact Us</a></li>                        </ul>
+                            <li><a href="https://smallseo.tools/" style="font-family: Atomic Age"> <button class="btn btn-white dropdown-toggle position-relative" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="gschsearch()" target="_blank">
+            <div class="text-left pr-3 text-primary">
+              <strong>
+                Home
+              </strong>
+              
+            </div>
+          </button></a></li><li><a href="https://smallseo.tools/contact" style="font-family: Atomic Age"> <button class="btn btn-white dropdown-toggle position-relative" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="gschsearch()" target="_blank">
+            <div class="text-left pr-3 text-primary">
+              <strong>
+                About
+              </strong>
+              
+            </div>
+          </button></a></li><li><a href="https://smallseo.tools/blog" style="font-family: Atomic Age"> <button class="btn btn-white dropdown-toggle position-relative" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="gschsearch()" target="_blank">
+            <div class="text-left pr-3 text-primary">
+              <strong>
+                Contact Us
+              </strong>
+              
+            </div>
+          </button></a></li>                        </ul>
                     </div>
                 </div>
             </nav>
@@ -1622,7 +1643,7 @@ document.getElementById("demo5").innerHTML = "<small><small><small><small>"+navi
         </ul>
     
         
-</div><br>
+</div>
 
 <!--Section  -->  <!--Section  -->  
 <div class="clearfix"></div>        </div>
@@ -1630,9 +1651,7 @@ document.getElementById("demo5").innerHTML = "<small><small><small><small>"+navi
         
 <div class="col-md-4">
     <div class="clearfix"></div>
-<div class="sidebar_adds p5 mt15 box_shadow_border">
-            <div class="sideXd">
-                    </div>
+
                     <div class="clearfix"></div>
 
     <div class="popular_tool_box box_shadow_border pn mb10">
@@ -1645,16 +1664,16 @@ document.getElementById("demo5").innerHTML = "<small><small><small><small>"+navi
                 <h3 class="mn p10" style="font-family: Atomic Age"><input type="text" id="Blah" placeholder="Enter text to search" name="sitesearch" type="hidden" autocomplete="on" class="form-control search" name="q" placeholder="Search in example.com" required="required"  type="text"></input></h3><br>
             </li>
         </ul>
-<br>
-<button onclick="gsearch()" target="_blank" type="warning">Google</button>
-<button onclick="ddgsearch()" target="_blank">DuckDuckgo</button>
-<button onclick="bsearch()" target="_blank">MSBing</button>
+<br>&nbsp;&nbsp;
+<button class="btn btn-white dropdown-toggle position-relative" onclick="gsearch()" target="_blank">Google</button>
+<button class="btn btn-white dropdown-toggle position-relative" onclick="bsearch()" target="_blank">Bing</button>
+<button class="btn btn-white dropdown-toggle position-relative"onclick="yahsearch()" target="_blank">Yahoo</button>&nbsp;&nbsp;&nbsp;
+<button class="btn btn-white dropdown-toggle position-relative" onclick="ddgsearch()" target="_blank">DuckDuckgo</button>&nbsp;&nbsp;
+<button class="btn btn-white dropdown-toggle position-relative" onclick="brsearch()" target="_blank">BoardReader</button>
+<button class="btn btn-white dropdown-toggle position-relative"onclick="ysearch()" target="_blank">Yandex</button>
+<button class="btn btn-white dropdown-toggle position-relative" onclick="yipsearch()" target="_blank">Yippy</button>
 
-<button onclick="yahsearch()" target="_blank">Yahoo</button>
-<button onclick="ysearch()" target="_blank">Yandex</button>
-<button onclick="yipsearch()" target="_blank">Yippy</button>
-<button onclick="brsearch()" target="_blank">BoardReader</button>
-<button onclick="intsearch()" target="_blank">IArchive</button>
+<button class="btn btn-white dropdown-toggle position-relative" onclick="intsearch()" target="_blank">IArchive</button>
 
 <script>
 function gsearch() {
@@ -1698,16 +1717,25 @@ function brsearch() {
 var Blah = document.getElementById("Blah").value;
 location=("https://boardreader.com/s/" + Blah + ".html");
 }
+
+function brsearch() {
+var Blah = document.getElementById("Blah").value;
+location=("https://boardreader.com/s/" + Blah + ".html");
+}
 </script>
 <br><br>
 <p style="text-align: center; font-family: Atoimic Age">Educational Searches</p>
+&nbsp;&nbsp;
+<button class="btn btn-white dropdown-toggle position-relative" onclick="gschsearch()" target="_blank">GoogleScholar</button>
+<button class="btn btn-white dropdown-toggle position-relative"onclick="sldsearch()" target="_blank">SlideShare</button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-white dropdown-toggle position-relative"onclick="wikisearch()" target="_blank">WikiPedia</button>
+<button class="btn btn-white dropdown-toggle position-relative"onclick="msasearch()" target="_blank">MSAcademic</button>
+<button class="btn btn-white dropdown-toggle position-relative"onclick="COREsearch()" target="_blank">CORE</button>
+<button class="btn btn-white dropdown-toggle position-relative"onclick="BASEsearch()" target="_blank">BASE</button>
+<button class="btn btn-white dropdown-toggle position-relative"onclick="ERICsearch()" target="_blank">ERIC</button>
 
-<button onclick="gschsearch()" target="_blank">Google Scholar</button>
-<button onclick="sldsearch()" target="_blank">Slide Share</button>
-<button onclick="wikisearch()" target="_blank">WikiPedia</button>
-
-
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="btn btn-white dropdown-toggle position-relative"onclick="SSsearch()" target="_blank">Semantic Scholar</button>
 <script>
 function gschsearch() {
 var Blah = document.getElementById("Blah").value;
@@ -1724,9 +1752,33 @@ var Blah = document.getElementById("Blah").value;
 location=("https://en.wikipedia.org/wiki/Special:Search?search=" + Blah + "");
 }
 
+function msasearch() {
+var Blah = document.getElementById("Blah").value;
+location=("https://academic.microsoft.com/search?q=" + Blah + "");
+}
+
+function SSsearch() {
+var Blah = document.getElementById("Blah").value;
+location=("https://www.semanticscholar.org/search?q=" + Blah + "");
+}
+
+function ERICsearch() {
+var Blah = document.getElementById("Blah").value;
+location=("https://eric.ed.gov/?q=" + Blah + "");
+}
+
+function COREsearch() {
+var Blah = document.getElementById("Blah").value;
+location=("https://core.ac.uk/search?q=" + Blah + "");
+}
+
+function BASEsearch() {
+var Blah = document.getElementById("Blah").value;
+location=("https://www.base-search.net/Search/Results?lookfor=" + Blah + "");
+}
 </script>
 </div>
-                </div>
+                
 
     <div class="clearfix"></div>
 
@@ -1835,7 +1887,7 @@ location=("https://en.wikipedia.org/wiki/Special:Search?search=" + Blah + "");
 <div class="sidebar_adds p5 mt15 box_shadow_border">
             <div class="sideXd">
                     </div>
-                    
+                    <h3>3B Traders</h3>
                 </div>
 
 <div class="clearfix"></div>        </div>
