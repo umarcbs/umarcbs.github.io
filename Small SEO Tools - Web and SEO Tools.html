@@ -1624,7 +1624,109 @@ document.getElementById("demo5").innerHTML = "<small><small><small><small>"+navi
         
 </div><br>
 
+<!--Section  -->  <!--Section  -->  
+<div class="clearfix"></div>        </div>
+              
+        
+<div class="col-md-4">
+    <div class="clearfix"></div>
+<div class="sidebar_adds p5 mt15 box_shadow_border">
+            <div class="sideXd">
+                    </div>
+                    <div class="clearfix"></div>
 
+    <div class="popular_tool_box box_shadow_border pn mb10">
+        <ul>
+            <li class="popular-seo-t pn">
+                <h3 class="mn p10" style="font-family: Atomic Age">Search in Search Engines <span style="cursor: pointer;"><text type="text" onclick="alert('Enter the text you want to search, then click on any of the buttons, it will search your text in the respective Search Engines.')">❓</text></span></h3>
+
+            </li>
+            <li class="popular-seo-t pn">
+                <h3 class="mn p10" style="font-family: Atomic Age"><input type="text" id="Blah" placeholder="Enter text to search" name="sitesearch" type="hidden" autocomplete="on" class="form-control search" name="q" placeholder="Search in example.com" required="required"  type="text"></input></h3><br>
+            </li>
+        </ul>
+<br>
+<button onclick="gsearch()" target="_blank" type="warning">Google</button>
+<button onclick="ddgsearch()" target="_blank">DuckDuckgo</button>
+<button onclick="bsearch()" target="_blank">MSBing</button>
+
+<button onclick="yahsearch()" target="_blank">Yahoo</button>
+<button onclick="ysearch()" target="_blank">Yandex</button>
+<button onclick="yipsearch()" target="_blank">Yippy</button>
+<button onclick="brsearch()" target="_blank">BoardReader</button>
+<button onclick="intsearch()" target="_blank">IArchive</button>
+
+<script>
+function gsearch() {
+var Blah = document.getElementById("Blah").value;
+location=("https://www.google.com/search?q=" + Blah + "");
+}
+
+function yahsearch() {
+var Blah = document.getElementById("Blah").value;
+location=("https://in.search.yahoo.com/search?p=" + Blah + "");
+}
+
+function bsearch() {
+var Blah = document.getElementById("Blah").value;
+location=("https://bing.com/?q=" + Blah + "");
+}
+
+function ysearch() {
+var Blah = document.getElementById("Blah").value;
+location=("https://yandex.com/search/?text=" + Blah + "");
+}
+
+
+function intsearch() {
+var Blah = document.getElementById("Blah").value;
+location=("https://archive.org/search.php?query=" + Blah + "");
+}
+
+function ddgsearch() {
+var Blah = document.getElementById("Blah").value;
+location=("https://duckduckgo.com/?q=" + Blah + "");
+}
+
+function yipsearch() {
+var Blah = document.getElementById("Blah").value;
+location=("https://www.yippy.com/search?query=" + Blah + "");
+}
+
+
+function brsearch() {
+var Blah = document.getElementById("Blah").value;
+location=("https://boardreader.com/s/" + Blah + ".html");
+}
+</script>
+<br><br>
+<p style="text-align: center; font-family: Atoimic Age">Educational Searches</p>
+
+<button onclick="gschsearch()" target="_blank">Google Scholar</button>
+<button onclick="sldsearch()" target="_blank">Slide Share</button>
+<button onclick="wikisearch()" target="_blank">WikiPedia</button>
+
+
+
+<script>
+function gschsearch() {
+var Blah = document.getElementById("Blah").value;
+location=("https://scholar.google.com/scholar?q=" + Blah + "");
+}
+
+function sldsearch() {
+var Blah = document.getElementById("Blah").value;
+location=("https://www.slideshare.net/search/slideshow?searchfrom=header&q=" + Blah + "");
+}
+
+function wikisearch() {
+var Blah = document.getElementById("Blah").value;
+location=("https://en.wikipedia.org/wiki/Special:Search?search=" + Blah + "");
+}
+
+</script>
+</div>
+                </div>
 
     <div class="clearfix"></div>
 
@@ -1722,95 +1824,7 @@ document.getElementById("demo5").innerHTML = "<small><small><small><small>"+navi
     </div>
 
 
-<!--Section  -->  <!--Section  -->  
-<div class="clearfix"></div>        </div>
-              
-        
-<div class="col-md-4">
-    <div class="clearfix"></div>
-<div class="sidebar_adds p5 mt15 box_shadow_border">
-            <div class="sideXd">
-                    </div>
-                    <div class="clearfix"></div>
 
-    <div class="popular_tool_box box_shadow_border pn mb10">
-        <ul>
-            <li class="popular-seo-t pn">
-                <h3 class="mn p10" style="font-family: Atomic Age">Search in Search Engines</h3>
-            </li>
-            <li class="popular-seo-t pn">
-                <h3 class="mn p10" style="font-family: Atomic Age"><input type="text" id="Blah" placeholder="Enter text to search" name="sitesearch" type="hidden" autocomplete="on" class="form-control search" name="q" placeholder="Search in example.com" required="required"  type="text"></input></h3><br>
-            </li>
-        </ul>
-<br>
-<button onclick="gsearch()" target="_blank">Google</button>
-<button onclick="bsearch()" target="_blank">MS Bing</button>
-<button onclick="ysearch()" target="_blank">Yandex</button>
-<button onclick="encsearch()" target="_blank">CS Search </button>
-<button onclick="ddgsearch()" target="_blank">DuckDuckgo</button>
-<button onclick="scowssearch()" target="_blank">SwissCows</button>
-<button onclick="brsearch()" target="_blank">BoardReader</button>
-
-<script>
-function gsearch() {
-var Blah = document.getElementById("Blah").value;
-location=("https://www.google.com/search?q=" + Blah + "");
-}
-
-function bsearch() {
-var Blah = document.getElementById("Blah").value;
-location=("https://bing.com/?q=" + Blah + "");
-}
-
-function ysearch() {
-var Blah = document.getElementById("Blah").value;
-location=("https://yandex.com/search/?text=" + Blah + "");
-}
-
-
-function ddgsearch() {
-var Blah = document.getElementById("Blah").value;
-location=("https://duckduckgo.com/?q=" + Blah + "");
-}
-
-function scowssearch() {
-var Blah = document.getElementById("Blah").value;
-location=("https://swisscows.com/web?query=" + Blah + "");
-}
-
-
-function brsearch() {
-var Blah = document.getElementById("Blah").value;
-location=("https://boardreader.com/s/" + Blah + ".html");
-}
-</script>
-<br>
-<p style="text-align: center; font-family: Atoimic Age">Educational Searches</p>
-
-<button onclick="gschsearch()" target="_blank">Google Scholar</button>
-<button onclick="bsearch()" target="_blank">Slide Share</button>
-<button onclick="ysearch()" target="_blank">WikiPedia</button>
-
-<script>
-function gschsearch() {
-var Blah = document.getElementById("Blah").value;
-location=("https://scholar.google.com/scholar?q=" + Blah + "");
-}
-
-function bsearch() {
-var Blah = document.getElementById("Blah").value;
-location=("https://www.slideshare.net/search/slideshow?searchfrom=header&q=" + Blah + "");
-}
-
-function ysearch() {
-var Blah = document.getElementById("Blah").value;
-location=("https://en.wikipedia.org/wiki/Special:Search?search=" + Blah + "");
-}
-
-
-</script>
-</div>
-                </div>
 
 <!--Section  -->  <!--Section  -->  
 <div class="clearfix"></div>        </div>
