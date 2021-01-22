@@ -2252,3 +2252,14 @@ section.inner_banner h3 {
   font-size: 32px;
   text-align: center;
 }
+
+
+
+/* Boani Pan icon Gradient color */
+.fab {
+  display: block;
+  background: -webkit-linear-gradient(red, darkorange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* Boani Pan icon Gradient color */
