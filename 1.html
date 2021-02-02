@@ -196,7 +196,7 @@
     <div class="container">
       <div class="row">
         <div class="col d-flex align-items-center">
-          <button class="navbar-toggler" type="button" data-controller="sidebar" data-target="#left-sidebar" data-close=".close-left-sidebar">
+          <button class="navbar-toggler" type="button" data-controller="sidebar" data-target="Search" data-close=".close-left-sidebar">
             <i class="fa fa-bars-regular"></i>
           </button>
 
@@ -208,7 +208,7 @@
     <div class="rounded-search col-md-6">
       
 <div class="search-form flex-fill">
-  <form class="form-search form-group sb-search-open" action="" data-controller="" data-expand="true">
+  <form class="form-search form-group sb-search-open" action="search" data-controller="search-form" data-expand="true">
     <input class="form-control bg-light en" placeholder="Search &quot;Noah&quot;" type="search" name="query" value="">
     <button type="submit" class="form-control form-control-submit search-btn"></button>
 
@@ -4511,7 +4511,7 @@ id="verse11" src="AyatMaani/1-1.m4a" preload="auto">
 <script type="text/javascript">
   function togglePlayayat11() {
   var myverse11 = document.getElementById("verse11");
-  return myverse11.paused ? myverse11.play() : verse11.pause();
+  return myverse11.paused ? myverse11.play() : myverse11.pause();
 };
 </script>
           <i class="fa fa-play-circle h4"></i>
@@ -5374,20 +5374,21 @@ id="verse11" src="AyatMaani/1-1.m4a" preload="auto">
       <script type="text/javascript">
         
       </script>
+      <!--
       <style type="text/css">
         audio {
  background:linear-gradient(to top left, transparent, transparent, transparent);
 }
 
 .styleit audio::-webkit-media-controls-panel {
- background:linear-gradient(to top left, black, gray,black);
+ background:linear-gradient(to top left, lightblue, lightblue, lightblue);
 }
 .styleit audio::-webkit-media-controls-line {
  background:linear-gradient(to top left, orange, orange,orange);
 }
 
       </style>
-      
+      -->
     </div>
 
   </div>
