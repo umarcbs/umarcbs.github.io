@@ -2091,6 +2091,7 @@
 
 
 
+<!-- Reciters Start -->  <!-- Reciters Start -->  <!-- Reciters Start -->
 <!-- Reciters Start -->
 <div class="sidebar slide-right border-left d-none" id="reciters-sidebar">
   <div class="sidebar-head d-flex align-items-center justify-content-between">
@@ -2112,7 +2113,7 @@
 
       <div class="form-check my-4" data-filter-tags="abdulbaset abdulsamad AbdulBaset AbdulSamad mujawwad">
         <div>
-          <input class="form-check-input" type="radio" name="recitation" value="1" id="recitation-1" onclick="togglePlay1a()">
+          <input class="form-check-input" type="radio" name="recitation" value="1" id="recitation-1" onclick="basit1()">
           <label class="form-check-label text-muted" for="recitation-1">
             <span class="english">
               AbdulBaset AbdulSamad
@@ -2123,12 +2124,12 @@
           </label>
 
           <audio 
-id="myAudio" src="abdulbasit001.mp3" preload="auto">
+id="basit1" src="Qirat/basit1/basit1001.mp3" preload="auto">
 </audio>
 <script type="text/javascript">
-  function togglePlay1a() {
+  function basit1() {
 
-  var myAudio = document.getElementById("myAudio");
+  var myAudio = document.getElementById("basit1");
   return myAudio.paused ? myAudio.play() : myAudio.pause();
 
 };
@@ -2143,7 +2144,7 @@ id="myAudio" src="abdulbasit001.mp3" preload="auto">
 
       <div class="form-check my-4" data-filter-tags="abdulbaset abdulsamad AbdulBaset AbdulSamad murattal">
         <div>
-          <input class="form-check-input" type="radio" name="recitation" value="2" id="recitation-2" onclick="togglePlay1b();">
+          <input class="form-check-input" type="radio" name="recitation" value="2" id="recitation-2" onclick="basit2();">
           <label class="form-check-label text-muted" for="recitation-2">
             <span class="english">
               AbdulBaset AbdulSamad
@@ -2154,11 +2155,11 @@ id="myAudio" src="abdulbasit001.mp3" preload="auto">
 
           </label>
           <audio 
-id="myAudio2" src="misharyalafasy001.mp3" preload="auto">
+id="basit2" src="Qirat/basit2/basit2001.mp3" preload="auto">
 </audio>
 <script type="text/javascript">
-  function togglePlay1b() {
-  var myAudio2 = document.getElementById("myAudio2");
+  function basit2() {
+  var myAudio2 = document.getElementById("basit2");
   return myAudio2.paused ? myAudio2.play() : myAudio2.pause();
 };
 </script>
@@ -2172,7 +2173,7 @@ id="myAudio2" src="misharyalafasy001.mp3" preload="auto">
 
       <div class="form-check my-4" data-filter-tags="abdur-rahman as-sudais Abdur-Rahman as-Sudais ">
         <div>
-          <input class="form-check-input" type="radio" name="recitation" value="3" id="recitation-3" onclick="togglePlay1c()">
+          <input class="form-check-input" type="radio" name="recitation" value="3" id="recitation-3" onclick="sudais()">
           <label class="form-check-label text-muted" for="recitation-3">
             <span class="english">
               Abdur-Rahman as-Sudais
@@ -2181,11 +2182,11 @@ id="myAudio2" src="misharyalafasy001.mp3" preload="auto">
 
           </label>
            <audio 
-id="myAudio3" src="hazzabalushi001.mp3" preload="auto">
+id="sudais" src="Qirat/sudais/sudais001.mp3" preload="auto">
 </audio>
 <script type="text/javascript">
-  function togglePlay1c() {
-  var myAudio2 = document.getElementById("myAudio3");
+  function sudais() {
+  var myAudio2 = document.getElementById("sudais");
   return myAudio2.paused ? myAudio2.play() : myAudio2.pause();
 };
 </script>
@@ -2197,16 +2198,55 @@ id="myAudio3" src="hazzabalushi001.mp3" preload="auto">
         </button>-->
       </div>
 
-      <div class="form-check my-4" data-filter-tags="abu bakr al-shatri Abu Bakr al-Shatri ">
+      <div class="form-check my-4" data-filter-tags="abu bakr al-shatri Abu Bakr al-Shatri">
         <div>
-          <input class="form-check-input" type="radio" name="recitation" value="4" id="recitation-4">
+          <input class="form-check-input" type="radio" name="recitation" value="4" id="recitation-4" onclick="shatri()">
           <label class="form-check-label text-muted" for="recitation-4">
             <span class="english">
-              Abu Bakr al-Shatri
+              Abu Bakr Shatri
             </span>
 
 
           </label>
+          <audio 
+id="shatri" src="Qirat/shatri/shatri001.mp3" preload="auto">
+</audio>
+<script type="text/javascript">
+  function shatri() {
+  var myAudio2 = document.getElementById("shatri");
+  return myAudio2.paused ? myAudio2.play() : myAudio2.pause();
+};
+</script>
+        </div>
+
+        <!--<button class="btn btn-info d-flex align-items-center mt-2 hear-voice justify-content-between px-2">
+          <i class="fa fa-play fa-center-2"></i>
+          Hear the Voice
+        </button>-->
+      </div>
+
+      <div class="form-check my-4" data-filter-tags="ajnad series Ajnad Series murattal">
+        <div>
+          <input class="form-check-input" type="radio" name="recitation" value="aj" id="recitation-aj" onclick="ajnad()">
+          <label class="form-check-label text-muted" for="recitation-aj">
+            <span class="english">
+              Ajnad Series
+            </span>
+
+
+            <small class="rounded-pill bg-primary text-white p-1 style" data-style="murattal" data-original-title="" title="">Murattal</small>
+
+
+          </label>
+          <audio 
+id="ajnad" src="Qirat/ajnad/ajnad001.mp3" preload="auto">
+</audio>
+<script type="text/javascript">
+  function ajnad() {
+  var myAudio2 = document.getElementById("ajnad");
+  return myAudio2.paused ? myAudio2.play() : myAudio2.pause();
+};
+</script>
         </div>
 
         <!--<button class="btn btn-info d-flex align-items-center mt-2 hear-voice justify-content-between px-2">
@@ -2217,7 +2257,7 @@ id="myAudio3" src="hazzabalushi001.mp3" preload="auto">
 
       <div class="form-check my-4" data-filter-tags="hani ar-rifai Hani ar-Rifai ">
         <div>
-          <input class="form-check-input" type="radio" name="recitation" value="5" id="recitation-5">
+          <input class="form-check-input" type="radio" name="recitation" value="5" id="recitation-5" onclick="hani();">
           <label class="form-check-label text-muted" for="recitation-5">
             <span class="english">
               Hani ar-Rifai
@@ -2225,6 +2265,43 @@ id="myAudio3" src="hazzabalushi001.mp3" preload="auto">
 
 
           </label>
+          <audio 
+id="hani" src="Qirat/hani/hani001.mp3" preload="auto">
+</audio>
+<script type="text/javascript">
+  function hani() {
+  var myAudio2 = document.getElementById("hani");
+  return myAudio2.paused ? myAudio2.play() : myAudio2.pause();
+};
+</script>
+        </div>
+
+        <!--<button class="btn btn-info d-flex align-items-center mt-2 hear-voice justify-content-between px-2">
+          <i class="fa fa-play fa-center-2"></i>
+          Hear the Voice
+        </button>-->
+      </div>
+
+
+      <div class="form-check my-4" data-filter-tags="hazza al balushi Hazza al Balushi">
+        <div>
+          <input class="form-check-input" type="radio" name="recitation" value="haz" id="recitation-haz" onclick="hazza()">
+          <label class="form-check-label text-muted" for="recitation-haz">
+            <span class="english">
+              Hazza al Balushi
+            </span>
+
+
+          </label>
+           <audio 
+id="hazza" src="Qirat/hazza/hazza001.mp3" preload="auto">
+</audio>
+<script type="text/javascript">
+  function hazza() {
+  var myAudio2 = document.getElementById("hazza");
+  return myAudio2.paused ? myAudio2.play() : myAudio2.pause();
+};
+</script>
         </div>
 
         <!--<button class="btn btn-info d-flex align-items-center mt-2 hear-voice justify-content-between px-2">
@@ -2235,7 +2312,7 @@ id="myAudio3" src="hazzabalushi001.mp3" preload="auto">
 
       <div class="form-check my-4" data-filter-tags="mahmoud khalil al-husary Mahmoud Khalil Al-Husary ">
         <div>
-          <input class="form-check-input" type="radio" name="recitation" value="6" id="recitation-6">
+          <input class="form-check-input" type="radio" name="recitation" value="6" id="recitation-6" onclick="husary1();">
           <label class="form-check-label text-muted" for="recitation-6">
             <span class="english">
               Mahmoud Khalil Al-Husary
@@ -2243,6 +2320,15 @@ id="myAudio3" src="hazzabalushi001.mp3" preload="auto">
 
 
           </label>
+          <audio 
+id="husary1" src="Qirat/husary1/husary001.mp3" preload="auto">
+</audio>
+<script type="text/javascript">
+  function husary1() {
+  var myAudio2 = document.getElementById("husary1");
+  return myAudio2.paused ? myAudio2.play() : myAudio2.pause();
+};
+</script>
         </div>
 
         <!--<button class="btn btn-info d-flex align-items-center mt-2 hear-voice justify-content-between px-2">
@@ -2253,7 +2339,7 @@ id="myAudio3" src="hazzabalushi001.mp3" preload="auto">
 
       <div class="form-check my-4" data-filter-tags="mahmoud khalil al-husary Mahmoud Khalil Al-Husary muallim">
         <div>
-          <input class="form-check-input" type="radio" name="recitation" value="12" id="recitation-12">
+          <input class="form-check-input" type="radio" name="recitation" value="12" id="recitation-12" onclick="husary2();">
           <label class="form-check-label text-muted" for="recitation-12">
             <span class="english">
               Mahmoud Khalil Al-Husary
@@ -2262,6 +2348,15 @@ id="myAudio3" src="hazzabalushi001.mp3" preload="auto">
               <small class="rounded-pill bg-primary text-white p-1 style" data-style="muallim" data-original-title="" title="">Muallim</small>
 
           </label>
+          <audio 
+id="husary2" src="Qirat/husary2/husary001.mp3" preload="auto">
+</audio>
+<script type="text/javascript">
+  function husary2() {
+  var myAudio2 = document.getElementById("husary2");
+  return myAudio2.paused ? myAudio2.play() : myAudio2.pause();
+};
+</script>
         </div>
 
         <!--<button class="btn btn-info d-flex align-items-center mt-2 hear-voice justify-content-between px-2">
@@ -2272,14 +2367,23 @@ id="myAudio3" src="hazzabalushi001.mp3" preload="auto">
 
       <div class="form-check my-4" data-filter-tags="mishari rashid al-`afasy Mishari Rashid al-`Afasy ">
         <div>
-          <input class="form-check-input" type="radio" name="recitation" value="7" id="recitation-7" checked="checked">
-          <label class="form-check-label text-muted" for="recitation-7">
+          <input class="form-check-input" type="radio" name="recitation" value="ala" id="recitation-ala" checked="checked" onclick="mishary();">
+          <label class="form-check-label text-muted" for="recitation-ala">
             <span class="english">
               Mishari Rashid al-`Afasy
             </span>
 
 
           </label>
+          <audio 
+id="mishary" src="Qirat/mishary/mishary001.mp3" preload="auto">
+</audio>
+<script type="text/javascript">
+  function mishary() {
+  var myAudio2 = document.getElementById("mishary");
+  return myAudio2.paused ? myAudio2.play() : myAudio2.pause();
+};
+</script>
         </div>
 
         <!--<button class="btn btn-info d-flex align-items-center mt-2 hear-voice justify-content-between px-2">
@@ -2307,6 +2411,28 @@ id="myAudio3" src="hazzabalushi001.mp3" preload="auto">
         </button>-->
       </div>
 
+
+      <div class="form-check my-4" data-filter-tags="mohamed al luhaidan Mohamed al Luhaidan mujawwad">
+        <div>
+          <input class="form-check-input" type="radio" name="recitation" value="8" id="recitation-8">
+          <label class="form-check-label text-muted" for="recitation-8">
+            <span class="english">
+              Mohamed al Luhaidan
+            </span>
+
+              <small class="rounded-pill bg-primary text-white p-1 style" data-style="mujawwad" data-original-title="" title="">Mujawwad</small>
+
+          </label>
+        </div>
+
+        <!--<button class="btn btn-info d-flex align-items-center mt-2 hear-voice justify-content-between px-2">
+          <i class="fa fa-play fa-center-2"></i>
+          Hear the Voice
+        </button>-->
+      </div>
+
+
+
       <div class="form-check my-4" data-filter-tags="mohamed siddiq al-minshawi Mohamed Siddiq al-Minshawi murattal">
         <div>
           <input class="form-check-input" type="radio" name="recitation" value="9" id="recitation-9">
@@ -2318,6 +2444,35 @@ id="myAudio3" src="hazzabalushi001.mp3" preload="auto">
               <small class="rounded-pill bg-primary text-white p-1 style" data-style="murattal" data-original-title="" title="">Murattal</small>
 
           </label>
+        </div>
+
+        <!--<button class="btn btn-info d-flex align-items-center mt-2 hear-voice justify-content-between px-2">
+          <i class="fa fa-play fa-center-2"></i>
+          Hear the Voice
+        </button>-->
+      </div>
+
+
+      <div class="form-check my-4" data-filter-tags="raad mohammad al kurdi Raad Mohammad al Kurdi mujawwad">
+        <div>
+          <input class="form-check-input" type="radio" name="recitation" value="9" id="recitation-9" onclick="togglePlayraad();">
+          <label class="form-check-label text-muted" for="recitation-9">
+            <span class="english">
+              Raad Mohammad al Kurdi
+            </span>
+
+              <small class="rounded-pill bg-primary text-white p-1 style" data-style="mujawwad" data-original-title="" title="">Mujawwad</small>
+
+          </label>
+          <audio 
+id="myAudioraad" src="Qirat/raad/raad001.mp3" preload="auto">
+</audio>
+<script type="text/javascript">
+  function togglePlayraad() {
+  var myAudio2 = document.getElementById("myAudioraad");
+  return myAudio2.paused ? myAudio2.play() : myAudio2.pause();
+};
+</script>
         </div>
 
         <!--<button class="btn btn-info d-flex align-items-center mt-2 hear-voice justify-content-between px-2">
@@ -2367,6 +2522,7 @@ id="myAudio3" src="hazzabalushi001.mp3" preload="auto">
 
 
 
+<!--  Reciters end -->
 <!--  Reciters end -->
 
 
@@ -5369,7 +5525,7 @@ id="verse11" src="AyatMaani/1-1.m4a" preload="auto">
     <div class="row offset-md-1">
       
       <audio controls>
-            <source src="shah001.mp3" type="audio/mpeg">
+            <source src="Maani/shah/shah001.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
       </audio>
       </section>
