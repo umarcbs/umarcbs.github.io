@@ -71,25 +71,7 @@
 <meta name="robots" content="all, index, follow, archive">
 <meta name="revisit-after" content="30 days">
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script type="text/javascript" async="" src="./1_files/analytics.js.download"></script><script async="" src="./1_files/js"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-8496014-1');
-    document.addEventListener('turbolinks:load', function (event) {
-        if (typeof gtag === 'function') {
-            gtag('config', 'UA-8496014-1', {
-                'page_location': event.data.url
-            });
-        }
-    });
-</script>
 
-<script defer="" src="./1_files/polyfill.min.js.download"></script>
 
 
 <!-- fonts -->
@@ -133,7 +115,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
 
     <div id="left-sidebar" class="sidebar slide-left border-right d-none">&nbsp;
-      <div> &nbsp; &nbsp; &nbsp; &nbsp; <img class="img-fluid ls-is-cached lazyloaded" alt="Quran.com logo" data-src="quran.webp" src="quran.webp" width="150" height="10"></div><br>
+      <div> &nbsp; &nbsp; &nbsp; &nbsp; <img class="img-fluid ls-is-cached lazyloaded" alt="Koshur Qoran logo" data-src="quran.webp" src="quran.webp" width="150" height="10"></div><br>
       <div class="ff-b text-primary" style="text-align: center; font-family: Reem Kufi; font-size: 20px; "> Koshur Qoran |    كٲشُر قرآن      </div>
   <div class="sidebar-head d-flex align-items-center">
     <h4 class="ff-b mb-0">Menu</h4>
@@ -142,40 +124,40 @@
 
   <ul class="main-menu p-0">
     <li class="d-block my-1">
-      <a href="https://quran.com/">
+      <a href="index.html">
         <i style='font-size:18px;' class='fas'>&#xf678;</i>
         <span class="en">Home</span>
 </a>    </li>
     <li class="d-block my-1">
-      <a href="https://quran.com/about-us">
+      <a href="about.html">
         <i style='font-size:18px' class='fas'>&#xf2b9;</i>
          <span class="en">About us</span>
 </a>    </li>
     <li class="d-block my-1">
-      <a href="https://quran.com/donations">
+      <a href="donations.html">
         <i style='font-size:18px' class='fas'>&#xf4be;</i>
         <span class="en">Contribute</span>
 </a>    </li>
     <li class="d-block my-1">
-      <a href="https://quran.com/support">
+      <a href="feedback.html">
         <i class="fa fa-help pr-2"></i>
 
         <span class="en">Help &amp; feedback</span>
 </a>    </li>
     <li class="d-block my-1">
-      <a href="https://quran.com/privacy">
+      <a href="privacy.html">
         <i style='font-size:18px' class='fas'>&#xf573;</i>
 
         <span class="en">Privacy</span>
 </a>    </li>
     <li class="d-block my-1">
-      <a href="https://quran.com/developers">
+      <a href="developers.html">
         <i style='font-size:18px' class='fas'>&#xf121;</i>
 
         <span class="en">Developers</span>
 </a>    </li>
     <li class="d-block my-1">
-      <a href="https://quran.com/apps">
+      <a href="apps.html">
         <i style='font-size:18px' class='fas'>&#xf3cd;</i>
         <span class="en">Mobile Apps</span>
 </a>    </li>
@@ -222,7 +204,7 @@
             <i class="fa fa-bars-regular"></i>
           </button>
 
-          <a class="h2 ff-b mb-0 ml-3" href="./Quran0.html">
+          <a class="h2 ff-b mb-0 ml-3" href="./index.html">
             Koshur<span class="ff-m h4 ml-0"> Qoran | كٲشُر قرآن    </span>
 </a>        </div>
 
@@ -231,7 +213,7 @@
       
 <div class="search-form flex-fill">
   <form class="form-search form-group sb-search-open" action="search" data-controller="search-form" data-expand="true">
-    <input class="form-control bg-light en" placeholder="Search &quot;Noah&quot;" type="search" name="query" value="">
+    <text class="form-control bg-light en" placeholder="Search &quot;Noah&quot;" type="search" name="query" value="Welcome to Koshur Qoran">
     <button type="submit" class="form-control form-control-submit search-btn"></button>
 
     <span class="search-label rounded-right" id="search-trigger">
@@ -354,7 +336,7 @@
   <div class="tab-content" id="display-tabs">
     <div class="tab-pane fade show active" id="display" role="tabpanel" aria-labelledby="display-tab">
       <h6 class="ff-b">
-        <span class="en">Word Meanings</span>
+        <span class="en">Word by Word Meanings</span>
       </h6>
 
       <div class="row">
@@ -421,6 +403,9 @@
           <h6 class="mb-0 ff-b">
             <span class="en">Select Arabic font</span>
           </h6>
+          <span class="mb-0 text-muted fs-sm">
+         <span class="en">Four Fonts</span>
+      </span>
         </div>
 
         <div class="col-1">
@@ -434,6 +419,9 @@
           <h6 class="mb-0 ff-b">
             <span class="en">Select Translation font</span>
           </h6>
+          <span class="mb-0 text-muted fs-sm">
+         <span class="en">Seven Fonts</span>
+      </span>
         </div>
 
         <div class="col-1">
@@ -485,10 +473,10 @@
           <label class="form-check-label" for="alafasy">
             <span class="en">Mishary Alafasy</span>
           </label>
-          <audio controls loop>
-  <source src="1a.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+          <button class="btn btn-info d-flex align-items-center mt-2 hear-voice justify-content-between px-2">
+          <i class="fa fa-play fa-center-2"></i>
+          Hear the Voice
+        </button>
         </div>
        
         <div class="form-check text-muted mt-2">
@@ -496,12 +484,20 @@
           <label class="form-check-label" for="abdulbasit">
             <span class="en">Abdul Basit</span>
           </label>
+          <button class="btn btn-info d-flex align-items-center mt-2 hear-voice justify-content-between px-2">
+          <i class="fa fa-play fa-center-2"></i>
+          Hear the Voice
+        </button>
         </div>
         <div class="form-check text-muted mt-2">
           <input class="form-check-input" type="radio" value="1r" name="rad" id="raadkurdi" >
           <label class="form-check-label" for="raadkurdi">
             <span class="en">Raad al Kurdi</span>
           </label>
+          <button class="btn btn-info d-flex align-items-center mt-2 hear-voice justify-content-between px-2">
+          <i class="fa fa-play fa-center-2"></i>
+          Hear the Voice
+        </button>
         </div>
 
       </div>
@@ -592,15 +588,7 @@
   </label>
 </div>
 
-<div class="form-check my-4 ml-4" data-filter-tags="english english abdul haleem abdul haleem">
-  <input class="form-check-input translation" type="checkbox" value="85" id="tans-1997">
-  <label class="form-check-label text-muted" for="tans-1997">
-    <span class="english">
-      Abdul Haleem
-    </span>
 
-  </label>
-</div>
 
 <div class="form-check my-4 ml-4" data-filter-tags="english english mufti taqi usmani mufti taqi usmani">
   <input class="form-check-input translation" type="checkbox" value="84" id="tans-1983">
@@ -612,15 +600,7 @@
   </label>
 </div>
 
-<div class="form-check my-4 ml-4" data-filter-tags="english english dr. ghali dr. ghali">
-  <input class="form-check-input translation" type="checkbox" value="17" id="tans-1987">
-  <label class="form-check-label text-muted" for="tans-1987">
-    <span class="english">
-      Dr. Ghali
-    </span>
 
-  </label>
-</div>
 
 <div class="form-check my-4 ml-4" data-filter-tags="english english muhsin khan muhsin khan">
   <input class="form-check-input translation" type="checkbox" value="18" id="tans-2006">
@@ -642,55 +622,10 @@
   </label>
 </div>
 
-<div class="form-check my-4 ml-4" data-filter-tags="english english transliteration transliteration">
-  <input class="form-check-input translation" type="checkbox" value="57" id="tans-2017">
-  <label class="form-check-label text-muted" for="tans-2017">
-    <span class="english">
-      Transliteration
-    </span>
 
-  </label>
-</div>
 
-<div class="form-check my-4 ml-4" data-filter-tags="english english english translation (pickthall) english translation (pickthall)">
-  <input class="form-check-input translation" type="checkbox" value="19" id="tans-2019">
-  <label class="form-check-label text-muted" for="tans-2019">
-    <span class="english">
-      English Translation (Pickthall)
-    </span>
 
-  </label>
-</div>
 
-<div class="form-check my-4 ml-4" data-filter-tags="english english english translation (yusuf ali) english translation (yusuf ali)">
-  <input class="form-check-input translation" type="checkbox" value="22" id="tans-2021">
-  <label class="form-check-label text-muted" for="tans-2021">
-    <span class="english">
-      English Translation (Yusuf Ali)
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="english english ruwwad center ruwwad center">
-  <input class="form-check-input translation" type="checkbox" value="206" id="tans-2169">
-  <label class="form-check-label text-muted" for="tans-2169">
-    <span class="english">
-      Ruwwad Center
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="english english muhammad hijab muhammad hijab">
-  <input class="form-check-input translation" type="checkbox" value="207" id="tans-2170">
-  <label class="form-check-label text-muted" for="tans-2170">
-    <span class="english">
-      Muhammad Hijab
-    </span>
-
-  </label>
-</div>
 
     </div>
 
@@ -713,1365 +648,7 @@
   </label>
 </div>
 
-<div class="form-check my-4 ml-4" data-filter-tags="russian russian ministry of awqaf, egypt ministry of awqaf, egypt">
-  <input class="form-check-input translation" type="checkbox" value="78" id="tans-2002">
-  <label class="form-check-label text-muted" for="tans-2002">
-    <span class="english">
-      Ministry of Awqaf, Egypt
-    </span>
 
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="russian russian russian translation ( elmir kuliev ) russian translation ( elmir kuliev )">
-  <input class="form-check-input translation" type="checkbox" value="45" id="tans-1985">
-  <label class="form-check-label text-muted" for="tans-1985">
-    <span class="english">
-      Russian Translation ( Elmir Kuliev )
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted azeri" data-filter-tags="azeri azeri">
-          Azeri
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="azeri azeri alikhan musayev alikhan musayev">
-  <input class="form-check-input translation" type="checkbox" value="75" id="tans-2000">
-  <label class="form-check-label text-muted" for="tans-2000">
-    <span class="english">
-      Alikhan Musayev
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="azeri azeri azerbaijani azerbaijani">
-  <input class="form-check-input translation" type="checkbox" value="23" id="tans-2004">
-  <label class="form-check-label text-muted" for="tans-2004">
-    <span class="english">
-      Azerbaijani
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted uighur, uyghur" data-filter-tags="uighur, uyghur uighur, uyghur">
-          Uighur, Uyghur
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="uighur, uyghur uighur, uyghur muhammad saleh muhammad saleh">
-  <input class="form-check-input translation" type="checkbox" value="76" id="tans-1999">
-  <label class="form-check-label text-muted" for="tans-1999">
-    <span class="english">
-      Muhammad Saleh
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted divehi, dhivehi, maldivian" data-filter-tags="divehi, dhivehi, maldivian divehi, dhivehi, maldivian">
-          Divehi, Dhivehi, Maldivian
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="divehi, dhivehi, maldivian divehi, dhivehi, maldivian divehi divehi">
-  <input class="form-check-input translation" type="checkbox" value="86" id="tans-1984">
-  <label class="form-check-label text-muted" for="tans-1984">
-    <span class="english">
-      Divehi
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted spanish" data-filter-tags="spanish spanish">
-          Spanish
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="spanish spanish sheikh isa garcia sheikh isa garcia">
-  <input class="form-check-input translation" type="checkbox" value="83" id="tans-1982">
-  <label class="form-check-label text-muted" for="tans-1982">
-    <span class="english">
-      Sheikh Isa Garcia
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="spanish spanish montada islamic foundation montada islamic foundation">
-  <input class="form-check-input translation" type="checkbox" value="140" id="tans-1967">
-  <label class="form-check-label text-muted" for="tans-1967">
-    <span class="english">
-      Montada Islamic Foundation
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="spanish spanish spanish translation(cortes) spanish translation(cortes)">
-  <input class="form-check-input translation" type="checkbox" value="28" id="tans-2028">
-  <label class="form-check-label text-muted" for="tans-2028">
-    <span class="english">
-      Spanish Translation(Cortes)
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="spanish spanish noor international center noor international center">
-  <input class="form-check-input translation" type="checkbox" value="199" id="tans-2162">
-  <label class="form-check-label text-muted" for="tans-2162">
-    <span class="english">
-      Noor International Center
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted hindi" data-filter-tags="hindi hindi">
-          Hindi
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="hindi hindi suhel farooq khan suhel farooq khan">
-  <input class="form-check-input translation" type="checkbox" value="82" id="tans-1981">
-  <label class="form-check-label text-muted" for="tans-1981">
-    <span class="english">
-      Suhel Farooq Khan
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="hindi hindi maulana azizul haque al-umari maulana azizul haque al-umari">
-  <input class="form-check-input translation" type="checkbox" value="122" id="tans-2048">
-  <label class="form-check-label text-muted" for="tans-2048">
-    <span class="english">
-      Maulana Azizul Haque al-Umari
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted kurdish" data-filter-tags="kurdish kurdish">
-          Kurdish
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="kurdish kurdish burhan muhammad-amin burhan muhammad-amin">
-  <input class="form-check-input translation" type="checkbox" value="81" id="tans-1980">
-  <label class="form-check-label text-muted" for="tans-1980">
-    <span class="english">
-      Burhan Muhammad-Amin
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="kurdish kurdish muhammad saleh bamoki muhammad saleh bamoki">
-  <input class="form-check-input translation" type="checkbox" value="143" id="tans-1970">
-  <label class="form-check-label text-muted" for="tans-1970">
-    <span class="english">
-      Muhammad Saleh Bamoki
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted malayalam" data-filter-tags="malayalam malayalam">
-          Malayalam
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="malayalam malayalam muhammad karakunnu and vanidas elayavoor muhammad karakunnu and vanidas elayavoor">
-  <input class="form-check-input translation" type="checkbox" value="80" id="tans-1979">
-  <label class="form-check-label text-muted" for="tans-1979">
-    <span class="english">
-      Muhammad Karakunnu and Vanidas Elayavoor
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="malayalam malayalam abdul-hamid haidar &amp; kanhi muhammad abdul-hamid haidar &amp; kanhi muhammad">
-  <input class="form-check-input translation" type="checkbox" value="224" id="tans-2187">
-  <label class="form-check-label text-muted" for="tans-2187">
-    <span class="english">
-      Abdul-Hamid Haidar &amp; Kanhi Muhammad
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="malayalam malayalam malay translation(abdul hameed and kunhi) malay translation(abdul hameed and kunhi)">
-  <input class="form-check-input translation" type="checkbox" value="37" id="tans-2026">
-  <label class="form-check-label text-muted" for="tans-2026">
-    <span class="english">
-      Malay Translation(Abdul Hameed and Kunhi)
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted urdu" data-filter-tags="urdu urdu">
-          Urdu
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="urdu urdu مولانا محمد جوناگڑھی مولانا محمد جوناگڑھی">
-  <input class="form-check-input translation" type="checkbox" value="54" id="tans-1962">
-  <label class="form-check-label text-muted" for="tans-1962">
-    <span class="english">
-      مولانا محمد جوناگڑھی
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="urdu urdu fi zilal al-qur&#39;an fe zilal al-qur&#39;an">
-  <input class="form-check-input translation" type="checkbox" value="156" id="tans-1965">
-  <label class="form-check-label text-muted" for="tans-1965">
-    <span class="english">
-      Fi Zilal al-Qur'an
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="urdu urdu shaykh al-hind mahmud al-hasan(with tafsir e usmani) shaykh al-hind mahmud al-hasan(with tafsir e usmani)">
-  <input class="form-check-input translation" type="checkbox" value="151" id="tans-1964">
-  <label class="form-check-label text-muted" for="tans-1964">
-    <span class="english">
-      Shaykh al-Hind Mahmud al-Hasan(with Tafsir E Usmani)
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="urdu urdu bayan ul quran بیان القرآن">
-  <input class="form-check-input translation" type="checkbox" value="158" id="tans-1947">
-  <label class="form-check-label text-muted" for="tans-1947">
-    <span class="english">
-      Bayan ul Quran
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="urdu urdu تفہیم القرآن - سید ابو الاعلیٰ مودودی تفہیم القرآن - سید ابو الاعلیٰ مودودی">
-  <input class="form-check-input translation" type="checkbox" value="97" id="tans-2015">
-  <label class="form-check-label text-muted" for="tans-2015">
-    <span class="english">
-      تفہیم القرآن - سید ابو الاعلیٰ مودودی
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted french" data-filter-tags="french french">
-          French
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="french french montada islamic foundation montada islamic foundation">
-  <input class="form-check-input translation" type="checkbox" value="136" id="tans-1957">
-  <label class="form-check-label text-muted" for="tans-1957">
-    <span class="english">
-      Montada Islamic Foundation
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="french french french translation(muhammad hamidullah) french translation(muhammad hamidullah)">
-  <input class="form-check-input translation" type="checkbox" value="31" id="tans-2023">
-  <label class="form-check-label text-muted" for="tans-2023">
-    <span class="english">
-      French Translation(Muhammad Hamidullah)
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted persian" data-filter-tags="persian persian">
-          Persian
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="persian persian islamhouse.com islamhouse.com">
-  <input class="form-check-input translation" type="checkbox" value="135" id="tans-1955">
-  <label class="form-check-label text-muted" for="tans-1955">
-    <span class="english">
-      IslamHouse.com
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="persian persian farsi translation(hussein taji) farsi translation(hussein taji)">
-  <input class="form-check-input translation" type="checkbox" value="29" id="tans-2022">
-  <label class="form-check-label text-muted" for="tans-2022">
-    <span class="english">
-      Farsi Translation(Hussein Taji)
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted tajik" data-filter-tags="tajik tajik">
-          Tajik
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="tajik tajik khawaja mirof &amp; khawaja mir khawaja mirof &amp; khawaja mir">
-  <input class="form-check-input translation" type="checkbox" value="139" id="tans-1961">
-  <label class="form-check-label text-muted" for="tans-1961">
-    <span class="english">
-      Khawaja Mirof &amp; Khawaja Mir
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="tajik tajik pioneers of translation center pioneers of translation center">
-  <input class="form-check-input translation" type="checkbox" value="223" id="tans-2186">
-  <label class="form-check-label text-muted" for="tans-2186">
-    <span class="english">
-      Pioneers of Translation Center
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="tajik tajik tajik tajik">
-  <input class="form-check-input translation" type="checkbox" value="74" id="tans-2001">
-  <label class="form-check-label text-muted" for="tans-2001">
-    <span class="english">
-      Tajik
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted japanese" data-filter-tags="japanese japanese">
-          Japanese
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="japanese japanese ryoichi mita ryoichi mita">
-  <input class="form-check-input translation" type="checkbox" value="35" id="tans-1956">
-  <label class="form-check-label text-muted" for="tans-1956">
-    <span class="english">
-      Ryoichi Mita
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="japanese japanese saeed sato saeed sato">
-  <input class="form-check-input translation" type="checkbox" value="218" id="tans-2181">
-  <label class="form-check-label text-muted" for="tans-2181">
-    <span class="english">
-      Saeed Sato
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted indonesian" data-filter-tags="indonesian indonesian">
-          Indonesian
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="indonesian indonesian king fahad quran complex king fahad quran complex">
-  <input class="form-check-input translation" type="checkbox" value="134" id="tans-1954">
-  <label class="form-check-label text-muted" for="tans-1954">
-    <span class="english">
-      King Fahad Quran Complex
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="indonesian indonesian indonesian islamic affairs ministry indonesian islamic affairs ministry">
-  <input class="form-check-input translation" type="checkbox" value="33" id="tans-2051">
-  <label class="form-check-label text-muted" for="tans-2051">
-    <span class="english">
-      Indonesian Islamic affairs ministry
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted italian" data-filter-tags="italian italian">
-          Italian
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="italian italian hamza roberto piccardo hamza roberto piccardo">
-  <input class="form-check-input translation" type="checkbox" value="153" id="tans-1963">
-  <label class="form-check-label text-muted" for="tans-1963">
-    <span class="english">
-      Hamza Roberto Piccardo
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="italian italian othman al-sharif othman al-sharif">
-  <input class="form-check-input translation" type="checkbox" value="209" id="tans-2172">
-  <label class="form-check-label text-muted" for="tans-2172">
-    <span class="english">
-      Othman al-Sharif
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted bengali" data-filter-tags="bengali bengali">
-          Bengali
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="bengali bengali taisirul quran taisirul quran">
-  <input class="form-check-input translation" type="checkbox" value="161" id="tans-2070">
-  <label class="form-check-label text-muted" for="tans-2070">
-    <span class="english">
-      Taisirul Quran
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="bengali bengali sheikh mujibur rahman sheikh mujibur rahman">
-  <input class="form-check-input translation" type="checkbox" value="163" id="tans-2068">
-  <label class="form-check-label text-muted" for="tans-2068">
-    <span class="english">
-      Sheikh Mujibur Rahman
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="bengali bengali rawai al-bayan rawai al-bayan">
-  <input class="form-check-input translation" type="checkbox" value="162" id="tans-2072">
-  <label class="form-check-label text-muted" for="tans-2072">
-    <span class="english">
-      Rawai Al-bayan
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="bengali bengali dr. abu bakr muhammad zakaria dr. abu bakr muhammad zakaria">
-  <input class="form-check-input translation" type="checkbox" value="213" id="tans-2176">
-  <label class="form-check-label text-muted" for="tans-2176">
-    <span class="english">
-      Dr. Abu Bakr Muhammad Zakaria
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted turkish" data-filter-tags="turkish turkish">
-          Turkish
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="turkish turkish dar al-salam center dar al-salam center">
-  <input class="form-check-input translation" type="checkbox" value="210" id="tans-2173">
-  <label class="form-check-label text-muted" for="tans-2173">
-    <span class="english">
-      Dar Al-Salam Center
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="turkish turkish turkish translation(diyanet) turkish translation(diyanet)">
-  <input class="form-check-input translation" type="checkbox" value="77" id="tans-1986">
-  <label class="form-check-label text-muted" for="tans-1986">
-    <span class="english">
-      Turkish Translation(Diyanet)
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="turkish turkish muslim shahin muslim shahin">
-  <input class="form-check-input translation" type="checkbox" value="124" id="tans-2036">
-  <label class="form-check-label text-muted" for="tans-2036">
-    <span class="english">
-      Muslim Shahin
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="turkish turkish shaban britch shaban britch">
-  <input class="form-check-input translation" type="checkbox" value="112" id="tans-2032">
-  <label class="form-check-label text-muted" for="tans-2032">
-    <span class="english">
-      Shaban Britch
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="turkish turkish elmalili hamdi yazir elmalili hamdi yazir">
-  <input class="form-check-input translation" type="checkbox" value="52" id="tans-2039">
-  <label class="form-check-label text-muted" for="tans-2039">
-    <span class="english">
-      Elmalili Hamdi Yazir
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted tagalog" data-filter-tags="tagalog tagalog">
-          Tagalog
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="tagalog tagalog dar al-salam center dar al-salam center">
-  <input class="form-check-input translation" type="checkbox" value="211" id="tans-2174">
-  <label class="form-check-label text-muted" for="tans-2174">
-    <span class="english">
-      Dar Al-Salam Center
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted ukrainian" data-filter-tags="ukrainian ukrainian">
-          Ukrainian
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="ukrainian ukrainian dr. mikhailo yaqubovic dr. mikhailo yaqubovic">
-  <input class="form-check-input translation" type="checkbox" value="217" id="tans-2180">
-  <label class="form-check-label text-muted" for="tans-2180">
-    <span class="english">
-      Dr. Mikhailo Yaqubovic
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted tamil" data-filter-tags="tamil tamil">
-          Tamil
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="tamil tamil sheikh omar sharif bin abdul salam sheikh omar sharif bin abdul salam">
-  <input class="form-check-input translation" type="checkbox" value="229" id="tans-2192">
-  <label class="form-check-label text-muted" for="tans-2192">
-    <span class="english">
-      Sheikh Omar Sharif bin Abdul Salam
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="tamil tamil jan trust foundation jan trust foundation">
-  <input class="form-check-input translation" type="checkbox" value="50" id="tans-1974">
-  <label class="form-check-label text-muted" for="tans-1974">
-    <span class="english">
-      Jan Trust Foundation
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="tamil tamil abdul hameed baqavi abdul hameed baqavi">
-  <input class="form-check-input translation" type="checkbox" value="133" id="tans-1953">
-  <label class="form-check-label text-muted" for="tans-1953">
-    <span class="english">
-      Abdul Hameed Baqavi
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted serbian" data-filter-tags="serbian serbian">
-          Serbian
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="serbian serbian dar al-salam center dar al-salam center">
-  <input class="form-check-input translation" type="checkbox" value="215" id="tans-2178">
-  <label class="form-check-label text-muted" for="tans-2178">
-    <span class="english">
-      Dar Al-Salam Center
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted uzbek" data-filter-tags="uzbek uzbek">
-          Uzbek
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="uzbek uzbek muhammad sodik muhammad yusuf muhammad sodik muhammad yusuf">
-  <input class="form-check-input translation" type="checkbox" value="55" id="tans-1966">
-  <label class="form-check-label text-muted" for="tans-1966">
-    <span class="english">
-      Muhammad Sodik Muhammad Yusuf
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="uzbek uzbek alauddin mansour alauddin mansour">
-  <input class="form-check-input translation" type="checkbox" value="101" id="tans-1992">
-  <label class="form-check-label text-muted" for="tans-1992">
-    <span class="english">
-      Alauddin Mansour
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="uzbek uzbek muhammad sodik muhammad yusuf muhammad sodik muhammad yusuf">
-  <input class="form-check-input translation" type="checkbox" value="127" id="tans-2043">
-  <label class="form-check-label text-muted" for="tans-2043">
-    <span class="english">
-      Muhammad Sodik Muhammad Yusuf
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted german" data-filter-tags="german german">
-          German
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="german german the sabiq company the sabiq company">
-  <input class="form-check-input translation" type="checkbox" value="141" id="tans-1968">
-  <label class="form-check-label text-muted" for="tans-1968">
-    <span class="english">
-      The Sabiq company
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="german german sabiq sabiq">
-  <input class="form-check-input translation" type="checkbox" value="123" id="tans-2035">
-  <label class="form-check-label text-muted" for="tans-2035">
-    <span class="english">
-      Sabiq
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="german german abu reda muhammad ibn ahmad abu reda muhammad ibn ahmad">
-  <input class="form-check-input translation" type="checkbox" value="208" id="tans-2171">
-  <label class="form-check-label text-muted" for="tans-2171">
-    <span class="english">
-      Abu Reda Muhammad ibn Ahmad
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="german german frank bubenheim and nadeem frank bubenheim and nadeem">
-  <input class="form-check-input translation" type="checkbox" value="27" id="tans-2052">
-  <label class="form-check-label text-muted" for="tans-2052">
-    <span class="english">
-      Frank Bubenheim and Nadeem
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted bosnian" data-filter-tags="bosnian bosnian">
-          Bosnian
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="bosnian bosnian dar al-salam center dar al-salam center">
-  <input class="form-check-input translation" type="checkbox" value="214" id="tans-2177">
-  <label class="form-check-label text-muted" for="tans-2177">
-    <span class="english">
-      Dar Al-Salam Center
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="bosnian bosnian muhamed mehanović muhamed mehanović">
-  <input class="form-check-input translation" type="checkbox" value="25" id="tans-2038">
-  <label class="form-check-label text-muted" for="tans-2038">
-    <span class="english">
-      Muhamed Mehanović
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="bosnian bosnian besim korkut besim korkut">
-  <input class="form-check-input translation" type="checkbox" value="126" id="tans-2054">
-  <label class="form-check-label text-muted" for="tans-2054">
-    <span class="english">
-      Besim Korkut
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted telugu" data-filter-tags="telugu telugu">
-          Telugu
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="telugu telugu maulana abder-rahim ibn muhammad maulana abder-rahim ibn muhammad">
-  <input class="form-check-input translation" type="checkbox" value="227" id="tans-2190">
-  <label class="form-check-label text-muted" for="tans-2190">
-    <span class="english">
-      Maulana Abder-Rahim ibn Muhammad
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted marathi" data-filter-tags="marathi marathi">
-          Marathi
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="marathi marathi muhammad shafi’i ansari muhammad shafi’i ansari">
-  <input class="form-check-input translation" type="checkbox" value="226" id="tans-2189">
-  <label class="form-check-label text-muted" for="tans-2189">
-    <span class="english">
-      Muhammad Shafi’i Ansari
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted hebrew" data-filter-tags="hebrew hebrew">
-          Hebrew
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="hebrew hebrew dar al-salam center dar al-salam center">
-  <input class="form-check-input translation" type="checkbox" value="233" id="tans-2196">
-  <label class="form-check-label text-muted" for="tans-2196">
-    <span class="english">
-      Dar Al-Salam Center
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted gujarati" data-filter-tags="gujarati gujarati">
-          Gujarati
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="gujarati gujarati rabila al-umry rabila al-umry">
-  <input class="form-check-input translation" type="checkbox" value="225" id="tans-2188">
-  <label class="form-check-label text-muted" for="tans-2188">
-    <span class="english">
-      Rabila Al-Umry
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted ganda" data-filter-tags="ganda ganda">
-          Ganda
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="ganda ganda african development foundation african development foundation">
-  <input class="form-check-input translation" type="checkbox" value="232" id="tans-2195">
-  <label class="form-check-label text-muted" for="tans-2195">
-    <span class="english">
-      African Development Foundation
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted swahili" data-filter-tags="swahili swahili">
-          Swahili
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="swahili swahili dr. abdullah muhammad abu bakr and sheikh nasir khamis dr. abdullah muhammad abu bakr and sheikh nasir khamis">
-  <input class="form-check-input translation" type="checkbox" value="231" id="tans-2194">
-  <label class="form-check-label text-muted" for="tans-2194">
-    <span class="english">
-      Dr. Abdullah Muhammad Abu Bakr and Sheikh Nasir Khamis
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="swahili swahili ali muhsin al-barwani ali muhsin al-barwani">
-  <input class="form-check-input translation" type="checkbox" value="49" id="tans-1976">
-  <label class="form-check-label text-muted" for="tans-1976">
-    <span class="english">
-      Ali Muhsin Al-Barwani
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted thai" data-filter-tags="thai thai">
-          Thai
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="thai thai society of institutes and universities society of institutes and universities">
-  <input class="form-check-input translation" type="checkbox" value="230" id="tans-2193">
-  <label class="form-check-label text-muted" for="tans-2193">
-    <span class="english">
-      Society of Institutes and Universities
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="thai thai thai translatio (king fahad quran complex) thai translatio (king fahad quran complex)">
-  <input class="form-check-input translation" type="checkbox" value="51" id="tans-2029">
-  <label class="form-check-label text-muted" for="tans-2029">
-    <span class="english">
-      Thai Translatio (King Fahad Quran Complex)
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted kazakh" data-filter-tags="kazakh kazakh">
-          Kazakh
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="kazakh kazakh khalifa altay khalifa altay">
-  <input class="form-check-input translation" type="checkbox" value="222" id="tans-2185">
-  <label class="form-check-label text-muted" for="tans-2185">
-    <span class="english">
-      Khalifa Altay
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="kazakh kazakh khalifah altai khalifah altai">
-  <input class="form-check-input translation" type="checkbox" value="113" id="tans-2033">
-  <label class="form-check-label text-muted" for="tans-2033">
-    <span class="english">
-      Khalifah Altai
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted vietnamese" data-filter-tags="vietnamese vietnamese">
-          Vietnamese
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="vietnamese vietnamese translation pioneers center ruwwad center">
-  <input class="form-check-input translation" type="checkbox" value="220" id="tans-2183">
-  <label class="form-check-label text-muted" for="tans-2183">
-    <span class="english">
-      Translation Pioneers Center
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="vietnamese vietnamese hasan abdul-karim hasan abdul-karim">
-  <input class="form-check-input translation" type="checkbox" value="221" id="tans-2184">
-  <label class="form-check-label text-muted" for="tans-2184">
-    <span class="english">
-      Hasan Abdul-Karim
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted albanian" data-filter-tags="albanian albanian">
-          Albanian
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="albanian albanian translation pioneers center ruwwad center">
-  <input class="form-check-input translation" type="checkbox" value="216" id="tans-2179">
-  <label class="form-check-label text-muted" for="tans-2179">
-    <span class="english">
-      Translation Pioneers Center
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="albanian albanian hasan efendi nahi hasan efendi nahi">
-  <input class="form-check-input translation" type="checkbox" value="88" id="tans-1960">
-  <label class="form-check-label text-muted" for="tans-1960">
-    <span class="english">
-      Hasan Efendi Nahi
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="albanian albanian albanian translation albanian translation">
-  <input class="form-check-input translation" type="checkbox" value="89" id="tans-2018">
-  <label class="form-check-label text-muted" for="tans-2018">
-    <span class="english">
-      Albanian Translation
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted dutch" data-filter-tags="dutch dutch">
-          Dutch
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="dutch dutch sofian s. siregar sofian s. siregar">
-  <input class="form-check-input translation" type="checkbox" value="144" id="tans-1971">
-  <label class="form-check-label text-muted" for="tans-1971">
-    <span class="english">
-      Sofian S. Siregar
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="dutch dutch salomo keyzer salomo keyzer">
-  <input class="form-check-input translation" type="checkbox" value="40" id="tans-1998">
-  <label class="form-check-label text-muted" for="tans-1998">
-    <span class="english">
-      Salomo Keyzer
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted amharic" data-filter-tags="amharic amharic">
-          Amharic
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="amharic amharic sadiq and sani sadiq and sani">
-  <input class="form-check-input translation" type="checkbox" value="87" id="tans-1973">
-  <label class="form-check-label text-muted" for="tans-1973">
-    <span class="english">
-      Sadiq and Sani
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="amharic amharic sadiq and sani sadiq and sani">
-  <input class="form-check-input translation" type="checkbox" value="114" id="tans-2055">
-  <label class="form-check-label text-muted" for="tans-2055">
-    <span class="english">
-      Sadiq and Sani
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted swedish" data-filter-tags="swedish swedish">
-          Swedish
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="swedish swedish knut bernström knut bernström">
-  <input class="form-check-input translation" type="checkbox" value="48" id="tans-1977">
-  <label class="form-check-label text-muted" for="tans-1977">
-    <span class="english">
-      Knut Bernström
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted central khmer" data-filter-tags="central khmer central khmer">
-          Central Khmer
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="central khmer central khmer cambodian muslim community development cambodian muslim community development">
-  <input class="form-check-input translation" type="checkbox" value="128" id="tans-2003">
-  <label class="form-check-label text-muted" for="tans-2003">
-    <span class="english">
-      Cambodian Muslim Community Development
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted malay" data-filter-tags="malay malay">
-          Malay
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="malay malay abdullah muhammad basmeih abdullah muhammad basmeih">
-  <input class="form-check-input translation" type="checkbox" value="39" id="tans-1988">
-  <label class="form-check-label text-muted" for="tans-1988">
-    <span class="english">
-      Abdullah Muhammad Basmeih
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted korean" data-filter-tags="korean korean">
-          Korean
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="korean korean korean korean">
-  <input class="form-check-input translation" type="checkbox" value="36" id="tans-1989">
-  <label class="form-check-label text-muted" for="tans-1989">
-    <span class="english">
-      Korean
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="korean korean hamed choi hamed choi">
-  <input class="form-check-input translation" type="checkbox" value="219" id="tans-2182">
-  <label class="form-check-label text-muted" for="tans-2182">
-    <span class="english">
-      Hamed Choi
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted finnish" data-filter-tags="finnish finnish">
-          Finnish
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="finnish finnish finnish finnish">
-  <input class="form-check-input translation" type="checkbox" value="30" id="tans-1990">
-  <label class="form-check-label text-muted" for="tans-1990">
-    <span class="english">
-      Finnish
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted czech" data-filter-tags="czech czech">
-          Czech
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="czech czech czech czech">
-  <input class="form-check-input translation" type="checkbox" value="26" id="tans-1991">
-  <label class="form-check-label text-muted" for="tans-1991">
-    <span class="english">
-      Czech
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted portuguese" data-filter-tags="portuguese portuguese">
-          Portuguese
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="portuguese portuguese helmi nasr helmi nasr">
-  <input class="form-check-input translation" type="checkbox" value="103" id="tans-1993">
-  <label class="form-check-label text-muted" for="tans-1993">
-    <span class="english">
-      Helmi Nasr
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="portuguese portuguese portuguese translation( samir ) portuguese translation( samir )">
-  <input class="form-check-input translation" type="checkbox" value="43" id="tans-2027">
-  <label class="form-check-label text-muted" for="tans-2027">
-    <span class="english">
-      Portuguese Translation( Samir )
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted tatar" data-filter-tags="tatar tatar">
-          Tatar
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="tatar tatar tatar tatar">
-  <input class="form-check-input translation" type="checkbox" value="53" id="tans-2007">
-  <label class="form-check-label text-muted" for="tans-2007">
-    <span class="english">
-      Tatar
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted albanian" data-filter-tags="albanian albanian">
-          Albanian
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="albanian albanian albanian albanian">
-  <input class="form-check-input translation" type="checkbox" value="47" id="tans-2008">
-  <label class="form-check-label text-muted" for="tans-2008">
-    <span class="english">
-      Albanian
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted romanian" data-filter-tags="romanian romanian">
-          Romanian
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="romanian romanian romanian romanian">
-  <input class="form-check-input translation" type="checkbox" value="44" id="tans-2009">
-  <label class="form-check-label text-muted" for="tans-2009">
-    <span class="english">
-      Romanian
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted polish" data-filter-tags="polish polish">
-          Polish
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="polish polish polish polish">
-  <input class="form-check-input translation" type="checkbox" value="42" id="tans-2010">
-  <label class="form-check-label text-muted" for="tans-2010">
-    <span class="english">
-      Polish
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted norwegian" data-filter-tags="norwegian norwegian">
-          Norwegian
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="norwegian norwegian norwegian norwegian">
-  <input class="form-check-input translation" type="checkbox" value="41" id="tans-2011">
-  <label class="form-check-label text-muted" for="tans-2011">
-    <span class="english">
-      Norwegian
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted chechen" data-filter-tags="chechen chechen">
-          Chechen
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="chechen chechen magomed magomedov magomed magomedov">
-  <input class="form-check-input translation" type="checkbox" value="106" id="tans-2013">
-  <label class="form-check-label text-muted" for="tans-2013">
-    <span class="english">
-      Magomed Magomedov
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted yoruba" data-filter-tags="yoruba yoruba">
-          Yoruba
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="yoruba yoruba shaykh abu rahimah mikael aykyuni shaykh abu rahimah mikael aykyuni">
-  <input class="form-check-input translation" type="checkbox" value="125" id="tans-2037">
-  <label class="form-check-label text-muted" for="tans-2037">
-    <span class="english">
-      Shaykh Abu Rahimah Mikael Aykyuni
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted somali" data-filter-tags="somali somali">
-          Somali
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="somali somali mahmud muhammad abduh mahmud muhammad abduh">
-  <input class="form-check-input translation" type="checkbox" value="46" id="tans-1996">
-  <label class="form-check-label text-muted" for="tans-1996">
-    <span class="english">
-      Mahmud Muhammad Abduh
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted maranao" data-filter-tags="maranao maranao">
-          Maranao
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="maranao maranao maranao maranao">
-  <input class="form-check-input translation" type="checkbox" value="38" id="tans-2016">
-  <label class="form-check-label text-muted" for="tans-2016">
-    <span class="english">
-      Maranao
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted chinese" data-filter-tags="chinese chinese">
-          Chinese
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="chinese chinese chinese translation (simplified) - ma jain chinese translation (simplified) - ma jain">
-  <input class="form-check-input translation" type="checkbox" value="56" id="tans-2020">
-  <label class="form-check-label text-muted" for="tans-2020">
-    <span class="english">
-      Chinese Translation (Simplified) - Ma Jain
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="chinese chinese muhammad makin muhammad makin">
-  <input class="form-check-input translation" type="checkbox" value="109" id="tans-2049">
-  <label class="form-check-label text-muted" for="tans-2049">
-    <span class="english">
-      Muhammad Makin
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted hausa" data-filter-tags="hausa hausa">
-          Hausa
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="hausa hausa hausa translation(abubakar gumi) hausa translation(abubakar gumi)">
-  <input class="form-check-input translation" type="checkbox" value="32" id="tans-2024">
-  <label class="form-check-label text-muted" for="tans-2024">
-    <span class="english">
-      Hausa Translation(Abubakar Gumi)
-    </span>
-
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="hausa hausa abubakar mahmood jummi abubakar mahmood jummi">
-  <input class="form-check-input translation" type="checkbox" value="115" id="tans-2034">
-  <label class="form-check-label text-muted" for="tans-2034">
-    <span class="english">
-      Abubakar Mahmood Jummi
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted nepali" data-filter-tags="nepali nepali">
-          Nepali
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="nepali nepali ahl al-hadith central society of nepal ahl al-hadith central society of nepal">
-  <input class="form-check-input translation" type="checkbox" value="108" id="tans-2030">
-  <label class="form-check-label text-muted" for="tans-2030">
-    <span class="english">
-      Ahl Al-Hadith Central Society of Nepal
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted oromo" data-filter-tags="oromo oromo">
-          Oromo
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="oromo oromo ghali apapur apaghuna ghali apapur apaghuna">
-  <input class="form-check-input translation" type="checkbox" value="111" id="tans-2031">
-  <label class="form-check-label text-muted" for="tans-2031">
-    <span class="english">
-      Ghali Apapur Apaghuna
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted georgian" data-filter-tags="georgian georgian">
-          Georgian
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="georgian georgian translation pioneers center ruwwad center">
-  <input class="form-check-input translation" type="checkbox" value="212" id="tans-2175">
-  <label class="form-check-label text-muted" for="tans-2175">
-    <span class="english">
-      Translation Pioneers Center
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted sinhala, sinhalese" data-filter-tags="sinhala, sinhalese sinhala, sinhalese">
-          Sinhala, Sinhalese
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="sinhala, sinhalese sinhala, sinhalese translation pioneers center ruwwad center">
-  <input class="form-check-input translation" type="checkbox" value="228" id="tans-2191">
-  <label class="form-check-label text-muted" for="tans-2191">
-    <span class="english">
-      Translation Pioneers Center
-    </span>
-
-  </label>
-</div>
-
-        <strong class="ff-m text-muted assamese" data-filter-tags="assamese assamese">
-          Assamese
-        </strong>
-
-        
-<div class="form-check my-4 ml-4" data-filter-tags="assamese assamese shaykh rafeequl islam habibur-rahman shaykh rafeequl islam habibur-rahman">
-  <input class="form-check-input translation" type="checkbox" value="120" id="tans-2047">
-  <label class="form-check-label text-muted" for="tans-2047">
-    <span class="english">
-      Shaykh Rafeequl Islam Habibur-Rahman
-    </span>
-
-  </label>
-</div>
 
         <strong class="ff-m text-muted pashto" data-filter-tags="pashto pashto">
           Pashto
@@ -2434,8 +1011,8 @@ id="mishary" src="Qirat/mishary/mishary001.mp3" preload="auto">
 
       <div class="form-check my-4" data-filter-tags="mohamed al luhaidan Mohamed al Luhaidan mujawwad">
         <div>
-          <input class="form-check-input" type="radio" name="recitation" value="8" id="recitation-8">
-          <label class="form-check-label text-muted" for="recitation-8">
+          <input class="form-check-input" type="radio" name="recitation" value="8" id="recitation-lu">
+          <label class="form-check-label text-muted" for="recitation-lu">
             <span class="english">
               Mohamed al Luhaidan
             </span>
@@ -2475,8 +1052,8 @@ id="mishary" src="Qirat/mishary/mishary001.mp3" preload="auto">
 
       <div class="form-check my-4" data-filter-tags="raad mohammad al kurdi Raad Mohammad al Kurdi mujawwad">
         <div>
-          <input class="form-check-input" type="radio" name="recitation" value="9" id="recitation-9" onclick="togglePlayraad();">
-          <label class="form-check-label text-muted" for="recitation-9">
+          <input class="form-check-input" type="radio" name="recitation" value="9" id="recitation-rk" onclick="togglePlayraad();">
+          <label class="form-check-label text-muted" for="recitation-rk">
             <span class="english">
               Raad Mohammad al Kurdi
             </span>
@@ -2580,19 +1157,19 @@ id="myAudioraad" src="Qirat/raad/raad001.mp3" preload="auto">
         <span class="en">King Fahd Quran Complex v1</span>
 
         <div class="arabic" style="font-size: 30px">
-            <span class=" p1-v1" word"="" id="w-1">
+            <span class=" p1-v1" word="" id="w-1">
             ﭑ
             </span>
-            <span class=" p1-v1" word"="" id="w-2">
+            <span class=" p1-v1" word="" id="w-2">
             ﭒ
             </span>
-            <span class=" p1-v1" word"="" id="w-3">
+            <span class=" p1-v1" word="" id="w-3">
             ﭓ
             </span>
-            <span class=" p1-v1" word"="" id="w-4">
+            <span class=" p1-v1" word="" id="w-4">
             ﭔ
             </span>
-            <span class=" p1-v1" end"="" id="w-5">
+            <span class=" p1-v1" end="" id="w-5">
             ﭕ
             </span>
         </div>
@@ -2660,7 +1237,7 @@ id="myAudioraad" src="Qirat/raad/raad001.mp3" preload="auto">
         <span class="k">Amiri</span>
 
         <div class="Amiri" style="font-size: 20px">
-  <p style="font-family: Amiri;">   كٲشُر قرآن          </p>
+  <p style="font-family: Amiri;">   كٲشُر قرآن   تتہ  تَميُک تفسیر        </p>
         </div>
       </label>
     </div>
@@ -2673,31 +1250,31 @@ id="myAudioraad" src="Qirat/raad/raad001.mp3" preload="auto">
         <span class="k">Aref Ruqaa</span>
 
         <div class="Aref Ruqaa" style="font-size: 20px">
-            <p style="font-family: Aref Ruqaa;">   كٲشُر قرآن          </p>
+            <p style="font-family: Aref Ruqaa;">   كٲشُر قرآن    تہ  تَميُک تفسیر        </p>
         </div>
       </label>
     </div>
 
 
     <div class="my-4 col-12">
-      <input class="form-check-input" type="radio" name="translationfont" value="tajweed" id="tajweed" onclick="myFunctionCairo();">
+      <input class="form-check-input" type="radio" name="translationfont" value="Cairo" id="Cairo" onclick="myFunctionCairo();">
       <label class="form-check-label text-muted ff-m" for="Cairo">
         <span class="k">Cairo</span>
 
         <div class="Cairo" style="font-size: 20px">
-    <p style="font-family: Cairo;">   كٲشُر قرآن          </p>
+    <p style="font-family: Cairo;">   كٲشُر قرآن     تہ  تَميُک تفسیر       </p>
         </div>
       </label>
     </div>
 
 
     <div class="my-4 col-12">
-      <input class="form-check-input" type="radio" name="translationfont" onclick="myFunctionKufam();">
+      <input class="form-check-input" type="radio" name="translationfont" value="Kufam" id="Kufam" onclick="myFunctionKufam();">
       <label class="form-check-label text-muted ff-m" for="Kufam">
         <span class="k">Kufam</span>
 
         <div class="Kufam" style="font-size: 20px">
-    <p style="font-family: Kufam;">   كٲشُر قرآن          </p>
+    <p style="font-family: Kufam;">   كٲشُر قرآن      تہ  تَميُک تفسیر      </p>
         </div>
       </label>
     </div>
@@ -2705,12 +1282,36 @@ id="myAudioraad" src="Qirat/raad/raad001.mp3" preload="auto">
 
 
     <div class="my-4 col-12">
-      <input class="form-check-input" type="radio" name="translationfont" onclick="myFunctionKatibeh();">
+      <input class="form-check-input" type="radio" name="translationfont" value="Katibeh" id="Katibeh" onclick="myFunctionKatibeh();">
       <label class="form-check-label text-muted ff-m" for="Katibeh">
         <span class="k">Katibeh</span>
 
         <div class="Katibeh" style="font-size: 20px">
-    <p style="font-family: Katibeh;">   كٲشُر قرآن          </p>
+    <p style="font-family: Katibeh;">   كٲشُر قرآن       تہ  تَميُک تفسیر     </p>
+        </div>
+      </label>
+    </div>
+
+
+    <div class="my-4 col-12">
+      <input class="form-check-input" type="radio" name="translationfont" value="Lemonada" id="Lemonada" onclick="myFunctionLemonada();">
+      <label class="form-check-label text-muted ff-m" for="Lemonada">
+        <span class="k">Lemonada</span>
+
+        <div class="Lemonada" style="font-size: 20px">
+    <p style="font-family: Lemonada;">   كٲشُر قرآن       تہ  تَميُک تفسیر     </p>
+        </div>
+      </label>
+    </div>
+
+
+    <div class="my-4 col-12">
+      <input class="form-check-input" type="radio" name="translationfont" value="Markazi" id="Markazi" onclick="myFunctionMarkazi();">
+      <label class="form-check-label text-muted ff-m" for="Markazi">
+        <span class="k">Markazi</span>
+
+        <div class="Markazi" style="font-size: 20px">
+    <p style="font-family: Markazi Text;">   كٲشُر قرآن       تہ  تَميُک تفسیر     </p>
         </div>
       </label>
     </div>
@@ -2721,6 +1322,8 @@ id="myAudioraad" src="Qirat/raad/raad001.mp3" preload="auto">
 
 <link href="https://fonts.googleapis.com/css2?family=Kufam&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lemonada&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&display=swap" rel="stylesheet">
 
 <script>
 function myFunctionAmiri() {
@@ -2745,6 +1348,16 @@ function myFunctionKufam() {
 <script>
 function myFunctionKatibeh() {
   document.getElementById("demo").style.fontFamily = 'Katibeh';
+}
+</script>
+<script>
+function myFunctionLemonada() {
+  document.getElementById("demo").style.fontFamily = 'Lemonada';
+}
+</script>
+<script>
+function myFunctionMarkazi() {
+  document.getElementById("demo").style.fontFamily = 'Markazi Text';
 }
 </script>
 
@@ -5302,19 +3915,19 @@ id="verse11" src="AyatMaani/1-1.m4a" preload="auto">
         <div class="line">
           <div class="text-center">
               <div class="arabic d-inline verse code" data-verse-number="1" data-controller="verse" data-key="1">
-                <span class="word w v1 p1-v1" id="w-1" data-local="english" data-audio="wbw/001_001_001.mp3" data-t="In (the) name" data-tr="bis&#39;mi" data-position="1" data-key="1:1:1" data-controller="word" data-original-title="" title="">
+                <span class="word w v1 p1-v1" id="w-1" data-local="english" data-audio="wbw/001_001_001.mp3" data-t="In (the) name" data-tr="bis&#39;mi" data-k="  ناو سیت    " data-ke="Naave Seet" data-ur="  شروع  نام سے   " data-hi="  शुरू नाम से  " data-position="1" data-key="1:1:1" data-controller="word" data-original-title="" title="">
   ﭑ
 </span>
-<span class="word w v1 p1-v1" id="w-2" data-local="english" data-audio="wbw/001_001_002.mp3" data-t="(of) Allah" data-tr="l-lahi" data-position="2" data-key="1:1:2" data-controller="word" data-original-title="" title="">
+<span class="word w v1 p1-v1" id="w-2" data-local="english" data-audio="wbw/001_001_002.mp3" data-t="(of) Allah" data-tr="l-lahi"  data-k="  خدایہ  سندِہ  " data-ke="Khudaye (sinde)" data-ur="  خدا کے  " data-hi="  ख़ु़दा के  " data-position="2" data-key="1:1:2" data-controller="word" data-original-title="" title="">
   ﭒ
 </span>
-<span class="word w v1 p1-v1" id="w-3" data-local="english" data-audio="wbw/001_001_003.mp3" data-t="the Most Gracious" data-tr="l-raḥmāni" data-position="3" data-key="1:1:3" data-controller="word" data-original-title="" title="">
+<span class="word w v1 p1-v1" id="w-3" data-local="english" data-audio="wbw/001_001_003.mp3" data-t="the Most Gracious" data-tr="l-raḥmāni"  data-k="  یُس    رحم کرہ وُن چُھ    " data-ke="yus Raham Karwun chu" data-ur="  جو بہت مہربان ہے  " data-hi="  जो मेहरबान है "  data-position="3" data-key="1:1:3" data-controller="word" data-original-title="" title="">
   ﭓ
 </span>
-<span class="word w v1 p1-v1" id="w-4" data-local="english" data-audio="wbw/001_001_004.mp3" data-t="the Most Merciful" data-tr="l-raḥīmi" data-position="4" data-key="1:1:4" data-controller="word" data-original-title="" title="">
+<span class="word w v1 p1-v1" id="w-4" data-local="english" data-audio="wbw/001_001_004.mp3" data-t="the Most Merciful" data-tr="l-raḥīmi"  data-k="  یُس    مہربان چُھ   " data-ke="yus Meherbaan chu" data-ur="  رحم کرنے والا ہے  " data-hi="  निहायत रहम वाला है  "   data-position="4" data-key="1:1:4" data-controller="word" data-original-title="" title="">
   ﭔ
 </span>
-<span class="end w v1 p1-v1" id="w-5" data-local="english" data-audio="" data-t="Ayah 1" data-tr="" data-position="5" data-key="" data-controller="word" data-original-title="" title="">
+<span class="end w v1 p1-v1" id="w-5" data-local="english" data-audio="" data-t="Ayah 1" data-tr="" data-k="" data-ke="" data-ur="" data-hi="" data-position="5" data-key="" data-controller="word" data-original-title="" title="">
   ﭕ
 </span>
 
@@ -5324,19 +3937,19 @@ id="verse11" src="AyatMaani/1-1.m4a" preload="auto">
         <div class="line">
           <div class="text-center">
               <div class="arabic d-inline verse code" data-verse-number="2" data-controller="verse" data-key="2">
-                <span class="word w v1 p1-v1" id="w-1130" data-local="english" data-audio="wbw/001_002_001.mp3" data-t="All praises and thanks" data-tr="al-ḥamdu" data-position="1" data-key="1:2:1" data-controller="word" data-original-title="" title="">
+                <span class="word w v1 p1-v1" id="w-1130" data-local="english" data-audio="wbw/001_002_001.mp3" data-t="All praises and thanks" data-tr="al-ḥamdu" data-k=" ساری مدح تہ شکر    " data-ke="Saari madah te shukr" data-ur="  سب تعریف"   data-hi=" सब तारीफ  "  data-position="1" data-key="1:2:1" data-controller="word" data-original-title="" title="">
   ﭖ
 </span>
-<span class="word w v1 p1-v1" id="w-1131" data-local="english" data-audio="wbw/001_002_002.mp3" data-t="(be) to Allah" data-tr="lillahi" data-position="2" data-key="1:2:2" data-controller="word" data-original-title="" title="">
+<span class="word w v1 p1-v1" id="w-1131" data-local="english" data-audio="wbw/001_002_002.mp3" data-t="(be) to Allah" data-tr="lillahi" data-k=" چھِہ    خدایس خاطر   " data-ke="che Khodayas khater" data-ur="  اللہ کے لیے ہے"   data-hi="  ख़ु़दा ही के लिए " data-position="2" data-key="1:2:2" data-controller="word" data-original-title="" title="">
   ﭗ
 </span>
-<span class="word w v1 p1-v1" id="w-1132" data-local="english" data-audio="wbw/001_002_003.mp3" data-t="the Lord" data-tr="rabbi" data-position="3" data-key="1:2:3" data-controller="word" data-original-title="" title="">
+<span class="word w v1 p1-v1" id="w-1132" data-local="english" data-audio="wbw/001_002_003.mp3" data-t="the Lord" data-tr="rabbi" data-k=" یُس پرورِش کروُن  چھُہ   " data-ke="yus parwarish karwun chu" data-ur="جو رب ہے"  data-hi=" जो पालने वाला  " data-position="3" data-key="1:2:3" data-controller="word" data-original-title="" title="">
   ﭘ
 </span>
-<span class="word w v1 p1-v1" id="w-1133" data-local="english" data-audio="wbw/001_002_004.mp3" data-t="of the universe" data-tr="l-ʿālamīna" data-position="4" data-key="1:2:4" data-controller="word" data-original-title="" title="">
+<span class="word w v1 p1-v1" id="w-1133" data-local="english" data-audio="wbw/001_002_004.mp3" data-t="of the universe" data-tr="l-ʿālamīna" data-k=" سارنی عالمَن  ہُند  " data-ke="saarni aalmeenan huind" data-ur=" تمام جہانوں کا"  data-hi=" सारे जहाँन का  " data-position="4" data-key="1:2:4" data-controller="word" data-original-title="" title="">
   ﭙ
 </span>
-<span class="end w v1 p1-v1" id="w-1134" data-local="english" data-audio="" data-t="Ayah 2" data-tr="" data-position="5" data-key="" data-controller="word" data-original-title="" title="">
+<span class="end w v1 p1-v1" id="w-1134" data-local="english" data-audio="" data-t="Ayah 2" data-tr="" data-k="" data-ke="" data-ur="    " data-hi="   " data-position="5" data-key="" data-controller="word" data-original-title="" title="">
   ﭚ
 </span>
 
@@ -5346,28 +3959,28 @@ id="verse11" src="AyatMaani/1-1.m4a" preload="auto">
         <div class="line">
           <div class="text-center">
               <div class="arabic d-inline verse code" data-verse-number="3" data-controller="verse" data-key="3">
-                <span class="word w v1 p1-v1" id="w-2953" data-local="english" data-audio="wbw/001_003_001.mp3" data-t="The Most Gracious" data-tr="al-raḥmāni" data-position="1" data-key="1:3:1" data-controller="word" data-original-title="" title="">
+                <span class="word w v1 p1-v1" id="w-2953" data-local="english" data-audio="wbw/001_003_001.mp3" data-t="The Most Gracious" data-tr="al-raḥmāni" data-k="يُس سيٹھاہ رحم  کروُن چھُہ   " data-ke="yus setha raham karwun chu" data-ur="جو بہت مہربان"  data-hi=" बड़ा मेहरबान  " data-position="1" data-key="1:3:1" data-controller="word" data-original-title="" title="">
   ﭛ
 </span>
-<span class="word w v1 p1-v1" id="w-2954" data-local="english" data-audio="wbw/001_003_002.mp3" data-t="the Most Merciful" data-tr="l-raḥīmi" data-position="2" data-key="1:3:2" data-controller="word" data-original-title="" title="">
+<span class="word w v1 p1-v1" id="w-2954" data-local="english" data-audio="wbw/001_003_002.mp3" data-t="the Most Merciful" data-tr="l-raḥīmi" data-k="يُس مہربان چھُہ   " data-ke="yus meharban chu" data-ur="  بار بار رحم فرمانے والا ہے"  data-hi=" रहम वाला है  " data-position="2" data-key="1:3:2" data-controller="word" data-original-title="" title="">
   ﭜ
 </span>
-<span class="end w v1 p1-v1" id="w-2955" data-local="english" data-audio="" data-t="Ayah 3" data-tr="" data-position="3" data-key="" data-controller="word" data-original-title="" title="">
+<span class="end w v1 p1-v1" id="w-2955" data-local="english" data-audio="" data-t="Ayah 3" data-tr="" data-k="" data-ke="" data-ur="    " data-hi="   " data-position="3" data-key="" data-controller="word" data-original-title="" title="">
   ﭝ
 </span>
 
               </div>
               <div class="arabic d-inline verse code" data-verse-number="4" data-controller="verse" data-key="4">
-                <span class="word w v1 p1-v1" id="w-3252" data-local="english" data-audio="wbw/001_004_001.mp3" data-t="(The) Master" data-tr="māliki" data-position="1" data-key="1:4:1" data-controller="word" data-original-title="" title="">
+                <span class="word w v1 p1-v1" id="w-3252" data-local="english" data-audio="wbw/001_004_001.mp3" data-t="(The) Master" data-tr="māliki" data-k="مالِک تہ اختیار وول چھُہ   " data-ke="Malik (ikhtiyar woal) chu" data-ur="  مالک ہے"  data-hi="  मालिक है " data-position="1" data-key="1:4:1" data-controller="word" data-original-title="" title="">
   ﭞ
 </span>
-<span class="word w v1 p1-v1" id="w-3253" data-local="english" data-audio="wbw/001_004_002.mp3" data-t="(of the) Day" data-tr="yawmi" data-position="2" data-key="1:4:2" data-controller="word" data-original-title="" title="">
+<span class="word w v1 p1-v1" id="w-3253" data-local="english" data-audio="wbw/001_004_002.mp3" data-t="(of the) Day" data-tr="yawmi" data-k="تَمہ دُہُک  " data-ke="(tami) duhuk" data-ur="  دن کا"  data-hi="  रोज़े " data-position="2" data-key="1:4:2" data-controller="word" data-original-title="" title="">
   ﭟ
 </span>
-<span class="word w v1 p1-v1" id="w-3254" data-local="english" data-audio="wbw/001_004_003.mp3" data-t="(of the) Judgment" data-tr="l-dīni" data-position="3" data-key="1:4:3" data-controller="word" data-original-title="" title="">
+<span class="word w v1 p1-v1" id="w-3254" data-local="english" data-audio="wbw/001_004_003.mp3" data-t="(of the) Judgment" data-tr="l-dīni" data-k="یُس جزاءُک یعنی قیامتک چھُہ  " data-ke="yus jazhuk (qayamatuk) chu" data-ur="  بدلے کے"  data-hi="  जज़ा का " data-position="3" data-key="1:4:3" data-controller="word" data-original-title="" title="">
   ﭠ
 </span>
-<span class="end w v1 p1-v1" id="w-3255" data-local="english" data-audio="" data-t="Ayah 4" data-tr="" data-position="4" data-key="" data-controller="word" data-original-title="" title="">
+<span class="end w v1 p1-v1" id="w-3255" data-local="english" data-audio="" data-t="Ayah 4" data-tr="" data-k="" data-ke="" data-ur="    " data-hi="   " data-position="4" data-key="" data-controller="word" data-original-title="" title="">
   ﭡ
 </span>
 
@@ -5380,22 +3993,22 @@ id="verse11" src="AyatMaani/1-1.m4a" preload="auto">
                 <span class="word w v1 p1-v1" id="w-5334" data-local="english" data-audio="wbw/001_005_001.mp3" data-t="You Alone" data-tr="iyyāka" data-position="1" data-key="1:5:1" data-controller="word" data-original-title="" title="">
   ﭢ
 </span>
-<span class="word w v1 p1-v1" id="w-5335" data-local="english" data-audio="wbw/001_005_002.mp3" data-t="we worship" data-tr="naʿbudu" data-position="2" data-key="1:5:2" data-controller="word" data-original-title="" title="">
+<span class="word w v1 p1-v1" id="w-5335" data-local="english" data-audio="wbw/001_005_002.mp3" data-t="we worship" data-tr="naʿbudu" data-k=" أسی  بندگی کران " data-ke="aes bandagi karan" data-ur=" ہم عبادت کرتے ہیں" data-hi=" हम इबादत करते हैं " data-position="2" data-key="1:5:2" data-controller="word" data-original-title="" title="">
   ﭣ
 </span>
-<span class="word w v1 p1-v1" id="w-5336" data-local="english" data-audio="wbw/001_005_003.mp3" data-t="and You Alone" data-tr="wa-iyyāka" data-position="3" data-key="1:5:3" data-controller="word" data-original-title="" title="">
+<span class="word w v1 p1-v1" id="w-5336" data-local="english" data-audio="wbw/001_005_003.mp3" data-t="and You Alone" data-tr="wa-iyyāka" data-k="بیہ ژے یوت   " data-ke="beyye chey yoat" data-ur=" اور صرف تجھ سے"  data-hi="  और तुझ ही से " data-position="3" data-key="1:5:3" data-controller="word" data-original-title="" title="">
   ﭤ
 </span>
-<span class="word w v1 p1-v1" id="w-5337" data-local="english" data-audio="wbw/001_005_004.mp3" data-t="we ask for help" data-tr="nastaʿīnu" data-position="4" data-key="1:5:4" data-controller="word" data-original-title="" title="">
+<span class="word w v1 p1-v1" id="w-5337" data-local="english" data-audio="wbw/001_005_004.mp3" data-t="we ask for help" data-tr="nastaʿīnu" data-k="أسی یاری منگان  " data-ke="aes yeri mangan" data-ur=" ہم مدد چاہتے ہیں"  data-hi=" मदद चाहते हैं  " data-position="4" data-key="1:5:4" data-controller="word" data-original-title="" title="">
   ﭥ
 </span>
-<span class="end w v1 p1-v1" id="w-5338" data-local="english" data-audio="" data-t="Ayah 5" data-tr="" data-position="5" data-key="" data-controller="word" data-original-title="" title="">
+<span class="end w v1 p1-v1" id="w-5338" data-local="english" data-audio="" data-t="Ayah 5" data-tr="" data-k="" data-ke="" data-ur="    " data-hi="   "data-position="5" data-key="" data-controller="word" data-original-title="" title="">
   ﭦ
 </span>
 
               </div>
               <div class="arabic d-inline verse code" data-verse-number="6" data-controller="verse" data-key="6">
-                <span class="word w v1 p1-v1" id="w-6844" data-local="english" data-audio="wbw/001_006_001.mp3" data-t="Guide us" data-tr="ih&#39;dinā" data-position="1" data-key="1:6:1" data-controller="word" data-original-title="" title="">
+                <span class="word w v1 p1-v1" id="w-6844" data-local="english" data-audio="wbw/001_006_001.mp3" data-t="Guide us" data-tr="ih&#39;dinā" data-k="ہاو  اَسِہ  " data-ke="Haav asi" data-ur=" دکھا ہم کو"  data-hi=" हमें दिखा  " data-position="1" data-key="1:6:1" data-controller="word" data-original-title="" title="">
   ﭧ
 </span>
 
@@ -5405,25 +4018,25 @@ id="verse11" src="AyatMaani/1-1.m4a" preload="auto">
         <div class="line">
           <div class="text-center">
               <div class="arabic d-inline verse code" data-verse-number="6" data-controller="verse" data-key="6">
-                <span class="word w v1 p1-v1" id="w-6845" data-local="english" data-audio="wbw/001_006_002.mp3" data-t="(to) the path" data-tr="l-ṣirāṭa" data-position="2" data-key="1:6:2" data-controller="word" data-original-title="" title="">
+                <span class="word w v1 p1-v1" id="w-6845" data-local="english" data-audio="wbw/001_006_002.mp3" data-t="(to) the path" data-tr="l-ṣirāṭa" data-k="وَتھ   " data-ke="wath" data-ur=" راستہ"  data-hi=" रास्ता  " data-position="2" data-key="1:6:2" data-controller="word" data-original-title="" title="">
   ﭨ
 </span>
-<span class="word w v1 p1-v1" id="w-6846" data-local="english" data-audio="wbw/001_006_003.mp3" data-t="the straight" data-tr="l-mus&#39;taqīma" data-position="3" data-key="1:6:3" data-controller="word" data-original-title="" title="">
+<span class="word w v1 p1-v1" id="w-6846" data-local="english" data-audio="wbw/001_006_003.mp3" data-t="the straight" data-tr="l-mus&#39;taqīma" data-k="سیز  " data-ke="sez" data-ur=" سیدھا" data-hi="   सीधा " data-position="3" data-key="1:6:3" data-controller="word" data-original-title="" title="">
   ﭩ
 </span>
-<span class="end w v1 p1-v1" id="w-6847" data-local="english" data-audio="" data-t="Ayah 6" data-tr="" data-position="4" data-key="" data-controller="word" data-original-title="" title="">
+<span class="end w v1 p1-v1" id="w-6847" data-local="english" data-audio="" data-t="Ayah 6" data-tr="" data-k="" data-ke="" data-ur="    " data-hi="   " data-position="4" data-key="" data-controller="word" data-original-title="" title="">
   ﭪ
 </span>
 
               </div>
               <div class="arabic d-inline verse code" data-verse-number="7" data-controller="verse" data-key="7">
-                <span class="word w v1 p1-v1" id="w-8411" data-local="english" data-audio="wbw/001_007_001.mp3" data-t="(The) path" data-tr="ṣirāṭa" data-position="1" data-key="1:7:1" data-controller="word" data-original-title="" title="">
+                <span class="word w v1 p1-v1" id="w-8411" data-local="english" data-audio="wbw/001_007_001.mp3" data-t="(The) path" data-tr="ṣirāṭa" data-k="وَتھ   " data-ke="Wath" data-ur=" راستہ" data-hi="  रास्ता " data-position="1" data-key="1:7:1" data-controller="word" data-original-title="" title="">
   ﭫ
 </span>
-<span class="word w v1 p1-v1" id="w-8412" data-local="english" data-audio="wbw/001_007_002.mp3" data-t="(of) those" data-tr="alladhīna" data-position="2" data-key="1:7:2" data-controller="word" data-original-title="" title="">
+<span class="word w v1 p1-v1" id="w-8412" data-local="english" data-audio="wbw/001_007_002.mp3" data-t="(of) those" data-tr="alladhīna" data-k="تِمن لٌوکن ہنز    " data-ke="timan lookan hinz" data-ur=" ان لوگوں کا"  data-hi="  उन लोगों का " data-position="2" data-key="1:7:2" data-controller="word" data-original-title="" title="">
   ﭬ
 </span>
-<span class="word w v1 p1-v1" id="w-8413" data-local="english" data-audio="wbw/001_007_003.mp3" data-t="You have bestowed (Your) Favors" data-tr="anʿamta" data-position="3" data-key="1:7:3" data-controller="word" data-original-title="" title="">
+<span class="word w v1 p1-v1" id="w-8413" data-local="english" data-audio="wbw/001_007_003.mp3" data-t="You have bestowed (Your) Favors" data-tr="anʿamta" data-k="ژیہ نعمژء عطا کریتھ    " data-ke="cxea nyamche ata kareth" data-ur=" انعام کیا تو نے" data-hi=" तूने फ़ज़ल किया  " data-position="3" data-key="1:7:3" data-controller="word" data-original-title="" title="">
   ﭭ
 </span>
 
@@ -5433,16 +4046,16 @@ id="verse11" src="AyatMaani/1-1.m4a" preload="auto">
         <div class="line">
           <div class="text-center">
               <div class="arabic d-inline verse code" data-verse-number="7" data-controller="verse" data-key="7">
-                <span class="word w v1 p1-v1" id="w-8414" data-local="english" data-audio="wbw/001_007_004.mp3" data-t="on them" data-tr="ʿalayhim" data-position="4" data-key="1:7:4" data-controller="word" data-original-title="" title="">
+                <span class="word w v1 p1-v1" id="w-8414" data-local="english" data-audio="wbw/001_007_004.mp3" data-t="on them" data-tr="ʿalayhim" data-k="تِمن پیٹھ   " data-ke="timan peth" data-ur="اوپر ان کے" data-hi="  जिन पर " data-position="4" data-key="1:7:4" data-controller="word" data-original-title="" title="">
   ﭮ
 </span>
-<span class="word w v1 p1-v1" id="w-8415" data-local="english" data-audio="wbw/001_007_005.mp3" data-t="not (of)" data-tr="ghayri" data-position="5" data-key="1:7:5" data-controller="word" data-original-title="" title="">
+<span class="word w v1 p1-v1" id="w-8415" data-local="english" data-audio="wbw/001_007_005.mp3" data-t="not (of)" data-tr="ghayri" data-k="تِہنز نہ   " data-ke="tihinz ni" data-ur="  نہ ان (لوگوں) کا" data-hi=" (उनका रास्ता) नहीं  "data-position="5" data-key="1:7:5" data-controller="word" data-original-title="" title="">
   ﭯ
 </span>
-<span class="word w v1 p1-v1" id="w-8416" data-local="english" data-audio="wbw/001_007_006.mp3" data-t="those who earned (Your) wrath" data-tr="l-maghḍūbi" data-position="6" data-key="1:7:6" data-controller="word" data-original-title="" title="">
+<span class="word w v1 p1-v1" id="w-8416" data-local="english" data-audio="wbw/001_007_006.mp3" data-t="those who earned (Your) wrath" data-tr="l-maghḍūbi" data-k="چانی ژَکھ چِھہ   " data-ke="cheyn cxakh che" data-ur=" غضب کیا گیا" data-hi=" गजब नाज़िल  हुआ  " data-position="6" data-key="1:7:6" data-controller="word" data-original-title="" title="">
   ﭰ
 </span>
-<span class="word w v1 p1-v1" id="w-8417" data-local="english" data-audio="wbw/001_007_007.mp3" data-t="on themselves" data-tr="ʿalayhim" data-position="7" data-key="1:7:7" data-controller="word" data-original-title="" title="">
+<span class="word w v1 p1-v1" id="w-8417" data-local="english" data-audio="wbw/001_007_007.mp3" data-t="on themselves" data-tr="ʿalayhim" data-k=" تِمَن پیٹھ  " data-ke="timan peth" data-ur=" اوپر ان کے"  data-hi=" जिन पर  " data-position="7" data-key="1:7:7" data-controller="word" data-original-title="" title="">
   ﭱ
 </span>
 
@@ -5452,13 +4065,13 @@ id="verse11" src="AyatMaani/1-1.m4a" preload="auto">
         <div class="line">
           <div class="text-center">
               <div class="arabic d-inline verse code" data-verse-number="7" data-controller="verse" data-key="7">
-                <span class="word w v1 p1-v1" id="w-8418" data-local="english" data-audio="wbw/001_007_008.mp3" data-t="and not" data-tr="walā" data-position="8" data-key="1:7:8" data-controller="word" data-original-title="" title="">
+                <span class="word w v1 p1-v1" id="w-8418" data-local="english" data-audio="wbw/001_007_008.mp3" data-t="and not" data-tr="walā" data-k="بیہ نہ   " data-ke="beye ni" data-ur=" اور نہ"  data-hi=" और न (उन लोगों का)  "data-position="8" data-key="1:7:8" data-controller="word" data-original-title="" title="">
   ﭲ
 </span>
-<span class="word w v1 p1-v1" id="w-8419" data-local="english" data-audio="wbw/001_007_009.mp3" data-t="(of) those who go astray" data-tr="l-ḍālīna" data-position="9" data-key="1:7:9" data-controller="word" data-original-title="" title="">
+<span class="word w v1 p1-v1" id="w-8419" data-local="english" data-audio="wbw/001_007_009.mp3" data-t="(of) those who go astray" data-tr="l-ḍālīna" data-k="تِہنز یِم وَتہ ڈءل  " data-ke="(tihinz) yim wati del" data-ur=" ان (لوگوں) کا جو گمراہ ہیں " data-hi="  जो रस्ते से भटक गए " data-position="9" data-key="1:7:9" data-controller="word" data-original-title="" title="">
   ﭳ
 </span>
-<span class="end w v1 p1-v1" id="w-8420" data-local="english" data-audio="" data-t="Ayah 7" data-tr="" data-position="10" data-key="" data-controller="word" data-original-title="" title="">
+<span class="end w v1 p1-v1" id="w-8420" data-local="english" data-audio="" data-t="Ayah 7" data-tr="" data-k="" data-ke="" data-ur="    " data-hi="   "data-position="10" data-key="" data-controller="word" data-original-title="" title="">
   ﭴ
 </span>
 
