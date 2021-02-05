@@ -20,7 +20,7 @@
 <link href="https://cdn.qurancdn.com/assets/icons/apple-touch-icon-2a7c9837b14d7ff52d75d814e88ad221c593174ede7cd60f2efa8c6aa6e87f97.png" title="Quran.com" type="image/png" rel="apple-touch-icon" color="theme-color">
 
 
-<title>Surah Al-Fatihah - 1:1 | KoshurQoran</title>
+<title>Surah Al-Fatihah | KoshurQoran</title>
 <meta name="description" content="Surah Al-Fatihah(الفاتحة) 1:1 In the Name of Allah—the Most Compassionate, Most Merciful.">
 <meta name="keywords" content="the opener, سورة الفاتحة, সূচনা, pembukaan, l&#39;aprente, അല്‍ഫാതിഹ, pristup, de opening, открывающая коран, la apertura, öppningen, 开端章, l&#39;ouverture, کھولنے والی, kitabı açan, fâtiha, القران الكريم, القرآن, قران, quran">
 <link rel="canonical" href="https://quran.com/1">
@@ -164,6 +164,23 @@
   </ul>
 
   <div class="more-links">
+    <h4 class="ff-b"><span class="en">More From Us</span></h4>
+    <ul class="p-0">
+      <li class="d-block my-1">
+        <a href="#" rel="noopener noreferrer">Monthly Magazines</a>
+      </li>
+      <li class="d-block my-1">
+        <a href="#" rel="noopener noreferrer">Salah Guide</a>
+      </li>
+      <li class="d-block my-1">
+        <a href="#" rel="noopener noreferrer">Soft Documents</a>
+      </li>
+      
+    </ul>
+  </div>
+
+
+  <div class="more-links">
     <h4 class="ff-b"><span class="en">Related Sites</span></h4>
     <ul class="p-0">
       <li class="d-block my-1">
@@ -284,7 +301,7 @@
     <div class="col-11">
       <h6 class="mb-0 ff-b"><span class="en">Choose Translations</span></h6>
       <span class="mb-0 text-muted fs-sm">
-        <span class="en">Showing one translation</span>
+        <span class="en">Mirwaiz Mohammad Yousuf Shah</span>
       </span>
     </div>
 
@@ -297,7 +314,7 @@
     <div class="col-11">
       <h6 class="mb-0 ff-b"><span class="en">Choose Reciters</span></h6>
       <span class="mb-0 text-muted fs-sm english">
-         Mishari Rashid al-`Afasy
+         Hazza Al Balushi
       </span>
     </div>
 
@@ -310,7 +327,7 @@
     <div class="col-11">
       <h6 class="mb-0 ff-b"><span class="en">Site Language</span></h6>
       <span class="mb-0 text-muted fs-sm">
-         <span class="en">English</span>
+         <span class="en">Kashmiri</span>
       </span>
     </div>
 
@@ -464,14 +481,14 @@
       
 
       <div class="py-4">
-        <h6 class="ff-b"><span class="en">Click on any of the radio buttons to listen to the selected Qari's Qirat of the whole Surah.</span></h6>
+        <h6 class="ff-b"><span class="en">Click on any of the radio buttons to listen to the selected Person's Audio Translation of the whole Surah. </span></h6>
         
 
         
         <div class="form-check text-muted mt-2">
-          <input class="form-check-input" type="radio" value="1a" name="rad" id="alafasy" >
-          <label class="form-check-label" for="alafasy">
-            <span class="en">Mishary Alafasy</span>
+          <input class="form-check-input" type="radio" value="maani1" name="rad" id="maani1" onclick="maani1();">
+          <label class="form-check-label" for="maani1">
+            <span class="en">Maulvi Mohammad Ahmad Shah</span>
           </label>
           <button class="btn btn-info d-flex align-items-center mt-2 hear-voice justify-content-between px-2">
           <i class="fa fa-play fa-center-2"></i>
@@ -480,38 +497,37 @@
         </div>
        
         <div class="form-check text-muted mt-2">
-          <input class="form-check-input" type="radio" value="1b" name="rad" id="abdulbasit" >
-          <label class="form-check-label" for="abdulbasit">
-            <span class="en">Abdul Basit</span>
+          <input class="form-check-input" type="radio" name="rad" id="maani2" onclick="ayub1();">
+          <label class="form-check-label" for="maani2">
+            <span class="en">Mohammad Ayyoob bin Mohammad Yousuf</span>
           </label>
           <button class="btn btn-info d-flex align-items-center mt-2 hear-voice justify-content-between px-2">
           <i class="fa fa-play fa-center-2"></i>
           Hear the Voice
         </button>
+        <audio 
+id="maaniayub" src="Maani/ayub/ayub001.mp3" preload="auto">
+</audio>
+<script type="text/javascript">
+  function ayub1() {
+  var myverse11 = document.getElementById("maaniayub");
+  return myverse11.paused ? myverse11.play() : myverse11.pause();
+};
+</script>
         </div>
         <div class="form-check text-muted mt-2">
-          <input class="form-check-input" type="radio" value="1r" name="rad" id="raadkurdi" >
-          <label class="form-check-label" for="raadkurdi">
-            <span class="en">Raad al Kurdi</span>
+          <input class="form-check-input" type="radio" value="maani3" name="rad" id="maani3" disabled="disabled">
+          <label class="form-check-label" for="maani3">
+            <span class="en">Peer Mohammad Saqib</span>
           </label>
-          <button class="btn btn-info d-flex align-items-center mt-2 hear-voice justify-content-between px-2">
+          <button class="btn btn-info d-flex align-items-center mt-2 hear-voice justify-content-between px-2" disabled="disabled">
           <i class="fa fa-play fa-center-2"></i>
           Hear the Voice
         </button>
         </div>
 
       </div>
-<!--
-      <div class="py-4">
-        <div class="form-check form-switch">
-          <label class="form-check-label" for="tooltip-switch">
-            <span class="en">Show word translation in tooltip while playing ayah</span>
-          </label>
 
-          <input class="form-check-input" type="checkbox" id="tooltip-switch">
-        </div>
-      </div>
-    -->
     </div>
   </div>
 </div>
@@ -527,18 +543,29 @@
 
 <div data-controller="filter-list choose-translations" class="px-4" data-list="#ordered-translations" data-input="#filter-translations">
   <div class="rounded-search d-flex justify-content-end my-4">
-    <input class="form-control bg-light" placeholder="Filter" type="search" id="filter-translations">
+    <input class="form-control bg-light" placeholder="Filter" type="search" id="filter-translations" >
   </div>
 
   <div id="ordered-translations">
     <div class="py-4 border-bottom">
 
-      <strong class="ff-m text-muted english" data-filter-tags="english english">
-        English
+      <strong class="ff-m text-muted kashmiri" data-filter-tags="kashmiri koshur Kashmiri Koshur "  >
+        Kashmiri
       </strong>
 
       
-<div class="form-check my-4 ml-4" data-filter-tags="english english dr. mustafa khattab dr. mustafa khattab, the clear quran">
+<div class="form-check my-4 ml-4" data-filter-tags="kashmiri koshur mirwaiz mohammad yousuf shah, koshur qoran">
+  <input class="form-check-input " type="checkbox" value="131" id="tans-1975" checked="checked">
+  <label class="form-check-label text-muted" for="tans-1975">
+    <span class="english">
+      Mirwaiz Mohammad Yousuf Shah
+    </span>
+
+  </label>
+</div>
+
+<!-- Adding translation changes the translation of the surah
+  <div class="form-check my-4 ml-4" data-filter-tags="english english dr. mustafa khattab dr. mustafa khattab, the clear quran">
   <input class="form-check-input translation" type="checkbox" value="131" id="tans-1975">
   <label class="form-check-label text-muted" for="tans-1975">
     <span class="english">
@@ -547,19 +574,11 @@
 
   </label>
 </div>
+-->
 
-<div class="form-check my-4 ml-4" data-filter-tags="english english fadel soliman, bridges’ translation fadel soliman, bridges’ translation">
-  <input class="form-check-input translation" type="checkbox" value="149" id="tans-1952">
-  <label class="form-check-label text-muted" for="tans-1952">
-    <span class="english">
-      Fadel Soliman, Bridges’ translation
-    </span>
 
-  </label>
-</div>
-
-<div class="form-check my-4 ml-4" data-filter-tags="english english maarif-ul-quran maarif-ul-quran">
-  <input class="form-check-input translation" type="checkbox" value="167" id="tans-2132">
+<div class="form-check my-4 ml-4" data-filter-tags="kashmiri koshur maarif-ul-quran maarif-ul-quran">
+  <input class="form-check-input " type="checkbox" value="167" id="tans-2132" disabled="disabled">
   <label class="form-check-label text-muted" for="tans-2132">
     <span class="english">
       Maarif-ul-Quran
@@ -569,7 +588,7 @@
 </div>
 
 <div class="form-check my-4 ml-4" data-filter-tags="english english saheeh international saheeh international">
-  <input class="form-check-input translation" type="checkbox" value="20" id="tans-1994">
+  <input class="form-check-input " type="checkbox" value="20" id="tans-1994">
   <label class="form-check-label text-muted" for="tans-1994">
     <span class="english">
       Saheeh International
@@ -578,20 +597,12 @@
   </label>
 </div>
 
-<div class="form-check my-4 ml-4" data-filter-tags="english english muhammad taqi-ud-din al-hilali &amp; muhammad muhsin khan muhammad taqi-ud-din al-hilali &amp; muhammad muhsin khan">
-  <input class="form-check-input translation" type="checkbox" value="203" id="tans-2166">
-  <label class="form-check-label text-muted" for="tans-2166">
-    <span class="english">
-      Muhammad Taqi-ud-Din al-Hilali &amp; Muhammad Muhsin Khan
-    </span>
 
-  </label>
-</div>
 
 
 
 <div class="form-check my-4 ml-4" data-filter-tags="english english mufti taqi usmani mufti taqi usmani">
-  <input class="form-check-input translation" type="checkbox" value="84" id="tans-1983">
+  <input class="form-check-input " type="checkbox" value="84" id="tans-1983">
   <label class="form-check-label text-muted" for="tans-1983">
     <span class="english">
       Mufti Taqi Usmani
@@ -603,7 +614,7 @@
 
 
 <div class="form-check my-4 ml-4" data-filter-tags="english english muhsin khan muhsin khan">
-  <input class="form-check-input translation" type="checkbox" value="18" id="tans-2006">
+  <input class="form-check-input " type="checkbox" value="18" id="tans-2006">
   <label class="form-check-label text-muted" for="tans-2006">
     <span class="english">
       Muhsin Khan
@@ -613,7 +624,7 @@
 </div>
 
 <div class="form-check my-4 ml-4" data-filter-tags="english english tafheem-ul-quran - abul ala maududi tafheem-ul-quran - abul ala maududi">
-  <input class="form-check-input translation" type="checkbox" value="95" id="tans-2014" checked="checked">
+  <input class="form-check-input " type="checkbox" value="95" id="tans-2014" >
   <label class="form-check-label text-muted" for="tans-2014">
     <span class="english">
       Tafheem-ul-Quran - Abul Ala Maududi
@@ -634,7 +645,7 @@
         <span class="en">Other Languages</span>
       </h6>
         <strong class="ff-m text-muted russian" data-filter-tags="russian russian">
-          Russian
+          Urdu
         </strong>
 
         
@@ -642,7 +653,7 @@
   <input class="form-check-input translation" type="checkbox" value="79" id="tans-1978">
   <label class="form-check-label text-muted" for="tans-1978">
     <span class="english">
-      Abu Adel
+      Salahuddin Yusuf
     </span>
 
   </label>
@@ -677,10 +688,10 @@
   </div>
 
   
-<div class="render-async  " id="render_async_8b3cba5f5a1611695783" data-path="/settings/locales" data-method="GET" data-headers="{}" data-lazy-load="{&quot;root&quot;:&quot;#locales-sidebar&quot;}" data-controller="render-async">
+<div >
   
     <p class="text-center p-3">
-      <i class="fa fa-spinner fa-spin"></i> <span class="en">Loading...</span>
+      Currently Working...
     </p>
 
 </div>
@@ -882,7 +893,7 @@ id="hani" src="Qirat/hani/hani001.mp3" preload="auto">
 
       <div class="form-check my-4" data-filter-tags="hazza al balushi Hazza al Balushi">
         <div>
-          <input class="form-check-input" type="radio" name="recitation" value="haz" id="recitation-haz" onclick="hazza()">
+          <input class="form-check-input" type="radio" name="recitation" value="haz" id="recitation-haz" checked="checked" onclick="hazza()">
           <label class="form-check-label text-muted" for="recitation-haz">
             <span class="english">
               Hazza al Balushi
@@ -964,7 +975,7 @@ id="husary2" src="Qirat/husary2/husary001.mp3" preload="auto">
 
       <div class="form-check my-4" data-filter-tags="mishari rashid al-`afasy Mishari Rashid al-`Afasy ">
         <div>
-          <input class="form-check-input" type="radio" name="recitation" value="ala" id="recitation-ala" checked="checked" onclick="mishary();">
+          <input class="form-check-input" type="radio" name="recitation" value="ala" id="recitation-ala"  onclick="mishary();">
           <label class="form-check-label text-muted" for="recitation-ala">
             <span class="english">
               Mishari Rashid al-`Afasy
@@ -3350,7 +3361,7 @@ id="verse11" src="AyatMaani/1-1.m4a" preload="auto">
 
  <p dir="rtl">
 گوڈ چُھس بو  کران خدایہ  سندِہ  ناوہ سیت یُس سیٹھاہ  رحم  کرہ وُن   چُھ  ۔  یٌس     سیٹھاہ   مہربان     چُھ  ۔   <sup foot_note="1" style="font-size: 18px;">&#9312;</sup> 
-  </p><small class="d-block resource"> MirWaiz Mohammad Yousuf Shah.
+  </p><small class="d-block resource"> Mirwaiz Mohammad Yousuf Shah - Bayanul Furqan <small>(Koshur Qoran)</small>
 </small>
   <div id="footnotes">  <div class="footnote d-none" id="footnote-1">
     <div class="bg-info my-2 rounded-lg english">
@@ -4158,11 +4169,11 @@ id="verse11" src="AyatMaani/1-1.m4a" preload="auto">
     </div>
   </div>
 <section class="en">
-  <div id="player" data-controller="player player-manager" class="fixed-bottom bg-white custom-shadow">
+  <div id="player" data-controller="player player-manager" class="fixed-bottom bg-light custom-shadow">
   <div class="container p-2">
     <div class="row offset-md-1">
       
-      <audio controls>
+      <audio controls class="en">
             <source src="Maani/shah/shah001.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
       </audio>
@@ -4264,10 +4275,10 @@ id="verse11" src="AyatMaani/1-1.m4a" preload="auto">
               <a href="#" rel="noopener noreferrer">Quranic Recitations</a>
             </li>
             <li>
-              <a href="#" rel="noopener noreferrer">Quranic Recitations</a>
+              <a href="#" rel="noopener noreferrer">Word Meanings</a>
             </li>
             <li>
-              <a href="#" rel="noopener noreferrer">Quranic Recitations</a>
+              <a href="#" rel="noopener noreferrer">Other details</a>
             </li>
           </ul>
         </div>
@@ -4303,7 +4314,7 @@ id="verse11" src="AyatMaani/1-1.m4a" preload="auto">
 
              
           </p>
-          <p class="mb-0">© 2021 <a href="#">Koshurqoran.com</a>. v.1.0 <span class="en"> All Rights Reserved</span></p>
+          <p class="mb-0">© 2021 ˹<a href="#">Koshurqoran.com</a>˺  <span class="en">  -  All Rights Reserved -  [v.1.0]</span></p>
         </div>
       </div>
     </div>
@@ -4318,5 +4329,8 @@ id="verse11" src="AyatMaani/1-1.m4a" preload="auto">
 <!-- Bottom Footer End code -->                  <!-- Bottom Footer End code -->           <!-- Bottom Footer End code -->
 
   
+<!-- 
+<div id="loading-spinner" class="spinner p-3 d-none"><i class="spinner--swirl"></i></div>
+-->
 
-<div id="loading-spinner" class="spinner p-3 d-none"><i class="spinner--swirl"></i></div></body></html>
+</body></html>
