@@ -3340,13 +3340,89 @@ id="verse11" src="AyatMaani/1-1.m4a" preload="auto">
           <small class="d-md-none d-block mt-2">Tafsirs</small>
         </a>
 
-        <a href="1.html#1:1" class="ayah-action my-3 text-muted text-center" data-title="Share" data-controller="ajax-modal" data-url="1.html#1:1" data-name="ayah-action" data-category="share-list" data-original-title="" title="">
+        <a href="1.html#1:1" class="ayah-action my-3 text-muted text-center" data-title="Share" data-toggle="modal" data-target="#myModal" data-url="1.html#1:1" data-name="ayah-action" data-category="share-list" data-original-title="" title="">
           <i class="fa fa-share-alt"></i>
           <small class="d-md-none d-block mt-2">
             Share
           </small>
         </a>
+        <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: black;">
+          
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+
+          <p style="color: black;">Copy and Share the link of this Surah through any of the below mediums</p>
+          <div class="col">
+          <input type="text" value="https://umarcbs.github.io/1.html" id="myInput">
+                        <button class="btn btn-info d-flex align-items-center mt-2 hear-voice justify-content-between px-2" onclick="mycpy()">Copy</button></div>
+                        <script type="text/javascript">
+                          function mycpy() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+}
+                        </script>
+          <div class="row">
         
+          <button  class="btn btn-info d-flex align-items-center mt-2 hear-voice justify-content-between px-2" style="background-color: #25D366; font-size: 15px;" ><a href="whatsapp://send?text=https://umarcbs.github.io/1.html">Share this</a>
+          <i class="fa fa-whatsapp"></i>
+          WhatsApp
+        </button>
+        <button  class="btn btn-info d-flex align-items-center mt-2 hear-voice justify-content-between px-2" style="background-color: #0084B4; font-size: 15px;">
+          <i class="fa fa-twitter"></i>
+          Twitter
+        </button>
+        <button  class="btn btn-info d-flex align-items-center mt-2 hear-voice justify-content-between px-2" style="background-color: #0088CC; font-size: 15px;">
+          <i class="fa fa-telegram"></i>
+          Telegram
+        </button> 
+        <button  class="btn btn-info d-flex align-items-center mt-2 hear-voice justify-content-between px-2" style="background-color: #BB001B; font-size: 15px;">
+          <i class="fa fa-envelope"></i>
+          Email
+        </button>
+        <button  class="btn btn-info d-flex align-items-center mt-2 hear-voice justify-content-between px-2" style="background-color: #3B5998; font-size: 15px;">
+          <i class="fa fa-facebook"></i>
+          Facebook
+        </button> 
+        <button  class="btn btn-info d-flex align-items-center mt-2 hear-voice justify-content-between px-2" style="background-color: #DD2A7B; font-size: 15px;">
+          <i class="fa fa-envelope"></i>
+          Instagram
+        </button> 
+        </div>
+
+      
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times-circle close-sidebar close-translations-sidebar fa-center"></i></button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
 
         <a class="ayah-action text-center text-muted my-2 reflection-link" data-title="Read Reflections for this Ayah on QuranReflect" href="http://quranreflect.com/1/1?feed=true" target="_blank" data-controller="track" data-name="ayah-action" data-category="QuranReflect" data-original-title="" title="">
           <img width="30" data-src="https://cdn.qurancdn.com/assets/icon/QR-icon-b0946a40331951abe50fd9e2b02a7016b561c641c34a6c06f064e2beddd1cf6e.png" class=" lazyloaded" src="./1_files/QR-icon-b0946a40331951abe50fd9e2b02a7016b561c641c34a6c06f064e2beddd1cf6e.webp">
