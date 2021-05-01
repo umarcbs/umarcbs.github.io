@@ -1,0 +1,2 @@
+HTML Code - Table for easy reference of ASCII characters and Symbols in HTML format. 
+It can be used to check the browser supports. 
