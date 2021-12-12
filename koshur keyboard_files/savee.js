@@ -3,7 +3,7 @@ function save(){
     text = text.replace(/\n/g, "\r\n"); 
     var blob = new Blob([text], { type: "text/plain"});
     var anchor = document.createElement("a");
-    anchor.download = "keyboard_lexilogos.txt";
+    anchor.download = "koshur.txt";
     anchor.href = window.URL.createObjectURL(blob);
     anchor.target ="_blank";
     anchor.style.display = "none"; // just to be safe
