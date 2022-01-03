@@ -39,7 +39,7 @@
     <meta property="og:title" content="Text to Handwriting" />
     <meta
       property="og:url"
-      content="https://umarcbs.github.io/text-to-handwriting"
+      content="https://saurabhdaware.github.io/text-to-handwriting"
     />
     <meta
       property="og:description"
@@ -60,7 +60,8 @@
     <meta property="og:image:width" content="600" />
     <meta property="og:image:height" content="337" />
 
-    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@saurabhcodes" />
 
     <title>Text to Handwriting</title>
 
@@ -118,7 +119,6 @@
             width="25px"
             src="images/moon.svg"
         /></span>
-
       </button>
       <h1>Text to Handwriting</h1>
       <section class="generate-image-section">
@@ -138,8 +138,24 @@
                   <div class="display-flex left-margin-and-content">
                     <div contenteditable="true" class="left-margin"></div>
                     <div class="paper-content" id="note" contenteditable="true">
-                      This is a text to handwriting tool where you can enter any text and convert that into handwriting.
-                      It is simple to use and also has the option to upload your own custom fonts.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Ut rhoncus dui eget tortor feugiat iaculis. Morbi et dolor
+                      in felis viverra efficitur. Integer id laoreet arcu.
+                      Mauris turpis nibh, scelerisque sed tristique non,
+                      hendrerit in erat. Duis interdum nisl risus, ac ultrices
+                      ipsum auctor at. Aliquam faucibus iaculis metus sit amet
+                      tincidunt. Vestibulum cursus urna vel nunc imperdiet
+                      suscipit. Ut eu augue egestas, porta orci lobortis,
+                      pharetra orci. Morbi eu tellus quis nisi tempor accumsan
+                      nec eu urna. empor, ullamcorper tortor. Mauris quis
+                      fermentum augue. Phasellus ac nisl hendrerit, fringilla
+                      enim aliquam, placerat odio. Ut tortor nisi, pellentesque
+                      sed nisi at, hendrerit imperdiet turpis. Proin interdum
+                      porttitor metus at hendrerit. Proin ipsum nisl, lacinia
+                      vitae purus ullamcorper, maximus convallis sem. Sed nec
+                      lacinia lorem. Duis arcu metus, cursus non odio quis,
+                      tincidunt tempor augue. Donec eget vestibulum risus.
+                      Nullam blandit quis est vitae feugiat.
                     </div>
                   </div>
                   <div class="overlay"></div>
@@ -241,15 +257,12 @@
                       <option default value="#000f55">Blue</option>
                       <option value="black">Black</option>
                       <option value="#ba3807">Red</option>
-                      <option value="#006400">Green</option>
-                      <option value="white">white</option>
                     </select>
                   </div>
                   <div>
                     <label class="block" for="page-size">Page Size</label>
                     <select id="page-size">
                       <option default value="a4">A4 &nbsp;</option>
-                      <option default value="a5">A5 &nbsp;</option>
                     </select>
                   </div>
                   <div>
@@ -456,6 +469,54 @@
       </section>
 
       
+    </main>
+    <footer style="padding: 40px 0px 10px 0px;">
+     
+    </footer>
+
+    <!-- Fixed Elements -->
+    <section class="draw-container popup-container">
+      <button class="close-button">&times;</button>
+      <div class="display-flex responsive-flex">
+        <canvas
+          id="diagram-canvas"
+          style="background-color: #fff;"
+          height="300px"
+          width="600px"
+        ></canvas>
+        <div class="flex-1 buttons-container padding-around">
+          <button
+            id="add-to-paper-button"
+            style="margin-top: 5px; margin-bottom: 5px;"
+          >
+            Add to Paper
+          </button>
+          <button
+            id="draw-download-button"
+            style="margin-top: 5px; margin-bottom: 5px;"
+          >
+            Download Image
+          </button>
+          <br /><br />
+          <input
+            type="file"
+            id="image-to-add-in-canvas"
+            accept="image/x-png,image/jpeg"
+            hidden="hidden"
+          />
+          <br /><br /><button id="add-new-image-button">Add bg image</button>
+          <br /><br />
+          <button
+            id="clear-draw-canvas"
+            class="blue-button"
+            style="background-color: #f30; color: #fff;"
+          >
+            Clear Canvas
+          </button>
+        </div>
+      </div>
+    </section>
+    
 
     <script
       src="./js/vendors/html2canvas.min.js"
